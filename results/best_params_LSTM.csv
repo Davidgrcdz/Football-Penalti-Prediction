@@ -1,0 +1,6 @@
+embedding,best_f1,hidden_dim,num_layers,bidirectional,dropout,lr,batch_size,norm
+baseline,0.4934072568662734,64,1,True,0.2,0.001,64,L2
+gaitgl,0.49144356693512153,128,2,True,0.1,0.001,64,minmax
+gaitpart,0.4362348762348763,128,1,True,0.1,0.001,128,L2
+gaitset,0.46150744646438635,64,2,True,0.4,0.001,32,L2
+gln,0.5597580517204144,256,1,True,0.2,0.001,64,minmax
