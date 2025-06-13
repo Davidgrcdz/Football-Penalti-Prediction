@@ -1,0 +1,15 @@
+embedding,best_f1,hidden_dim,num_layers,bidirectional,dropout,lr,batch_size,norm
+baseline_CASIAB.csv,0.48852398659497764,64,1,False,0.4,0.001,64,L2
+baseline_OUMVLP.csv,0.4849837746872847,512,2,False,0.5,0.001,128,L2
+gaitgl.csv,0.46962702597655276,64,2,True,0.2,0.001,128,minmax
+gaitgl_GREW.csv,0.469905209358416,512,1,False,0.5,0.001,32,L2
+gaitgl_GREW_BNNeck.csv,0.4363144955518933,64,1,False,0.1,0.001,64,L2
+gaitgl_OUMVLP.csv,0.4846049918548962,256,1,False,0.5,0.001,64,L2
+gaitpart.csv,0.47015873015873016,256,1,False,0.0,0.001,32,L2
+gaitpart_GREW.csv,0.45782105878689416,512,2,True,0.4,0.001,64,minmax
+gaitpart_OUMVLP.csv,0.4786558915743946,512,3,True,0.3,0.001,32,L2
+gaitset.csv,0.4551405143513188,512,1,True,0.2,0.001,32,L2
+gaitset_GREW.csv,0.4536581644580065,64,1,False,0.1,0.001,32,L2
+gaitset_OUMVLP.csv,0.48688170631363575,512,1,True,0.0,0.001,32,L2
+gln_phase1.csv,0.511490084926144,64,2,False,0.0,0.001,32,L2
+gln_phase2.csv,0.4868396380918756,256,1,False,0.5,0.001,32,L2
