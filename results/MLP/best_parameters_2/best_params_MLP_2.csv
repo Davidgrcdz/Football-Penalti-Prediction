@@ -1,0 +1,15 @@
+embedding,best_f1,batch_size,pooling,norm,lr,wd,n_layers,base_dim,activation,dropout_rate,use_pca,norm_layer,do_layer,pca_frac
+baseline_CASIAB.csv,0.4455,32,mean,L2,0.0001,1e-05,3,128,relu,0.3,False,2,3,
+baseline_OUMVLP.csv,0.461,64,mean,minmax,0.001,0.0001,2,256,leakyrelu,0.4,False,2,0,
+gaitgl.csv,0.3902,16,mean,minmax,0.001,1e-06,2,256,relu,0.1,True,0,1,0.85
+gaitgl_GREW.csv,0.4273,128,mean,minmax,0.001,0.0001,2,128,relu,0.3,True,1,0,0.9
+gaitgl_GREW_BNNeck.csv,0.3948,16,max,minmax,0.0001,1e-05,2,512,elu,0.3,True,1,0,0.75
+gaitgl_OUMVLP.csv,0.3705,64,mean,L2,0.001,1e-06,3,256,elu,0.3,True,2,1,0.85
+gaitpart.csv,0.3253,32,max,minmax,0.001,0.0001,1,128,leakyrelu,0.2,True,0,0,0.8
+gaitpart_GREW.csv,0.4054,128,max,L2,0.001,0.0001,2,128,elu,0.3,True,1,2,0.95
+gaitpart_OUMVLP.csv,0.462,32,mean,minmax,0.001,0.0001,3,512,leakyrelu,0.2,True,3,3,0.9
+gaitset.csv,0.4172,128,mean,L2,0.0001,1e-05,2,512,gelu,0.4,False,1,0,
+gaitset_GREW.csv,0.4081,64,max,L2,0.001,0.0,3,128,relu,0.2,True,2,2,0.85
+gaitset_OUMVLP.csv,0.4464,32,max,L2,0.001,0.0,1,512,leakyrelu,0.3,True,1,0,0.7
+gln_phase1.csv,0.4694,16,mean,minmax,0.0001,0.0,1,128,gelu,0.1,True,1,1,0.7
+gln_phase2.csv,0.4575,32,max,minmax,0.001,0.0001,1,512,relu,0.2,False,1,0,
