@@ -1,4 +1,4 @@
-embedding,best_f1_cv,pooling,norm,batch_size,n_layers,base_dim,activation,dropout_rate,lr,wd,use_pca,norm_layer,do_layer,pca_frac
+embedding,best_f1_cv,pooling,norm,batch_size,num_layers,base_dim,activation,dropout_rate,lr,wd,use_pca,norm_layer,do_layer,pca_frac
 baseline_CASIAB.csv,0.4822,mean,L2,64,2,512,leakyrelu,0.4,0.0001,1e-06,False,2,2,
 baseline_OUMVLP.csv,0.4461,mean,minmax,16,2,512,leakyrelu,0.5,0.001,0.0001,False,1,2,
 gaitgl.csv,0.4035,mean,minmax,128,2,512,silu,0.3,0.0001,1e-06,True,1,1,0.8
