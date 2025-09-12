@@ -1,0 +1,15 @@
+embedding,best_f1_cv,num_layers,architecture_pattern,size_idx,bidirectional,dropout,pooling,fc_hidden,norm_post_lstm,lr,weight_decay,batch_size,optimizer,norm,activation,dropout_layer_1,norm_layer_1,first_size_idx,dropout_layer_2,norm_layer_2
+baseline_CASIAB.csv,0.43755979551702123,1,uniform,2.0,False,0.5,max,,False,0.001,2e-06,16,AdamW,L2,,,,,,
+baseline_OUMVLP.csv,0.44870351178935697,2,uniform,4.0,False,0.30000000000000004,max,512.0,False,0.001,5e-07,16,Adam,L2,leakyrelu,False,False,,,
+gaitgl.csv,0.4589391411695524,1,uniform,2.0,False,0.30000000000000004,max,,False,0.002,0.0,16,RMSprop,L2,,,,,,
+gaitgl_GREW.csv,0.4570198282603768,3,decreasing,,False,0.2,max,64.0,True,0.0002,1e-07,64,Adam,L2,leakyrelu,True,True,10.0,False,False
+gaitgl_GREW_BNNeck.csv,0.4617391257285475,3,decreasing,,True,0.2,last,768.0,False,0.0002,5e-07,16,Adam,L2,silu,True,False,9.0,False,False
+gaitgl_OUMVLP.csv,0.39003785659689755,2,increasing,,False,0.2,max,,False,0.001,2e-07,64,AdamW,L2,,True,True,10.0,,
+gaitpart.csv,0.2990731490731491,3,uniform,3.0,False,0.4,max,,True,2e-05,1e-05,128,RMSprop,L2,,False,True,,False,False
+gaitpart_GREW.csv,0.42591092727257723,3,uniform,10.0,False,0.2,last,512.0,True,2e-05,2e-06,32,AdamW,L2,silu,False,True,,False,True
+gaitpart_OUMVLP.csv,0.3797332231454558,2,uniform,2.0,False,0.5,max,,True,0.001,1e-05,16,RMSprop,L2,,False,True,,,
+gaitset.csv,0.4435639869714656,2,uniform,2.0,False,0.1,max,,False,0.001,1e-05,32,RMSprop,L2,,False,True,,,
+gaitset_GREW.csv,0.39743435994635584,2,uniform,2.0,False,0.5,max,,True,0.001,1e-05,16,RMSprop,L2,,False,True,,,
+gaitset_OUMVLP.csv,0.4107879806909061,1,uniform,5.0,False,0.5,max,,True,5e-05,1e-07,16,RMSprop,L2,,,,,,
+gln_phase1.csv,0.47299437385188386,1,uniform,2.0,False,0.30000000000000004,max,,False,0.002,0.0,16,RMSprop,L2,,,,,,
+gln_phase2.csv,0.4237961355297668,2,uniform,2.0,False,0.5,max,,True,0.001,1e-05,16,RMSprop,L2,,False,True,,,
