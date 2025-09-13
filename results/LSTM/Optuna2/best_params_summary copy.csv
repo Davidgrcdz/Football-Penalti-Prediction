@@ -1,0 +1,15 @@
+embedding,best_f1_cv,num_layers,architecture_pattern,first_size_idx,bidirectional,dropout,pooling,fc_hidden,norm_post_lstm,lr,weight_decay,batch_size,optimizer,norm,activation,dropout_layer_1,norm_layer_1,dropout_layer_2,norm_layer_2,dropout_layer_3,norm_layer_3,size_idx
+baseline_CASIAB.csv,0.4361384068413557,4,decreasing,9.0,False,0.4,max,512.0,True,1e-05,0.0,16,AdamW,L2,elu,True,True,True,True,False,False,
+baseline_OUMVLP.csv,0.475162751591854,1,uniform,,False,0.1,max,128.0,False,0.001,0.0,64,AdamW,L2,leakyrelu,,,,,,,6.0
+gaitgl.csv,0.4783558374699979,3,decreasing,5.0,True,0.4,last,128.0,True,0.0001,5e-07,96,AdamW,minmax,gelu,True,False,False,False,,,
+gaitgl_GREW.csv,0.46538959319954326,3,uniform,,False,0.1,max,,False,0.01,1e-05,16,AdamW,L2,,True,True,True,True,,,0.0
+gaitgl_GREW_BNNeck.csv,0.42968350099275604,3,decreasing,3.0,True,0.4,last,512.0,False,0.0001,5e-07,16,Adam,L2,elu,False,True,True,True,,,
+gaitgl_OUMVLP.csv,0.4160841739545134,1,decreasing,4.0,False,0.4,max,512.0,True,5e-05,1e-07,16,RMSprop,L2,tanh,,,,,,,
+gaitpart.csv,0.40822911656244987,4,increasing,1.0,False,0.0,max,128.0,False,0.001,1e-05,64,AdamW,L2,leakyrelu,False,True,True,True,True,False,
+gaitpart_GREW.csv,0.4513057490333103,1,decreasing,3.0,False,0.0,last,128.0,True,0.0002,1e-06,96,Adam,minmax,gelu,,,,,,,
+gaitpart_OUMVLP.csv,0.4797573261454322,1,decreasing,5.0,False,0.0,last,64.0,True,0.0001,1e-06,16,AdamW,L2,tanh,,,,,,,
+gaitset.csv,0.46288855598821277,3,decreasing,3.0,True,0.2,mean,1024.0,True,0.001,1e-05,96,AdamW,L2,gelu,True,True,True,False,,,
+gaitset_GREW.csv,0.485475699367967,2,decreasing,7.0,True,0.30000000000000004,last,64.0,False,0.0001,0.0,96,AdamW,minmax,gelu,False,True,,,,,
+gaitset_OUMVLP.csv,0.44211725464680546,3,decreasing,4.0,False,0.30000000000000004,max,1024.0,True,0.0002,2e-06,16,AdamW,L2,gelu,False,True,True,True,,,
+gln_phase1.csv,0.5130826647780284,1,decreasing,0.0,False,0.4,last,,False,0.01,1e-07,64,Adam,L2,,,,,,,,
+gln_phase2.csv,0.47845670693204,2,uniform,,True,0.5,max,768.0,True,0.0002,1e-05,16,RMSprop,L2,silu,False,True,,,,,2.0
