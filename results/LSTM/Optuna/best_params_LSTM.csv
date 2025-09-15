@@ -1,0 +1,15 @@
+embedding,best_f1_cv,num_layers,architecture_pattern,first_size_idx,bidirectional,dropout,pooling,fc_hidden,norm_post_lstm,lr,weight_decay,batch_size,optimizer,norm,activation,dropout_layer_1,norm_layer_1,dropout_layer_2,norm_layer_2,dropout_layer_3,norm_layer_3,size_idx
+baseline_CASIAB.csv,0.4361,4,decreasing,9,False,0.4,max,512,True,1e-05,0.0,16,AdamW,L2,elu,True,True,True,True,False,False,
+baseline_OUMVLP.csv,0.4752,1,uniform,,False,0.1,max,128,False,0.001,0.0,64,AdamW,L2,leakyrelu,,,,,,,6
+gaitgl.csv,0.4784,3,decreasing,5,True,0.4,last,128,True,0.0001,5e-07,96,AdamW,minmax,gelu,True,False,False,False,,,
+gaitgl_GREW.csv,0.4654,3,uniform,,False,0.1,max,,False,0.01,1e-05,16,AdamW,L2,,True,True,True,True,,,0
+gaitgl_GREW_BNNeck.csv,0.4297,3,decreasing,3,True,0.4,last,512,False,0.0001,5e-07,16,Adam,L2,elu,False,True,True,True,,,
+gaitgl_OUMVLP.csv,0.4161,1,decreasing,4,False,0.4,max,512,True,5e-05,1e-07,16,RMSprop,L2,tanh,,,,,,,
+gaitpart.csv,0.4082,4,increasing,1,False,0.0,max,128,False,0.001,1e-05,64,AdamW,L2,leakyrelu,False,True,True,True,True,False,
+gaitpart_GREW.csv,0.4513,1,decreasing,3,False,0.0,last,128,True,0.0002,1e-06,96,Adam,minmax,gelu,,,,,,,
+gaitpart_OUMVLP.csv,0.4798,1,decreasing,5,False,0.0,last,64,True,0.0001,1e-06,16,AdamW,L2,tanh,,,,,,,
+gaitset.csv,0.4629,3,decreasing,3,True,0.2,mean,1024,True,0.001,1e-05,96,AdamW,L2,gelu,True,True,True,False,,,
+gaitset_GREW.csv,0.4855,2,decreasing,7,True,0.3,last,64,False,0.0001,0.0,96,AdamW,minmax,gelu,False,True,,,,,
+gaitset_OUMVLP.csv,0.4421,3,decreasing,4,False,0.3,max,1024,True,0.0002,2e-06,16,AdamW,L2,gelu,False,True,True,True,,,
+gln_phase1.csv,0.5131,1,decreasing,0,False,0.4,last,,False,0.01,1e-07,64,Adam,L2,,,,,,,,
+gln_phase2.csv,0.4785,2,uniform,,True,0.5,max,768,True,0.0002,1e-05,16,RMSprop,L2,silu,False,True,,,,,2
