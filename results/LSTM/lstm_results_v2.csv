@@ -1,0 +1,151 @@
+id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode,train_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss
+
+197,20250918_204046,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.0305,0.56818,140,0.46566,0.46566,140,0.0305
+198,20250918_204046,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.03302,0.45455,233,0.38384,0.4748,226,0.16803
+199,20250918_204046,gaitgl.csv,Personalizado,LSTM,42,128,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.08746,0.40909,100,0.28444,0.3801,93,0.17769
+200,20250918_204046,gaitgl_GREW.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.05604,0.45455,62,0.33939,0.39507,49,0.17083
+201,20250918_204046,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.05816,0.40909,143,0.30438,0.38256,141,0.09792
+202,20250918_204046,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.06627,0.54545,129,0.38889,0.41577,126,0.10611
+203,20250918_204046,gaitpart.csv,Personalizado,LSTM,42,128,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.07979,0.5,188,0.35556,0.45238,160,0.15173
+204,20250918_204046,gaitpart_GREW.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.05316,0.59091,153,0.54939,0.54939,153,0.05316
+205,20250918_204046,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.40042,0.5,377,0.41749,0.44272,273,0.19727
+206,20250918_204046,gaitset.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.08496,0.36364,131,0.31059,0.3561,130,0.09607
+207,20250918_204046,gaitset_GREW.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.03689,0.38636,121,0.30843,0.36606,105,0.15674
+208,20250918_204046,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.07795,0.5,398,0.37243,0.40514,330,0.19894
+209,20250918_204046,gln_phase1.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.05602,0.59091,179,0.44562,0.52894,167,0.17311
+210,20250918_204046,gln_phase2.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],last,,,False,64,AdamW,,0.001,1e-05,True,0.06843,0.29545,159,0.28987,0.42169,157,0.0844
+
+211,20250918_204432,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00719,0.47727,140,0.21538,0.21538,140,1.00719
+212,20250918_204432,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00785,0.47727,123,0.21538,0.21538,123,1.00785
+213,20250918_204432,gaitgl.csv,Personalizado,LSTM,42,128,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00715,0.47727,161,0.21538,0.21538,161,1.00715
+214,20250918_204432,gaitgl_GREW.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00841,0.47727,106,0.21538,0.21538,106,1.00841
+215,20250918_204432,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.01144,0.47727,110,0.21538,0.21538,110,1.01144
+216,20250918_204432,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00679,0.47727,142,0.21538,0.21538,142,1.00679
+217,20250918_204432,gaitpart.csv,Personalizado,LSTM,42,128,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,0.9007,0.5,106,0.22222,0.22222,106,0.9007
+218,20250918_204432,gaitpart_GREW.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00694,0.47727,108,0.21538,0.21538,108,1.00694
+219,20250918_204432,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00575,0.47727,138,0.21538,0.21538,138,1.00575
+220,20250918_204432,gaitset.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00786,0.47727,133,0.21538,0.21538,133,1.00786
+221,20250918_204432,gaitset_GREW.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00535,0.47727,159,0.21538,0.21538,159,1.00535
+222,20250918_204432,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00547,0.47727,106,0.21538,0.21538,106,1.00547
+223,20250918_204432,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00764,0.47727,121,0.21538,0.21538,121,1.00764
+224,20250918_204432,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[256, 256]",True,minmax,0.3,[1],[1],mean,128,gelu,True,64,Adam,,0.0005,1e-06,True,1.00725,0.47727,160,0.21538,0.21538,160,1.00725
+
+225,20250918_204946,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.00826,0.47727,168,0.21538,0.21538,168,1.00826
+226,20250918_204946,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.02799,0.36364,126,0.28725,0.39483,123,0.13644
+227,20250918_204946,gaitgl.csv,Personalizado,LSTM,42,128,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.00991,0.47727,104,0.21538,0.21538,104,1.00991
+228,20250918_204946,gaitgl_GREW.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.0167,0.54545,69,0.38462,0.45068,62,0.03999
+229,20250918_204946,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.00927,0.47727,116,0.21538,0.21538,116,1.00927
+230,20250918_204946,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.01348,0.47727,113,0.21538,0.21538,113,1.01348
+231,20250918_204946,gaitpart.csv,Personalizado,LSTM,42,128,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.90259,0.5,116,0.22222,0.22222,116,0.90259
+232,20250918_204946,gaitpart_GREW.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.0155,0.52273,136,0.41989,0.55798,135,0.02494
+233,20250918_204946,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.00714,0.47727,136,0.21538,0.21538,136,1.00714
+234,20250918_204946,gaitset.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.02699,0.47727,91,0.34246,0.37333,90,0.05805
+235,20250918_204946,gaitset_GREW.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.00737,0.47727,139,0.21538,0.21538,139,1.00737
+236,20250918_204946,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,1.00818,0.47727,208,0.21538,0.21538,208,1.00818
+237,20250918_204946,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.93355,0.36364,213,0.25383,0.25383,213,0.93355
+238,20250918_204946,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256,elu,False,32,RMSprop,,0.001,1e-06,False,0.0417,0.45455,226,0.44035,0.48148,198,0.19591
+
+239,20250918_210359,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.07196,0.47727,279,0.45803,0.46111,254,0.17395
+240,20250918_210359,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.07516,0.40909,392,0.34994,0.4472,381,0.17113
+241,20250918_210359,gaitgl.csv,Personalizado,LSTM,42,128,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.06107,0.43182,140,0.38571,0.40961,137,0.13336
+242,20250918_210359,gaitgl_GREW.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.09746,0.5,103,0.41506,0.5,92,0.19878
+243,20250918_210359,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.06713,0.45455,239,0.42593,0.54994,217,0.12867
+244,20250918_210359,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.08197,0.47727,391,0.35421,0.41975,346,0.10234
+245,20250918_210359,gaitpart.csv,Personalizado,LSTM,42,128,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.08799,0.33333,337,0.26667,0.45238,332,0.17783
+246,20250918_210359,gaitpart_GREW.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.08631,0.56818,247,0.54557,0.60476,242,0.12199
+247,20250918_210359,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.07119,0.5,722,0.47494,0.5198,718,0.12989
+248,20250918_210359,gaitset.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.0663,0.38636,266,0.32755,0.33602,245,0.1726
+249,20250918_210359,gaitset_GREW.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.07248,0.36364,241,0.27436,0.33939,188,0.19764
+250,20250918_210359,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.08097,0.54545,945,0.40374,0.49949,944,0.08642
+251,20250918_210359,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.07701,0.56818,281,0.53801,0.59167,212,0.16197
+252,20250918_210359,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.0887,0.47727,294,0.42899,0.49496,240,0.12195
+
+253,20250918_211308,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00533,0.47727,138,0.21538,0.21538,138,1.00533
+254,20250918_211308,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.01029,0.47727,110,0.21538,0.21538,110,1.01029
+255,20250918_211308,gaitgl.csv,Personalizado,LSTM,42,128,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00689,0.47727,124,0.21538,0.21538,124,1.00689
+256,20250918_211308,gaitgl_GREW.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00813,0.47727,133,0.21538,0.21538,133,1.00813
+257,20250918_211308,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.0084,0.47727,176,0.21538,0.21538,176,1.0084
+258,20250918_211308,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00695,0.47727,144,0.21538,0.21538,144,1.00695
+259,20250918_211308,gaitpart.csv,Personalizado,LSTM,42,128,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,0.89948,0.5,224,0.22222,0.22222,224,0.89948
+260,20250918_211308,gaitpart_GREW.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.0097,0.47727,128,0.21538,0.21538,128,1.0097
+261,20250918_211308,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00505,0.47727,109,0.21538,0.21538,109,1.00505
+262,20250918_211308,gaitset.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00793,0.47727,133,0.21538,0.21538,133,1.00793
+263,20250918_211308,gaitset_GREW.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.01581,0.47727,112,0.21538,0.21538,112,1.01581
+264,20250918_211308,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00756,0.47727,119,0.21538,0.21538,119,1.00756
+265,20250918_211308,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00574,0.47727,130,0.21538,0.21538,130,1.00574
+266,20250918_211308,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[128, 256, 512]",True,minmax,0.4,[2],[2],attention,256,gelu,True,64,AdamW,,0.0005,1e-07,False,1.00781,0.47727,166,0.21538,0.21538,166,1.00781
+
+267,20250918_212337,baseline_CASIAB.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,0.02405,0.5,103,0.35418,0.37425,102,0.03876
+268,20250918_212337,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,0.0492,0.43182,171,0.39278,0.53157,165,0.08482
+269,20250918_212337,gaitgl.csv,Personalizado,LSTM,42,128,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00688,0.47727,122,0.21538,0.21538,122,1.00688
+270,20250918_212337,gaitgl_GREW.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00644,0.47727,133,0.21538,0.21538,133,1.00644
+271,20250918_212337,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,0.02114,0.45455,122,0.44177,0.54167,115,0.09362
+272,20250918_212337,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.0061,0.47727,172,0.21538,0.21538,172,1.0061
+273,20250918_212337,gaitpart.csv,Personalizado,LSTM,42,128,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,0.92284,0.5,249,0.22222,0.22222,249,0.92284
+274,20250918_212337,gaitpart_GREW.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00703,0.47727,149,0.21538,0.21538,149,1.00703
+275,20250918_212337,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00786,0.47727,132,0.21538,0.21538,132,1.00786
+276,20250918_212337,gaitset.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00562,0.47727,146,0.21538,0.21538,146,1.00562
+277,20250918_212337,gaitset_GREW.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00656,0.47727,160,0.21538,0.21538,160,1.00656
+278,20250918_212337,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00848,0.47727,107,0.21538,0.21538,107,1.00848
+279,20250918_212337,gln_phase1.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00581,0.47727,123,0.21538,0.21538,123,1.00581
+280,20250918_212337,gln_phase2.csv,Personalizado,LSTM,42,256,4,"[512, 512, 512, 512]",True,L2,0.3,[],[],mean,512,relu,False,32,Adam,,0.001,1e-06,True,1.00631,0.47727,138,0.21538,0.21538,138,1.00631
+
+281,20250918_215341,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.01735,0.47727,106,0.21538,0.21538,106,1.01735
+282,20250918_215341,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.0124,0.47727,113,0.21538,0.21538,113,1.0124
+283,20250918_215341,gaitgl.csv,Personalizado,LSTM,42,128,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.00694,0.47727,151,0.21538,0.21538,151,1.00694
+284,20250918_215341,gaitgl_GREW.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.00814,0.47727,182,0.21538,0.21538,182,1.00814
+285,20250918_215341,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.01369,0.47727,181,0.21538,0.21538,181,1.01369
+286,20250918_215341,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.00743,0.47727,128,0.21538,0.21538,128,1.00743
+287,20250918_215341,gaitpart.csv,Personalizado,LSTM,42,128,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,0.90022,0.5,125,0.22222,0.22222,125,0.90022
+288,20250918_215341,gaitpart_GREW.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.00733,0.47727,150,0.21538,0.21538,150,1.00733
+289,20250918_215341,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.01213,0.47727,120,0.21538,0.21538,120,1.01213
+290,20250918_215341,gaitset.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.0108,0.47727,139,0.21538,0.21538,139,1.0108
+291,20250918_215341,gaitset_GREW.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.00865,0.47727,106,0.21538,0.21538,106,1.00865
+292,20250918_215341,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.00862,0.36364,113,0.17778,0.17778,113,1.00862
+293,20250918_215341,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.01088,0.47727,151,0.21538,0.21538,151,1.01088
+294,20250918_215341,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],max,,,True,128,SGD,0.0,0.001,2e-06,True,1.01519,0.47727,112,0.21538,0.21538,112,1.01519
+
+295,20250918_215646,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00737,0.47727,129,0.21538,0.21538,129,1.00737
+296,20250918_215646,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00498,0.47727,103,0.21538,0.21538,103,1.00498
+297,20250918_215646,gaitgl.csv,Personalizado,LSTM,42,128,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,0.08967,0.43182,529,0.31389,0.37123,519,0.16867
+298,20250918_215646,gaitgl_GREW.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,0.02111,0.34091,204,0.3018,0.40256,201,0.10291
+299,20250918_215646,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00582,0.47727,103,0.21538,0.21538,103,1.00582
+300,20250918_215646,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00639,0.47727,106,0.21538,0.21538,106,1.00639
+301,20250918_215646,gaitpart.csv,Personalizado,LSTM,42,128,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,0.0693,0.66667,325,0.45238,0.50794,323,0.06166
+302,20250918_215646,gaitpart_GREW.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00495,0.47727,136,0.21538,0.21538,136,1.00495
+303,20250918_215646,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.0079,0.47727,134,0.21538,0.21538,134,1.0079
+304,20250918_215646,gaitset.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,0.07724,0.29545,404,0.20944,0.35591,400,0.12402
+305,20250918_215646,gaitset_GREW.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00581,0.47727,106,0.21538,0.21538,106,1.00581
+306,20250918_215646,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00534,0.47727,112,0.21538,0.21538,112,1.00534
+307,20250918_215646,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,1.00495,0.47727,115,0.21538,0.21538,115,1.00495
+308,20250918_215646,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[640, 320]",True,minmax,0.2,[1],[],last,128,silu,False,64,AdamW,,0.0003,1e-05,False,0.08295,0.40909,617,0.39184,0.44293,585,0.18422
+
+309,20250918_221632,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.01051,0.47727,120,0.21538,0.21538,120,1.01051
+310,20250918_221632,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00632,0.47727,148,0.21538,0.21538,148,1.00632
+311,20250918_221632,gaitgl.csv,Personalizado,LSTM,42,128,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00604,0.47727,222,0.21538,0.21538,222,1.00604
+312,20250918_221632,gaitgl_GREW.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00636,0.47727,229,0.21538,0.21538,229,1.00636
+313,20250918_221632,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00841,0.47727,172,0.21538,0.21538,172,1.00841
+314,20250918_221632,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.01436,0.47727,217,0.21538,0.21538,217,1.01436
+315,20250918_221632,gaitpart.csv,Personalizado,LSTM,42,128,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,0.91373,0.5,150,0.22222,0.22222,150,0.91373
+316,20250918_221632,gaitpart_GREW.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00695,0.47727,374,0.21538,0.21538,374,1.00695
+317,20250918_221632,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.01046,0.47727,119,0.21538,0.21538,119,1.01046
+318,20250918_221632,gaitset.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.01238,0.47727,139,0.21538,0.21538,139,1.01238
+319,20250918_221632,gaitset_GREW.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00843,0.47727,170,0.21538,0.21538,170,1.00843
+320,20250918_221632,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00653,0.47727,126,0.21538,0.21538,126,1.00653
+321,20250918_221632,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00991,0.47727,104,0.21538,0.21538,104,1.00991
+322,20250918_221632,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[192, 384, 768]",True,L2,0.3,[],[],mean,256,mish,True,48,AdamW,,0.0007,1e-06,False,1.00597,0.47727,222,0.21538,0.21538,222,1.00597
+
+323,20250918_224038,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.78124,0.40909,331,0.30287,0.30287,331,0.78124
+324,20250918_224038,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.06816,0.47727,456,0.36786,0.48879,424,0.1871
+325,20250918_224038,gaitgl.csv,Personalizado,LSTM,42,128,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.4206,0.36364,198,0.28333,0.28333,198,0.4206
+326,20250918_224038,gaitgl_GREW.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.07888,0.56818,138,0.48308,0.51825,113,0.18202
+327,20250918_224038,gaitgl_GREW_BNNeck.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.09287,0.40909,354,0.35185,0.42165,325,0.14162
+328,20250918_224038,gaitgl_OUMVLP.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.0559,0.52273,426,0.48726,0.51429,388,0.16054
+329,20250918_224038,gaitpart.csv,Personalizado,LSTM,42,128,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.84208,0.5,293,0.22222,0.22222,293,0.84208
+330,20250918_224038,gaitpart_GREW.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.04975,0.45455,337,0.32401,0.44485,281,0.11701
+331,20250918_224038,gaitpart_OUMVLP.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.65945,0.52273,387,0.38038,0.38038,387,0.65945
+332,20250918_224038,gaitset.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.05736,0.40909,331,0.30681,0.35964,316,0.17057
+333,20250918_224038,gaitset_GREW.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.04333,0.40909,456,0.34359,0.43415,453,0.10092
+334,20250918_224038,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.99928,0.47727,218,0.21538,0.21538,218,0.99928
+335,20250918_224038,gln_phase1.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.88652,0.47727,200,0.21538,0.21538,200,0.88652
+336,20250918_224038,gln_phase2.csv,Personalizado,LSTM,42,256,1,[1024],True,L2,0.5,[],[],attention,,,False,32,RMSprop,,0.0002,1e-06,True,0.08522,0.47727,194,0.45284,0.52206,144,0.18359
