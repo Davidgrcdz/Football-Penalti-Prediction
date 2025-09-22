@@ -1,4 +1,5 @@
 id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,pooling,norm,batch_size,num_layers,base_dim,activation,dropout_rate,learning_rate,weight_decay,use_pca,pca_frac,norm_layer,do_layer,train_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss,training
+
 1,20250826_192433,baseline_CASIAB.csv,baseline_CASIAB.csv,MLP,42,256,"[512, 256]",mean,L2,64,2,512,leakyrelu,0.4,0.0001,1e-06,False,,2,2,0.00443,0.54545,298,0.38538,0.47306,115,0.05668,COMPLETED
 2,20250826_192433,baseline_OUMVLP.csv,baseline_CASIAB.csv,MLP,42,256,"[512, 256]",mean,L2,64,2,512,leakyrelu,0.4,0.0001,1e-06,False,,2,2,0.00497,0.5,365,0.42487,0.47816,166,0.05863,COMPLETED
 3,20250826_192433,gaitgl.csv,baseline_CASIAB.csv,MLP,42,128,"[512, 256]",mean,L2,64,2,512,leakyrelu,0.4,0.0001,1e-06,False,,2,2,0.00446,0.47727,350,0.39899,0.4582,163,0.03607,COMPLETED

@@ -1,4 +1,5 @@
 id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,pooling,norm,batch_size,num_layers,base_dim,activation,dropout_rate,learning_rate,weight_decay,use_pca,pca_frac,norm_layer,do_layer,train_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss,training
+
 197,20250827_193601,baseline_CASIAB.csv,Personalizado,MLP,42,31,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.09507,0.59091,5000,0.5584,0.62584,4581,0.14313,STOPPED
 198,20250827_193601,baseline_OUMVLP.csv,Personalizado,MLP,42,26,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.19694,0.54545,5000,0.49308,0.57497,4573,0.18388,STOPPED
 199,20250827_193601,gaitgl.csv,Personalizado,MLP,42,26,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.13722,0.29545,5000,0.23115,0.32741,3947,0.1936,STOPPED
