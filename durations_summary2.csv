@@ -1,0 +1,4 @@
+model_csv,count,mean_min,median_min,p90_min,total_hours
+MLP,13,4.162,2.783,8.153,0.902
+LSTM_modular,13,13.206,6.433,10.443,2.861
+LSTM_modular_attention,13,14.492,9.8,14.007,3.14
