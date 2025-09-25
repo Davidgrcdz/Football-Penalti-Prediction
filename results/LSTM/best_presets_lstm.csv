@@ -1,7 +1,5 @@
 num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode
 
-4,"[896, 768, 640, 512]",False,L2,0.4,"[1, 2]","[1, 2]",max,512.0,elu,True,16,AdamW,,1e-05,0.0,False
-
 1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False
 3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False
 1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False
