@@ -1,0 +1,15 @@
+embedding,best_f1_cv,activation,attention_proj,batch_size,causal,ch_first_idx,ch_idx,channels_pattern,convs_per_block,dilation_d0,dilation_mode,dilation_start,dilation_step,dr_p,dr_use_b0,dr_use_b1,dr_use_b2,dr_use_b3,dr_use_b4,dr_use_b5,fc_hidden,kernel_size,ln_use_b0,ln_use_b1,ln_use_b2,ln_use_b3,ln_use_b4,ln_use_b5,lr,momentum_sgd,norm,num_blocks,optimizer,pooling,use_weight_norm,weight_decay,wn_on_skip
+baseline_CASIAB.csv,0.472,leakyrelu,False,96,False,3.0,,increasing,1,2.0,linear,,1.0,0.05,False,False,False,False,,,256.0,5,True,False,False,False,,,0.0001,,L2,4,Adam,attention,True,1e-06,True
+baseline_OUMVLP.csv,0.4869,silu,False,64,False,,1.0,uniform,2,,pow2,1.0,,0.0,True,True,False,,,,256.0,3,True,False,False,,,,0.0002,,L2,3,AdamW,attention,True,5e-07,False
+gaitgl.csv,0.4553,relu,False,32,True,1.0,,decreasing,2,2.0,linear,,3.0,0.1,False,,,,,,,3,True,,,,,,0.0002,,minmax,1,Adam,max,True,0.0,True
+gaitgl_GREW.csv,0.4655,relu,False,16,False,0.0,,increasing,1,,pow2,1.0,,0.2,True,True,True,False,True,,512.0,7,True,True,True,False,True,,0.0002,,L2,5,AdamW,last,False,0.0,False
+gaitgl_GREW_BNNeck.csv,0.4019,mish,False,32,True,0.0,,decreasing,2,,pow2,2.0,,0.3,False,,,,,,64.0,9,True,,,,,,0.001,,L2,1,Adam,last,False,1e-07,True
+gaitgl_OUMVLP.csv,0.4505,gelu,False,16,True,6.0,,decreasing,1,3.0,linear,,3.0,0.05,False,,,,,,,5,False,,,,,,0.0002,,minmax,1,AdamW,last,False,5e-07,True
+gaitpart.csv,0.3082,silu,True,32,True,,9.0,uniform,3,3.0,linear,,3.0,0.25,True,False,False,True,True,,64.0,7,False,True,False,False,False,,0.0005,,minmax,5,RMSprop,max,True,5e-07,True
+gaitpart_GREW.csv,0.4847,gelu,False,16,True,3.0,,increasing,3,2.0,linear,,3.0,0.3,True,,,,,,64.0,9,False,,,,,,0.0005,,L2,1,Adam,last,True,0.0,True
+gaitpart_OUMVLP.csv,0.4556,mish,False,16,False,1.0,,increasing,1,3.0,linear,,1.0,0.2,True,False,True,,,,128.0,3,True,False,True,,,,0.0002,,L2,3,AdamW,attention,True,0.0,True
+gaitset.csv,0.4913,elu,True,128,True,7.0,,decreasing,2,2.0,linear,,2.0,0.1,True,True,False,False,True,,128.0,7,True,True,True,True,False,,0.0001,,L2,5,Adam,last,True,1e-05,False
+gaitset_GREW.csv,0.4397,tanh,True,96,True,,2.0,uniform,2,2.0,linear,,3.0,0.2,True,False,,,,,64.0,5,True,True,,,,,0.001,,L2,2,Adam,attention,False,2e-06,False
+gaitset_OUMVLP.csv,0.461,silu,False,32,False,1.0,,increasing,2,1.0,linear,,1.0,0.0,False,True,,,,,,9,True,False,,,,,0.0001,,L2,2,AdamW,max,False,1e-07,False
+gln_phase1.csv,0.4853,mish,False,96,True,9.0,,increasing,1,3.0,linear,,3.0,0.0,True,,,,,,512.0,7,False,,,,,,0.0001,,L2,1,RMSprop,max,True,1e-05,False
+gln_phase2.csv,0.4868,gelu,False,64,False,2.0,,increasing,2,,pow2,1.0,,0.3,True,True,True,,,,256.0,2,True,True,False,,,,0.0005,,L2,3,AdamW,last,True,5e-07,False
