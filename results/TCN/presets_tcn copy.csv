@@ -21,7 +21,7 @@ channels,dilations,kernel_size,convs_per_block,activation,causal,use_weight_norm
 "[256, 384, 512, 640]","[1, 3, 6, 9]",3,2,leakyrelu,True,True,False,max,,False,64,AdamW,,0.0002,1e-06,L2,"[0.0, 0.1, 0.1, 0.2]","[True, True, True, True]"
 "[192, 256, 384]","[1, 2, 4]",5,1,leakyrelu,True,True,True,last,,False,64,AdamW,,0.00015,1e-06,L2,"[0.0, 0.1, 0.2]","[True, True, True]"
 
-"[128, 192, 256]","[1, 2, 4]",5,2,gelu,True,True,True,attention,256,True,64,AdamW,,0.0002,1e-06,L2,"[0.0, 0.1, 0.2]","[True, True, True]"
+"[128, 192, 256]","[1, 2, 4]",5,2,gelu,True,True,True,attention,256,True,64,AdamW,,0.00018,1e-06,L2,"[0.0, 0.1, 0.2]","[True, True, True]"
 "[192, 256, 384, 512]","[1, 2, 4, 8]",5,2,gelu,True,True,True,attention,256,True,32,AdamW,,0.00015,5e-07,L2,"[0.0, 0.1, 0.2, 0.2]","[True, True, True, True]"
 "[256, 384, 512]","[1, 2, 4]",5,2,silu,True,True,True,attention,512,True,32,AdamW,,0.00012,5e-07,L2,"[0.0, 0.1, 0.2]","[True, True, True]"
 "[192, 256]","[1, 2]",5,2,gelu,True,True,False,max,,False,96,AdamW,,0.0002,1e-06,L2,"[0.1, 0.2]","[True, True]"
@@ -33,3 +33,4 @@ channels,dilations,kernel_size,convs_per_block,activation,causal,use_weight_norm
 "[128, 192, 256, 384]","[1, 2, 4, 8]",5,2,gelu,True,True,False,max,,False,64,AdamW,,0.0002,1e-06,L2,"[0.0, 0.1, 0.1, 0.2]","[True, True, True, True]"
 "[320, 448]","[1, 2]",5,2,silu,True,True,True,attention,256,True,48,AdamW,,0.00015,5e-07,L2,"[0.1, 0.2]","[True, True]"
 "[192, 256, 384, 512]","[1, 2, 4, 8]",5,2,gelu,True,True,True,attention,,True,64,AdamW,,0.00015,1e-06,L2,"[0.0, 0.1, 0.15, 0.2]","[True, True, True, True]"
+
