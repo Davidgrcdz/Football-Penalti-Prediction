@@ -1,4 +1,5 @@
 id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode,train_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss,training,duration_sec
+
 14,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False,0.14049,0.54545,235,0.45466,0.49349,61,0.27511,STOPPED,19.05
 15,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False,0.13979,0.54545,336,0.46218,0.54291,151,0.16163,STOPPED,27.562
 16,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False,0.13977,0.5,174,0.42483,0.51493,26,0.30597,STOPPED,20.989
@@ -12,6 +13,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 24,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False,0.14009,0.38636,447,0.30392,0.43892,207,0.32761,STOPPED,60.262
 25,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False,0.24454,0.52273,293,0.4555,0.58654,107,0.14256,STOPPED,52.611
 26,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,1,[512],False,L2,0.1,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,False,0.14038,0.43182,216,0.3254,0.48207,71,0.17373,STOPPED,41.776
+
 53,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False,0.14101,0.5,246,0.45507,0.53333,107,0.16772,STOPPED,98.036
 54,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False,0.1745,0.43182,345,0.37115,0.46694,319,0.20048,STOPPED,134.644
 55,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False,0.14384,0.47727,349,0.41568,0.5377,176,0.14176,STOPPED,187.732
@@ -25,6 +27,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 63,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False,0.14286,0.45455,402,0.37238,0.41087,254,0.16326,STOPPED,256.433
 64,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False,0.14107,0.45455,279,0.38702,0.45198,215,0.14546,STOPPED,233.361
 65,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[256, 192, 128]",True,L2,0.4,[2],"[1, 2]",last,512.0,elu,False,16,Adam,,0.0001,5e-07,False,0.14237,0.43182,254,0.34237,0.44352,111,0.15512,STOPPED,212.583
+
 66,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False,0.14224,0.54545,426,0.45445,0.53535,255,0.14468,STOPPED,67.747
 67,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False,0.14361,0.5,606,0.4596,0.57469,54,0.24271,STOPPED,91.152
 68,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False,0.14254,0.34091,153,0.31917,0.38435,115,0.14474,STOPPED,30.653
@@ -38,6 +41,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 76,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False,0.14349,0.54545,953,0.49223,0.60006,949,0.14419,STOPPED,206.294
 77,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False,0.14272,0.5,422,0.35544,0.51183,114,0.14657,STOPPED,117.884
 78,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,1,[384],False,L2,0.4,[],[],max,512.0,tanh,True,16,RMSprop,,5e-05,1e-07,False,0.1436,0.68182,263,0.67072,0.67626,108,0.14651,STOPPED,77.761
+
 79,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,4,"[128, 192, 256, 384]",False,L2,0.0,"[2, 3]","[1, 2]",max,128.0,leakyrelu,False,64,AdamW,,0.001,1e-05,False,0.14014,0.47727,218,0.41905,0.45615,83,0.1547,STOPPED,34.741
 80,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[128, 192, 256, 384]",False,L2,0.0,"[2, 3]","[1, 2]",max,128.0,leakyrelu,False,64,AdamW,,0.001,1e-05,False,0.14075,0.45455,260,0.38442,0.48707,118,0.15704,STOPPED,41.458
 81,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,4,"[128, 192, 256, 384]",False,L2,0.0,"[2, 3]","[1, 2]",max,128.0,leakyrelu,False,64,AdamW,,0.001,1e-05,False,0.14033,0.38636,179,0.30429,0.40278,57,0.17627,STOPPED,44.395
@@ -51,6 +55,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 89,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[128, 192, 256, 384]",False,L2,0.0,"[2, 3]","[1, 2]",max,128.0,leakyrelu,False,64,AdamW,,0.001,1e-05,False,0.14051,0.29545,591,0.22287,0.36997,413,0.31512,STOPPED,150.729
 90,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,4,"[128, 192, 256, 384]",False,L2,0.0,"[2, 3]","[1, 2]",max,128.0,leakyrelu,False,64,AdamW,,0.001,1e-05,False,0.13953,0.34091,213,0.30068,0.47578,70,0.22642,STOPPED,74.843
 91,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,4,"[128, 192, 256, 384]",False,L2,0.0,"[2, 3]","[1, 2]",max,128.0,leakyrelu,False,64,AdamW,,0.001,1e-05,False,0.14051,0.45455,258,0.41793,0.42693,101,0.26957,STOPPED,90.644
+
 92,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,False,0.15096,0.5,713,0.47066,0.55346,530,0.16723,STOPPED,41.223
 93,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,False,0.1475,0.38636,955,0.33315,0.44362,906,0.15203,STOPPED,54.46
 94,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,False,0.14138,0.47727,481,0.46329,0.54434,439,0.15411,STOPPED,34.462
@@ -64,6 +69,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 102,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,False,0.17788,0.43182,1211,0.38519,0.54396,1096,0.16747,STOPPED,100.982
 103,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,False,0.14433,0.5,912,0.45133,0.62014,330,0.2754,STOPPED,104.164
 104,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,False,0.14124,0.43182,849,0.43061,0.52286,637,0.145,STOPPED,97.528
+
 105,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,False,0.14292,0.43182,356,0.39809,0.52707,169,0.17482,STOPPED,68.257
 106,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,False,0.14313,0.36364,450,0.32097,0.43467,305,0.14536,STOPPED,86.334
 107,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,False,0.14197,0.47727,257,0.43445,0.51433,180,0.1554,STOPPED,67.597
@@ -77,6 +83,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 115,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,False,0.18874,0.47727,638,0.40877,0.56741,355,0.27201,STOPPED,176.926
 116,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,False,0.14134,0.38636,329,0.34524,0.51389,162,0.2196,STOPPED,122.699
 117,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,False,0.14352,0.43182,285,0.36806,0.45425,125,0.20517,STOPPED,106.183
+
 157,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[64],False,L2,0.4,[],[],last,,,False,64,Adam,,0.01,1e-07,False,0.13988,0.40909,305,0.2963,0.42959,92,0.16365,STOPPED,17.231
 158,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[64],False,L2,0.4,[],[],last,,,False,64,Adam,,0.01,1e-07,False,0.14219,0.5,392,0.42398,0.46224,140,0.28145,STOPPED,22.443
 159,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,1,[64],False,L2,0.4,[],[],last,,,False,64,Adam,,0.01,1e-07,False,0.13982,0.47727,267,0.4016,0.46465,76,0.1424,STOPPED,17.006
@@ -90,6 +97,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 167,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[64],False,L2,0.4,[],[],last,,,False,64,Adam,,0.01,1e-07,False,0.14175,0.47727,831,0.37229,0.46142,626,0.15081,STOPPED,61.554
 168,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,1,[64],False,L2,0.4,[],[],last,,,False,64,Adam,,0.01,1e-07,False,0.14028,0.56818,261,0.51468,0.54,97,0.15144,STOPPED,24.149
 169,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,1,[64],False,L2,0.4,[],[],last,,,False,64,Adam,,0.01,1e-07,False,0.14141,0.38636,290,0.29524,0.38889,231,0.1548,STOPPED,26.906
+
 209,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256.0,elu,False,32,RMSprop,,0.001,1e-06,False,1.05851,0.25,299,0.25057,0.49529,116,0.14836,STOPPED,113.4
 210,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256.0,elu,False,32,RMSprop,,0.001,1e-06,False,0.14114,0.38636,551,0.33871,0.46615,399,0.29013,STOPPED,210.0
 211,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256.0,elu,False,32,RMSprop,,0.001,1e-06,False,1.0273,0.38636,168,0.34915,0.42659,51,0.27833,STOPPED,99.951
@@ -103,6 +111,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 219,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256.0,elu,False,32,RMSprop,,0.001,1e-06,False,1.10819,0.47727,114,0.21538,0.21538,114,1.10819,STOPPED,68.992
 220,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256.0,elu,False,32,RMSprop,,0.001,1e-06,False,0.33634,0.47727,202,0.42803,0.49637,200,0.2938,STOPPED,172.044
 221,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[512, 256, 128]",True,L2,0.2,[],[],max,256.0,elu,False,32,RMSprop,,0.001,1e-06,False,0.29886,0.43182,204,0.35984,0.59167,74,0.16435,STOPPED,174.144
+
 222,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.13978,0.52273,453,0.43939,0.55952,318,0.14018,STOPPED,48.258
 223,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.40767,0.36364,433,0.34035,0.45092,211,0.21259,STOPPED,46.027
 224,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.13963,0.47727,300,0.35536,0.45068,155,0.19819,STOPPED,49.801
@@ -116,6 +125,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 232,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.2971,0.5,856,0.41919,0.52236,628,0.31437,STOPPED,152.59
 233,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.14019,0.43182,441,0.3719,0.47917,243,0.26348,STOPPED,114.19
 234,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,0.14014,0.43182,314,0.40511,0.53704,261,0.16262,STOPPED,81.063
+
 313,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],mean,,,False,64,AdamW,0.0,0.0005,1e-05,True,0.14723,0.5,625,0.45333,0.48374,399,0.15317,STOPPED,58.615
 314,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],mean,,,False,64,AdamW,0.0,0.0005,1e-05,True,0.14027,0.52273,761,0.38186,0.53709,648,0.28303,STOPPED,70.939
 315,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,1,[256],True,L2,0.2,[],[],mean,,,False,64,AdamW,0.0,0.0005,1e-05,True,0.15248,0.54545,695,0.51111,0.61562,425,0.16826,STOPPED,84.872
@@ -129,6 +139,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 323,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],mean,,,False,64,AdamW,0.0,0.0005,1e-05,True,0.68574,0.45455,650,0.39153,0.39153,650,0.68574,STOPPED,91.588
 324,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],mean,,,False,64,AdamW,0.0,0.0005,1e-05,True,0.1694,0.40909,1095,0.39136,0.51401,750,0.23925,STOPPED,210.649
 325,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,1,[256],True,L2,0.2,[],[],mean,,,False,64,AdamW,0.0,0.0005,1e-05,True,0.14008,0.45455,766,0.38202,0.46667,447,0.23249,STOPPED,153.119
+
 352,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[512, 512]",True,minmax,0.1,[],[1],last,128.0,relu,True,96,AdamW,0.0,0.0002,2e-06,True,0.14058,0.47727,500,0.4096,0.51722,413,0.14767,STOPPED,154.451
 353,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[512, 512]",True,minmax,0.1,[],[1],last,128.0,relu,True,96,AdamW,0.0,0.0002,2e-06,True,0.14561,0.38636,774,0.33487,0.41084,312,0.32093,STOPPED,239.148
 354,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,2,"[512, 512]",True,minmax,0.1,[],[1],last,128.0,relu,True,96,AdamW,0.0,0.0002,2e-06,True,0.14168,0.43182,280,0.36854,0.49815,155,0.14364,STOPPED,151.457
@@ -142,6 +153,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 362,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[512, 512]",True,minmax,0.1,[],[1],last,128.0,relu,True,96,AdamW,0.0,0.0002,2e-06,True,1.10741,0.36364,163,0.17778,0.17778,163,1.10741,STOPPED,90.706
 363,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[512, 512]",True,minmax,0.1,[],[1],last,128.0,relu,True,96,AdamW,0.0,0.0002,2e-06,True,0.14151,0.45455,710,0.43826,0.54854,346,0.3046,STOPPED,579.368
 364,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[512, 512]",True,minmax,0.1,[],[1],last,128.0,relu,True,96,AdamW,0.0,0.0002,2e-06,True,0.14016,0.40909,672,0.37677,0.42063,512,0.14943,STOPPED,548.456
+
 365,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",True,L2,0.3,"[1, 2]",[],mean,,,False,96,RMSprop,0.0,0.0005,1e-06,True,0.1398,0.47727,621,0.40269,0.49558,470,0.23362,STOPPED,112.236
 366,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",True,L2,0.3,"[1, 2]",[],mean,,,False,96,RMSprop,0.0,0.0005,1e-06,True,0.26321,0.36364,1063,0.34981,0.53333,662,0.31128,STOPPED,192.457
 367,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[256, 256, 256]",True,L2,0.3,"[1, 2]",[],mean,,,False,96,RMSprop,0.0,0.0005,1e-06,True,0.13981,0.52273,603,0.43056,0.61616,356,0.19305,STOPPED,183.147
@@ -155,6 +167,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 375,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",True,L2,0.3,"[1, 2]",[],mean,,,False,96,RMSprop,0.0,0.0005,1e-06,True,1.10887,0.47727,106,0.21538,0.21538,106,1.10887,STOPPED,33.839
 376,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",True,L2,0.3,"[1, 2]",[],mean,,,False,96,RMSprop,0.0,0.0005,1e-06,True,0.21862,0.47727,912,0.42963,0.49642,895,0.21898,STOPPED,409.235
 377,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",True,L2,0.3,"[1, 2]",[],mean,,,False,96,RMSprop,0.0,0.0005,1e-06,True,0.93219,0.29545,674,0.24074,0.24074,674,0.93219,STOPPED,302.584
+
 443,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[640, 640]",True,L2,0.1,[],[1],max,,,True,96,AdamW,0.0,0.0001,2e-06,True,0.14367,0.52273,536,0.47486,0.53894,289,0.15377,STOPPED,226.577
 444,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[640, 640]",True,L2,0.1,[],[1],max,,,True,96,AdamW,0.0,0.0001,2e-06,True,0.14121,0.45455,529,0.38782,0.46081,498,0.14727,STOPPED,223.285
 445,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,2,"[640, 640]",True,L2,0.1,[],[1],max,,,True,96,AdamW,0.0,0.0001,2e-06,True,0.145,0.52273,263,0.43729,0.51655,64,0.2445,STOPPED,199.516
@@ -168,6 +181,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 453,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[640, 640]",True,L2,0.1,[],[1],max,,,True,96,AdamW,0.0,0.0001,2e-06,True,0.15863,0.5,999,0.45339,0.58205,484,0.2263,STOPPED,773.913
 454,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[640, 640]",True,L2,0.1,[],[1],max,,,True,96,AdamW,0.0,0.0001,2e-06,True,0.14143,0.5,446,0.43073,0.50798,231,0.14602,STOPPED,505.155
 455,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[640, 640]",True,L2,0.1,[],[1],max,,,True,96,AdamW,0.0,0.0001,2e-06,True,0.14303,0.47727,424,0.38088,0.52155,147,0.16738,STOPPED,482.157
+
 456,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[448, 320, 256]",True,L2,0.25,"[1, 2]",[],attention,,,False,64,Adam,0.0,0.0007,1e-06,False,0.14945,0.54545,355,0.43846,0.56093,224,0.21415,STOPPED,113.213
 457,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[448, 320, 256]",True,L2,0.25,"[1, 2]",[],attention,,,False,64,Adam,0.0,0.0007,1e-06,False,0.14073,0.5,958,0.4241,0.51612,697,0.22747,STOPPED,304.38
 458,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[448, 320, 256]",True,L2,0.25,"[1, 2]",[],attention,,,False,64,Adam,0.0,0.0007,1e-06,False,0.14011,0.40909,285,0.37664,0.46823,121,0.14987,STOPPED,152.488
@@ -181,6 +195,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 466,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[448, 320, 256]",True,L2,0.25,"[1, 2]",[],attention,,,False,64,Adam,0.0,0.0007,1e-06,False,1.10777,0.36364,112,0.17778,0.17778,112,1.10777,STOPPED,61.126
 467,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[448, 320, 256]",True,L2,0.25,"[1, 2]",[],attention,,,False,64,Adam,0.0,0.0007,1e-06,False,1.10755,0.36364,141,0.17778,0.17778,141,1.10755,STOPPED,107.84
 468,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[448, 320, 256]",True,L2,0.25,"[1, 2]",[],attention,,,False,64,Adam,0.0,0.0007,1e-06,False,0.99536,0.38636,221,0.27399,0.27399,221,0.99536,STOPPED,168.445
+
 534,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,0.0,0.001,0.0005,True,0.14001,0.47727,363,0.42554,0.45584,278,0.14037,STOPPED,35.905
 535,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,0.0,0.001,0.0005,True,0.2569,0.31818,587,0.30147,0.46566,283,0.34027,STOPPED,57.771
 536,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,0.0,0.001,0.0005,True,0.14089,0.45455,229,0.38499,0.51138,117,0.16635,STOPPED,28.001
@@ -194,6 +209,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 544,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,0.0,0.001,0.0005,True,1.10865,0.36364,588,0.17778,0.17778,588,1.10865,STOPPED,77.84
 545,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,0.0,0.001,0.0005,True,0.1402,0.43182,484,0.40711,0.54587,316,0.15225,STOPPED,84.74
 546,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,0.0,0.001,0.0005,True,1.10889,0.36364,278,0.17778,0.4303,116,0.33234,STOPPED,48.176
+
 547,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,2,"[256, 128]",True,L2,0.4,[1],[],max,128.0,elu,True,32,Adam,0.0,0.0007,0.0005,False,0.15368,0.5,334,0.33751,0.54659,309,0.18485,STOPPED,72.175
 548,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[256, 128]",True,L2,0.4,[1],[],max,128.0,elu,True,32,Adam,0.0,0.0007,0.0005,False,0.26394,0.43182,436,0.40271,0.52751,126,0.25423,STOPPED,94.006
 549,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,2,"[256, 128]",True,L2,0.4,[1],[],max,128.0,elu,True,32,Adam,0.0,0.0007,0.0005,False,0.15157,0.5,219,0.42703,0.48526,210,0.15099,STOPPED,66.613
@@ -207,6 +223,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 557,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,2,"[256, 128]",True,L2,0.4,[1],[],max,128.0,elu,True,32,Adam,0.0,0.0007,0.0005,False,1.10796,0.36364,186,0.17778,0.17778,186,1.10796,STOPPED,60.541
 558,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,2,"[256, 128]",True,L2,0.4,[1],[],max,128.0,elu,True,32,Adam,0.0,0.0007,0.0005,False,0.17105,0.47727,377,0.36464,0.51144,55,0.32688,STOPPED,157.305
 559,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,2,"[256, 128]",True,L2,0.4,[1],[],max,128.0,elu,True,32,Adam,0.0,0.0007,0.0005,False,0.15326,0.54545,218,0.45937,0.51198,123,0.16944,STOPPED,92.166
+
 599,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],mean,,,True,96,AdamW,0.0,0.0004,1e-05,True,0.14056,0.47727,582,0.41759,0.47675,258,0.34979,STOPPED,63.018
 600,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],mean,,,True,96,AdamW,0.0,0.0004,1e-05,True,0.16961,0.43182,487,0.39659,0.49708,410,0.17464,STOPPED,53.238
 601,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[256, 256, 256]",False,L2,0.1,[],[],mean,,,True,96,AdamW,0.0,0.0004,1e-05,True,0.13983,0.27273,567,0.26296,0.44869,293,0.28011,STOPPED,89.149
@@ -220,6 +237,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 609,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],mean,,,True,96,AdamW,0.0,0.0004,1e-05,True,1.10579,0.43182,553,0.40902,0.40902,553,1.10579,STOPPED,94.477
 610,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],mean,,,True,96,AdamW,0.0,0.0004,1e-05,True,0.1403,0.43182,688,0.4157,0.49722,580,0.14176,STOPPED,164.297
 611,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[256, 256, 256]",False,L2,0.1,[],[],mean,,,True,96,AdamW,0.0,0.0004,1e-05,True,0.13961,0.43182,548,0.39305,0.44637,421,0.14568,STOPPED,130.848
+
 625,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",True,L2,0.3,[],[],max,,,True,128,AdamW,0.0,0.0008,5e-06,True,0.14014,0.43182,356,0.37606,0.43722,189,0.18101,STOPPED,37.558
 626,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",True,L2,0.3,[],[],max,,,True,128,AdamW,0.0,0.0008,5e-06,True,0.16773,0.40909,391,0.3,0.45397,232,0.19658,STOPPED,41.951
 627,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,3,"[128, 128, 128]",True,L2,0.3,[],[],max,,,True,128,AdamW,0.0,0.0008,5e-06,True,0.14017,0.40909,332,0.28543,0.45762,65,0.33764,STOPPED,50.797
@@ -233,6 +251,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,num_layers,laye
 635,20250925_000859,gaitset_OUMVLP.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",True,L2,0.3,[],[],max,,,True,128,AdamW,0.0,0.0008,5e-06,True,0.22732,0.45455,1048,0.39886,0.53737,822,0.21395,STOPPED,174.388
 636,20250925_000859,gln_phase1.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",True,L2,0.3,[],[],max,,,True,128,AdamW,0.0,0.0008,5e-06,True,0.13966,0.5,439,0.38704,0.42758,272,0.15164,STOPPED,103.118
 637,20250925_000859,gln_phase2.csv,Personalizado,LSTM,42,256,3,"[128, 128, 128]",True,L2,0.3,[],[],max,,,True,128,AdamW,0.0,0.0008,5e-06,True,0.14014,0.56818,357,0.53367,0.57521,310,0.14103,STOPPED,84.208
+
 651,20250925_000859,baseline_CASIAB.csv,Personalizado,LSTM,42,256,4,"[256, 256, 256, 256]",True,L2,0.2,[],[],last,,,True,64,AdamW,0.0,0.0003,5e-05,True,0.13969,0.52273,314,0.47465,0.5527,234,0.23055,STOPPED,85.841
 652,20250925_000859,baseline_OUMVLP.csv,Personalizado,LSTM,42,256,4,"[256, 256, 256, 256]",True,L2,0.2,[],[],last,,,True,64,AdamW,0.0,0.0003,5e-05,True,0.14726,0.54545,405,0.44924,0.5,122,0.31549,STOPPED,110.795
 653,20250925_000859,gaitgl.csv,Personalizado,LSTM,42,128,4,"[256, 256, 256, 256]",True,L2,0.2,[],[],last,,,True,64,AdamW,0.0,0.0003,5e-05,True,0.14025,0.56818,273,0.42454,0.56845,169,0.14531,STOPPED,121.115

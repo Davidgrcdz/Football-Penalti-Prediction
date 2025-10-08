@@ -1,4 +1,5 @@
 id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,pooling,norm,batch_size,num_layers,base_dim,activation,dropout_rate,learning_rate,weight_decay,use_pca,pca_frac,norm_layer,do_layer,train_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss,training
+
 170,20250827_193601,baseline_CASIAB.csv,Personalizado,MLP,42,31,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.09507,0.59091,5000,0.5584,0.62584,4581,0.14313,STOPPED
 171,20250827_193601,baseline_OUMVLP.csv,Personalizado,MLP,42,26,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.19694,0.54545,5000,0.49308,0.57497,4573,0.18388,STOPPED
 172,20250827_193601,gaitgl.csv,Personalizado,MLP,42,26,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.13722,0.29545,5000,0.23115,0.32741,3947,0.1936,STOPPED
@@ -12,6 +13,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 180,20250827_193601,gaitset_OUMVLP.csv,Personalizado,MLP,42,34,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.21307,0.34091,5000,0.23389,0.33894,4693,0.18004,STOPPED
 181,20250827_193601,gln_phase1.csv,Personalizado,MLP,42,30,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.1061,0.43182,5000,0.41071,0.49716,3874,0.16757,STOPPED
 182,20250827_193601,gln_phase2.csv,Personalizado,MLP,42,33,"[512, 256, 128]",mean,L2,64,3,512,silu,0.5,0.0001,0.0,True,0.7,3,3,0.08091,0.40909,5000,0.37054,0.42667,3237,0.17375,STOPPED
+
 183,20250827_203929,baseline_CASIAB.csv,Personalizado,MLP,42,31,"[512, 256, 128]",mean,L2,64,3,512,elu,0.4,0.0001,0.0,True,0.7,2,3,0.004,0.45455,964,0.39496,0.56941,589,0.07505,COMPLETED
 184,20250827_203929,baseline_OUMVLP.csv,Personalizado,MLP,42,26,"[512, 256, 128]",mean,L2,64,3,512,elu,0.4,0.0001,0.0,True,0.7,2,3,0.00445,0.5,1488,0.41919,0.47569,1454,0.09146,COMPLETED
 185,20250827_203929,gaitgl.csv,Personalizado,MLP,42,26,"[512, 256, 128]",mean,L2,64,3,512,elu,0.4,0.0001,0.0,True,0.7,2,3,0.0048,0.27273,1274,0.2037,0.31951,698,0.18966,COMPLETED
@@ -25,6 +27,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 193,20250827_203929,gaitset_OUMVLP.csv,Personalizado,MLP,42,34,"[512, 256, 128]",mean,L2,64,3,512,elu,0.4,0.0001,0.0,True,0.7,2,3,0.0037,0.45455,1900,0.34144,0.48815,1225,0.17862,COMPLETED
 194,20250827_203929,gln_phase1.csv,Personalizado,MLP,42,30,"[512, 256, 128]",mean,L2,64,3,512,elu,0.4,0.0001,0.0,True,0.7,2,3,0.00429,0.52273,1007,0.50635,0.56703,666,0.06387,COMPLETED
 195,20250827_203929,gln_phase2.csv,Personalizado,MLP,42,33,"[512, 256, 128]",mean,L2,64,3,512,elu,0.4,0.0001,0.0,True,0.7,2,3,0.00415,0.38636,924,0.33488,0.44339,425,0.19231,COMPLETED
+
 196,20250828_151722,baseline_CASIAB.csv,Personalizado,MLP,42,49,"[512, 256, 128]",mean,minmax,128,3,512,leakyrelu,0.5,0.001,1e-05,True,0.8,1,2,0.00378,0.52273,119,0.47465,0.53037,72,0.05782,COMPLETED
 197,20250828_151722,baseline_OUMVLP.csv,Personalizado,MLP,42,47,"[512, 256, 128]",mean,minmax,128,3,512,leakyrelu,0.5,0.001,1e-05,True,0.8,1,2,0.00445,0.52273,141,0.47919,0.56923,59,0.17531,COMPLETED
 198,20250828_151722,gaitgl.csv,Personalizado,MLP,42,34,"[512, 256, 128]",mean,minmax,128,3,512,leakyrelu,0.5,0.001,1e-05,True,0.8,1,2,0.00352,0.5,210,0.46714,0.55307,107,0.05912,COMPLETED
@@ -38,6 +41,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 206,20250828_151722,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[512, 256, 128]",mean,minmax,128,3,512,leakyrelu,0.5,0.001,1e-05,True,0.8,1,2,0.00361,0.47727,134,0.45833,0.4743,118,0.00418,COMPLETED
 207,20250828_151722,gln_phase1.csv,Personalizado,MLP,42,52,"[512, 256, 128]",mean,minmax,128,3,512,leakyrelu,0.5,0.001,1e-05,True,0.8,1,2,0.00257,0.45455,101,0.37834,0.52076,60,0.03563,COMPLETED
 208,20250828_151722,gln_phase2.csv,Personalizado,MLP,42,56,"[512, 256, 128]",mean,minmax,128,3,512,leakyrelu,0.5,0.001,1e-05,True,0.8,1,2,0.00248,0.36364,94,0.30266,0.4205,42,0.13377,COMPLETED
+
 209,20250828_151907,baseline_CASIAB.csv,Personalizado,MLP,42,84,"[256, 128]",mean,minmax,64,2,256,leakyrelu,0.5,0.001,1e-05,True,0.9,1,2,0.00352,0.43182,68,0.31533,0.44314,44,0.01642,COMPLETED
 210,20250828_151907,baseline_OUMVLP.csv,Personalizado,MLP,42,82,"[256, 128]",mean,minmax,64,2,256,leakyrelu,0.5,0.001,1e-05,True,0.9,1,2,0.00372,0.52273,67,0.44147,0.56931,49,0.00872,COMPLETED
 211,20250828_151907,gaitgl.csv,Personalizado,MLP,42,59,"[256, 128]",mean,minmax,64,2,256,leakyrelu,0.5,0.001,1e-05,True,0.9,1,2,0.00287,0.5,79,0.36424,0.44335,72,0.00499,COMPLETED
@@ -51,6 +55,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 219,20250828_151907,gaitset_OUMVLP.csv,Personalizado,MLP,42,93,"[256, 128]",mean,minmax,64,2,256,leakyrelu,0.5,0.001,1e-05,True,0.9,1,2,0.0044,0.36364,60,0.27049,0.2986,32,0.03395,COMPLETED
 220,20250828_151907,gln_phase1.csv,Personalizado,MLP,42,90,"[256, 128]",mean,minmax,64,2,256,leakyrelu,0.5,0.001,1e-05,True,0.9,1,2,0.00326,0.52273,57,0.38481,0.5,34,0.01531,COMPLETED
 221,20250828_151907,gln_phase2.csv,Personalizado,MLP,42,96,"[256, 128]",mean,minmax,64,2,256,leakyrelu,0.5,0.001,1e-05,True,0.9,1,2,0.00375,0.45455,62,0.41403,0.43651,24,0.09378,COMPLETED
+
 222,20250828_154348,baseline_CASIAB.csv,Personalizado,MLP,42,40,"[512, 256, 128]",mean,L2,96,3,512,leakyrelu,0.5,0.0001,1e-07,True,0.75,3,3,0.00491,0.40909,735,0.33389,0.42605,306,0.07516,COMPLETED
 223,20250828_154348,baseline_OUMVLP.csv,Personalizado,MLP,42,34,"[512, 256, 128]",mean,L2,96,3,512,leakyrelu,0.5,0.0001,1e-07,True,0.75,3,3,0.00461,0.54545,827,0.49506,0.59756,375,0.13438,COMPLETED
 224,20250828_154348,gaitgl.csv,Personalizado,MLP,42,34,"[512, 256, 128]",mean,L2,96,3,512,leakyrelu,0.5,0.0001,1e-07,True,0.75,3,3,0.00452,0.38636,741,0.37222,0.41396,255,0.1825,COMPLETED
@@ -64,6 +69,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 232,20250828_154348,gaitset_OUMVLP.csv,Personalizado,MLP,42,43,"[512, 256, 128]",mean,L2,96,3,512,leakyrelu,0.5,0.0001,1e-07,True,0.75,3,3,0.00449,0.45455,1437,0.38366,0.50114,757,0.09992,COMPLETED
 233,20250828_154348,gln_phase1.csv,Personalizado,MLP,42,39,"[512, 256, 128]",mean,L2,96,3,512,leakyrelu,0.5,0.0001,1e-07,True,0.75,3,3,0.00469,0.40909,688,0.29925,0.44735,244,0.16597,COMPLETED
 234,20250828_154348,gln_phase2.csv,Personalizado,MLP,42,43,"[512, 256, 128]",mean,L2,96,3,512,leakyrelu,0.5,0.0001,1e-07,True,0.75,3,3,0.00396,0.47727,673,0.40056,0.48245,227,0.1435,COMPLETED
+
 235,20250829_182909,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[512, 384, 256, 128]",mean,L2,64,4,512,leakyrelu,0.5,0.0002,0.0,True,0.8,2,3,0.00402,0.38636,96,0.32755,0.41411,83,0.01042,COMPLETED
 236,20250829_182909,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[512, 384, 256, 128]",mean,L2,64,4,512,leakyrelu,0.5,0.0002,0.0,True,0.8,2,3,0.00414,0.5,121,0.48718,0.56061,112,0.0061,COMPLETED
 237,20250829_182909,gaitgl.csv,Personalizado,MLP,42,42,"[512, 384, 256, 128]",mean,L2,64,4,512,leakyrelu,0.5,0.0002,0.0,True,0.8,2,3,0.00169,0.34091,136,0.25289,0.3631,79,0.11055,COMPLETED
@@ -77,6 +83,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 245,20250829_182909,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[512, 384, 256, 128]",mean,L2,64,4,512,leakyrelu,0.5,0.0002,0.0,True,0.8,2,3,0.00437,0.5,217,0.46715,0.50637,166,0.10229,COMPLETED
 246,20250829_182909,gln_phase1.csv,Personalizado,MLP,42,51,"[512, 384, 256, 128]",mean,L2,64,4,512,leakyrelu,0.5,0.0002,0.0,True,0.8,2,3,0.00328,0.54545,111,0.53596,0.60597,69,0.08858,COMPLETED
 247,20250829_182909,gln_phase2.csv,Personalizado,MLP,42,55,"[512, 384, 256, 128]",mean,L2,64,4,512,leakyrelu,0.5,0.0002,0.0,True,0.8,2,3,0.00297,0.38636,106,0.32738,0.45455,69,0.06729,COMPLETED
+
 248,20250831_120344,baseline_CASIAB.csv,Personalizado,MLP,42,63,"[768, 512, 256]",mean,minmax,96,3,768,silu,0.4,0.00025,5e-07,True,0.85,2,1,0.00253,0.52273,314,0.4407,0.49558,84,0.19591,COMPLETED
 249,20250831_120344,baseline_OUMVLP.csv,Personalizado,MLP,42,61,"[768, 512, 256]",mean,minmax,96,3,768,silu,0.4,0.00025,5e-07,True,0.85,2,1,0.00485,0.65909,294,0.61197,0.61557,269,0.00514,COMPLETED
 250,20250831_120344,gaitgl.csv,Personalizado,MLP,42,45,"[768, 512, 256]",mean,minmax,96,3,768,silu,0.4,0.00025,5e-07,True,0.85,2,1,0.00343,0.5,473,0.42465,0.47806,289,0.01403,COMPLETED
@@ -90,6 +97,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 258,20250831_120344,gaitset_OUMVLP.csv,Personalizado,MLP,42,71,"[768, 512, 256]",mean,minmax,96,3,768,silu,0.4,0.00025,5e-07,True,0.85,2,1,0.00232,0.47727,247,0.34912,0.49444,103,0.12092,COMPLETED
 259,20250831_120344,gln_phase1.csv,Personalizado,MLP,42,68,"[768, 512, 256]",mean,minmax,96,3,768,silu,0.4,0.00025,5e-07,True,0.85,2,1,0.00357,0.5,275,0.44841,0.55072,126,0.09864,COMPLETED
 260,20250831_120344,gln_phase2.csv,Personalizado,MLP,42,73,"[768, 512, 256]",mean,minmax,96,3,768,silu,0.4,0.00025,5e-07,True,0.85,2,1,0.00382,0.43182,271,0.32323,0.44011,81,0.14887,COMPLETED
+
 261,20250831_121214,baseline_CASIAB.csv,Personalizado,MLP,42,38,"[512, 384, 256, 128, 64]",mean,minmax,64,5,512,leakyrelu,0.35,0.0001,0.0,True,0.75,3,2,0.00336,0.52273,118,0.43499,0.51532,76,0.01554,COMPLETED
 262,20250831_121214,baseline_OUMVLP.csv,Personalizado,MLP,42,36,"[512, 384, 256, 128, 64]",mean,minmax,64,5,512,leakyrelu,0.35,0.0001,0.0,True,0.75,3,2,0.00292,0.52273,109,0.47898,0.59829,86,0.0068,COMPLETED
 263,20250831_121214,gaitgl.csv,Personalizado,MLP,42,26,"[512, 384, 256, 128, 64]",mean,minmax,64,5,512,leakyrelu,0.35,0.0001,0.0,True,0.75,3,2,0.00269,0.5,178,0.36825,0.46373,95,0.08766,COMPLETED
@@ -103,6 +111,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 271,20250831_121214,gaitset_OUMVLP.csv,Personalizado,MLP,42,43,"[512, 384, 256, 128, 64]",mean,minmax,64,5,512,leakyrelu,0.35,0.0001,0.0,True,0.75,3,2,0.00284,0.43182,115,0.32174,0.37861,56,0.06234,COMPLETED
 272,20250831_121214,gln_phase1.csv,Personalizado,MLP,42,40,"[512, 384, 256, 128, 64]",mean,minmax,64,5,512,leakyrelu,0.35,0.0001,0.0,True,0.75,3,2,0.0032,0.59091,96,0.56852,0.58497,66,0.01721,COMPLETED
 273,20250831_121214,gln_phase2.csv,Personalizado,MLP,42,44,"[512, 384, 256, 128, 64]",mean,minmax,64,5,512,leakyrelu,0.35,0.0001,0.0,True,0.75,3,2,0.00479,0.5,97,0.41849,0.49615,57,0.03239,COMPLETED
+
 274,20250831_124046,baseline_CASIAB.csv,Personalizado,MLP,42,75,"[640, 320, 160, 80]",max,L2,48,4,640,silu,0.45,0.0001,1e-06,True,0.85,1,3,0.00461,0.59091,440,0.41879,0.45328,319,0.14274,COMPLETED
 275,20250831_124046,baseline_OUMVLP.csv,Personalizado,MLP,42,71,"[640, 320, 160, 80]",max,L2,48,4,640,silu,0.45,0.0001,1e-06,True,0.85,1,3,0.00429,0.5,531,0.36,0.39385,428,0.05004,COMPLETED
 276,20250831_124046,gaitgl.csv,Personalizado,MLP,42,75,"[640, 320, 160, 80]",max,L2,48,4,640,silu,0.45,0.0001,1e-06,True,0.85,1,3,0.00271,0.47727,361,0.49005,0.56566,266,0.19,COMPLETED
@@ -116,6 +125,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 284,20250831_124046,gaitset_OUMVLP.csv,Personalizado,MLP,42,68,"[640, 320, 160, 80]",max,L2,48,4,640,silu,0.45,0.0001,1e-06,True,0.85,1,3,0.0033,0.36364,2408,0.3177,0.375,1659,0.14326,COMPLETED
 285,20250831_124046,gln_phase1.csv,Personalizado,MLP,42,71,"[640, 320, 160, 80]",max,L2,48,4,640,silu,0.45,0.0001,1e-06,True,0.85,1,3,0.00255,0.45455,549,0.33464,0.34935,415,0.0566,COMPLETED
 286,20250831_124046,gln_phase2.csv,Personalizado,MLP,42,72,"[640, 320, 160, 80]",max,L2,48,4,640,silu,0.45,0.0001,1e-06,True,0.85,1,3,0.00473,0.45455,524,0.41368,0.48047,436,0.03354,COMPLETED
+
 287,20250831_145647,baseline_CASIAB.csv,Personalizado,MLP,42,40,"[512, 512, 384, 256]",mean,L2,64,4,512,silu,0.5,0.0002,1e-07,True,0.75,"[1, 2, 3]","[1, 2, 3]",0.00739,0.56818,1392,0.45011,0.51667,755,0.04817,STOPPED
 288,20250831_145647,baseline_OUMVLP.csv,Personalizado,MLP,42,34,"[512, 512, 384, 256]",mean,L2,64,4,512,silu,0.5,0.0002,1e-07,True,0.75,"[1, 2, 3]","[1, 2, 3]",0.00533,0.52273,1499,0.47475,0.60394,1256,0.02393,STOPPED
 289,20250831_145647,gaitgl.csv,Personalizado,MLP,42,34,"[512, 512, 384, 256]",mean,L2,64,4,512,silu,0.5,0.0002,1e-07,True,0.75,"[1, 2, 3]","[1, 2, 3]",0.00945,0.27273,1606,0.20851,0.32828,828,0.06359,STOPPED
@@ -129,6 +139,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 297,20250831_145647,gaitset_OUMVLP.csv,Personalizado,MLP,42,43,"[512, 512, 384, 256]",mean,L2,64,4,512,silu,0.5,0.0002,1e-07,True,0.75,"[1, 2, 3]","[1, 2, 3]",0.00557,0.47727,1348,0.40448,0.52222,1267,0.05402,STOPPED
 298,20250831_145647,gln_phase1.csv,Personalizado,MLP,42,39,"[512, 512, 384, 256]",mean,L2,64,4,512,silu,0.5,0.0002,1e-07,True,0.75,"[1, 2, 3]","[1, 2, 3]",0.00616,0.5,1152,0.44755,0.59725,455,0.11923,STOPPED
 299,20250831_145647,gln_phase2.csv,Personalizado,MLP,42,43,"[512, 512, 384, 256]",mean,L2,64,4,512,silu,0.5,0.0002,1e-07,True,0.75,"[1, 2, 3]","[1, 2, 3]",0.00771,0.45455,1324,0.3782,0.43267,1308,0.02118,STOPPED
+
 300,20250831_172254,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[1024, 784, 512, 256]",mean,L2,64,4,1024,leakyrelu,0.5,0.0002,1e-06,True,0.8,"[2, 3]","[1, 2, 3]",0.00449,0.40909,652,0.29167,0.4452,228,0.19333,COMPLETED
 301,20250831_172254,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[1024, 784, 512, 256]",mean,L2,64,4,1024,leakyrelu,0.5,0.0002,1e-06,True,0.8,"[2, 3]","[1, 2, 3]",0.0093,0.54545,862,0.53704,0.59916,318,0.18514,STOPPED
 302,20250831_172254,gaitgl.csv,Personalizado,MLP,42,42,"[1024, 784, 512, 256]",mean,L2,64,4,1024,leakyrelu,0.5,0.0002,1e-06,True,0.8,"[2, 3]","[1, 2, 3]",0.00952,0.43182,753,0.37703,0.45,293,0.12371,STOPPED
@@ -142,6 +153,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 310,20250831_172254,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[1024, 784, 512, 256]",mean,L2,64,4,1024,leakyrelu,0.5,0.0002,1e-06,True,0.8,"[2, 3]","[1, 2, 3]",0.00686,0.45455,843,0.38975,0.47013,527,0.03696,STOPPED
 311,20250831_172254,gln_phase1.csv,Personalizado,MLP,42,51,"[1024, 784, 512, 256]",mean,L2,64,4,1024,leakyrelu,0.5,0.0002,1e-06,True,0.8,"[2, 3]","[1, 2, 3]",0.00224,0.54545,823,0.49196,0.60108,509,0.00619,COMPLETED
 312,20250831_172254,gln_phase2.csv,Personalizado,MLP,42,55,"[1024, 784, 512, 256]",mean,L2,64,4,1024,leakyrelu,0.5,0.0002,1e-06,True,0.8,"[2, 3]","[1, 2, 3]",0.00813,0.45455,524,0.34396,0.49767,220,0.09295,STOPPED
+
 313,20250831_173400,baseline_CASIAB.csv,Personalizado,MLP,42,63,"[512, 384, 256]",mean,minmax,72,3,512,elu,0.5,0.0002,1e-07,True,0.85,"[1, 2]","[1, 2, 3]",0.0075,0.52273,1296,0.44955,0.48096,850,0.04468,STOPPED
 314,20250831_173400,baseline_OUMVLP.csv,Personalizado,MLP,42,61,"[512, 384, 256]",mean,minmax,72,3,512,elu,0.5,0.0002,1e-07,True,0.85,"[1, 2]","[1, 2, 3]",0.00995,0.56818,989,0.5097,0.54902,285,0.19229,STOPPED
 315,20250831_173400,gaitgl.csv,Personalizado,MLP,42,45,"[512, 384, 256]",mean,minmax,72,3,512,elu,0.5,0.0002,1e-07,True,0.85,"[1, 2]","[1, 2, 3]",0.00843,0.47727,1664,0.35325,0.40525,422,0.18779,STOPPED
@@ -155,6 +167,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 323,20250831_173400,gaitset_OUMVLP.csv,Personalizado,MLP,42,71,"[512, 384, 256]",mean,minmax,72,3,512,elu,0.5,0.0002,1e-07,True,0.85,"[1, 2]","[1, 2, 3]",0.00918,0.45455,1175,0.3854,0.46825,1115,0.01878,STOPPED
 324,20250831_173400,gln_phase1.csv,Personalizado,MLP,42,68,"[512, 384, 256]",mean,minmax,72,3,512,elu,0.5,0.0002,1e-07,True,0.85,"[1, 2]","[1, 2, 3]",0.00815,0.47727,938,0.34946,0.50486,322,0.14401,STOPPED
 325,20250831_173400,gln_phase2.csv,Personalizado,MLP,42,73,"[512, 384, 256]",mean,minmax,72,3,512,elu,0.5,0.0002,1e-07,True,0.85,"[1, 2]","[1, 2, 3]",0.0051,0.40909,1104,0.34956,0.42409,680,0.04168,STOPPED
+
 326,20250831_174001,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[768, 512, 256]",mean,L2,80,3,768,silu,0.4,0.00015,2e-07,True,0.8,"[1, 2]","[1, 2]",0.00324,0.54545,588,0.4534,0.46795,525,0.00569,COMPLETED
 327,20250831_174001,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[768, 512, 256]",mean,L2,80,3,768,silu,0.4,0.00015,2e-07,True,0.8,"[1, 2]","[1, 2]",0.00414,0.59091,652,0.57024,0.63394,361,0.01779,COMPLETED
 328,20250831_174001,gaitgl.csv,Personalizado,MLP,42,42,"[768, 512, 256]",mean,L2,80,3,768,silu,0.4,0.00015,2e-07,True,0.8,"[1, 2]","[1, 2]",0.00303,0.5,795,0.46714,0.4849,264,0.15487,COMPLETED
@@ -168,6 +181,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 336,20250831_174001,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[768, 512, 256]",mean,L2,80,3,768,silu,0.4,0.00015,2e-07,True,0.8,"[1, 2]","[1, 2]",0.00213,0.52273,822,0.47399,0.62014,456,0.11241,COMPLETED
 337,20250831_174001,gln_phase1.csv,Personalizado,MLP,42,51,"[768, 512, 256]",mean,L2,80,3,768,silu,0.4,0.00015,2e-07,True,0.8,"[1, 2]","[1, 2]",0.00388,0.54545,610,0.50377,0.59474,455,0.00825,COMPLETED
 338,20250831_174001,gln_phase2.csv,Personalizado,MLP,42,55,"[768, 512, 256]",mean,L2,80,3,768,silu,0.4,0.00015,2e-07,True,0.8,"[1, 2]","[1, 2]",0.00109,0.45455,532,0.37721,0.43863,175,0.10568,COMPLETED
+
 339,20250831_174414,baseline_CASIAB.csv,Personalizado,MLP,42,66,"[896, 640, 384, 192]",mean,L2,64,4,896,silu,0.4,0.0001,0.0,True,0.85,"[1, 2, 3]","[1, 2]",0.00292,0.47727,701,0.44058,0.5134,314,0.08738,COMPLETED
 340,20250831_174414,baseline_OUMVLP.csv,Personalizado,MLP,42,59,"[896, 640, 384, 192]",mean,L2,64,4,896,silu,0.4,0.0001,0.0,True,0.85,"[1, 2, 3]","[1, 2]",0.00301,0.59091,890,0.58182,0.67603,734,0.00535,COMPLETED
 341,20250831_174414,gaitgl.csv,Personalizado,MLP,42,53,"[896, 640, 384, 192]",mean,L2,64,4,896,silu,0.4,0.0001,0.0,True,0.85,"[1, 2, 3]","[1, 2]",0.00924,0.40909,961,0.35874,0.51852,437,0.13059,STOPPED
@@ -181,6 +195,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 349,20250831_174414,gaitset_OUMVLP.csv,Personalizado,MLP,42,72,"[896, 640, 384, 192]",mean,L2,64,4,896,silu,0.4,0.0001,0.0,True,0.85,"[1, 2, 3]","[1, 2]",0.00432,0.45455,1123,0.38422,0.45589,652,0.19127,COMPLETED
 350,20250831_174414,gln_phase1.csv,Personalizado,MLP,42,67,"[896, 640, 384, 192]",mean,L2,64,4,896,silu,0.4,0.0001,0.0,True,0.85,"[1, 2, 3]","[1, 2]",0.00348,0.5,701,0.41775,0.49955,243,0.19622,COMPLETED
 351,20250831_174414,gln_phase2.csv,Personalizado,MLP,42,72,"[896, 640, 384, 192]",mean,L2,64,4,896,silu,0.4,0.0001,0.0,True,0.85,"[1, 2, 3]","[1, 2]",0.00429,0.54545,609,0.39921,0.435,397,0.06882,COMPLETED
+
 352,20250831_175027,baseline_CASIAB.csv,Personalizado,MLP,42,66,"[768, 512, 384, 256]",mean,L2,64,4,768,leakyrelu,0.4,0.0002,5e-07,True,0.85,"[1, 2, 3]","[1, 2]",0.00374,0.52273,328,0.36605,0.49196,243,0.02575,COMPLETED
 353,20250831_175027,baseline_OUMVLP.csv,Personalizado,MLP,42,59,"[768, 512, 384, 256]",mean,L2,64,4,768,leakyrelu,0.4,0.0002,5e-07,True,0.85,"[1, 2, 3]","[1, 2]",0.00469,0.52273,576,0.5056,0.6016,298,0.01034,COMPLETED
 354,20250831_175027,gaitgl.csv,Personalizado,MLP,42,53,"[768, 512, 384, 256]",mean,L2,64,4,768,leakyrelu,0.4,0.0002,5e-07,True,0.85,"[1, 2, 3]","[1, 2]",0.00524,0.52273,533,0.50293,0.56015,240,0.08743,STOPPED
@@ -194,6 +209,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 362,20250831_175027,gaitset_OUMVLP.csv,Personalizado,MLP,42,72,"[768, 512, 384, 256]",mean,L2,64,4,768,leakyrelu,0.4,0.0002,5e-07,True,0.85,"[1, 2, 3]","[1, 2]",0.00387,0.43182,495,0.36333,0.47637,425,0.03041,COMPLETED
 363,20250831_175027,gln_phase1.csv,Personalizado,MLP,42,67,"[768, 512, 384, 256]",mean,L2,64,4,768,leakyrelu,0.4,0.0002,5e-07,True,0.85,"[1, 2, 3]","[1, 2]",0.00839,0.47727,422,0.34354,0.49161,100,0.10501,STOPPED
 364,20250831_175027,gln_phase2.csv,Personalizado,MLP,42,72,"[768, 512, 384, 256]",mean,L2,64,4,768,leakyrelu,0.4,0.0002,5e-07,True,0.85,"[1, 2, 3]","[1, 2]",0.0096,0.43182,296,0.34691,0.43425,101,0.13059,STOPPED
+
 365,20250831_175307,baseline_CASIAB.csv,Personalizado,MLP,42,31,"[768, 512, 384, 256]",mean,L2,64,4,768,silu,0.5,0.0002,5e-07,True,0.7,"[1, 2]","[1, 2, 3]",0.00836,0.45455,1323,0.42476,0.49817,1069,0.01803,STOPPED
 366,20250831_175307,baseline_OUMVLP.csv,Personalizado,MLP,42,26,"[768, 512, 384, 256]",mean,L2,64,4,768,silu,0.5,0.0002,5e-07,True,0.7,"[1, 2]","[1, 2, 3]",0.00863,0.63636,1425,0.56589,0.56589,1425,0.00863,STOPPED
 367,20250831_175307,gaitgl.csv,Personalizado,MLP,42,26,"[768, 512, 384, 256]",mean,L2,64,4,768,silu,0.5,0.0002,5e-07,True,0.7,"[1, 2]","[1, 2, 3]",0.00826,0.40909,1509,0.30688,0.4505,893,0.07973,STOPPED
@@ -207,6 +223,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 375,20250831_175307,gaitset_OUMVLP.csv,Personalizado,MLP,42,34,"[768, 512, 384, 256]",mean,L2,64,4,768,silu,0.5,0.0002,5e-07,True,0.7,"[1, 2]","[1, 2, 3]",0.00995,0.5,1397,0.43928,0.54265,717,0.18565,STOPPED
 376,20250831_175307,gln_phase1.csv,Personalizado,MLP,42,30,"[768, 512, 384, 256]",mean,L2,64,4,768,silu,0.5,0.0002,5e-07,True,0.7,"[1, 2]","[1, 2, 3]",0.00965,0.59091,1014,0.56975,0.62421,645,0.07571,STOPPED
 377,20250831_175307,gln_phase2.csv,Personalizado,MLP,42,33,"[768, 512, 384, 256]",mean,L2,64,4,768,silu,0.5,0.0002,5e-07,True,0.7,"[1, 2]","[1, 2, 3]",0.00737,0.43182,930,0.35507,0.46907,536,0.08253,STOPPED
+
 378,20250831_181912,baseline_CASIAB.csv,Personalizado,MLP,42,49,"[1024, 768, 512, 256]",mean,minmax,96,4,1024,silu,0.45,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2]",0.00467,0.56818,900,0.41347,0.57355,431,0.03133,COMPLETED
 379,20250831_181912,baseline_OUMVLP.csv,Personalizado,MLP,42,47,"[1024, 768, 512, 256]",mean,minmax,96,4,1024,silu,0.45,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2]",0.00922,0.54545,876,0.51603,0.57837,620,0.00744,STOPPED
 380,20250831_181912,gaitgl.csv,Personalizado,MLP,42,34,"[1024, 768, 512, 256]",mean,minmax,96,4,1024,silu,0.45,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2]",0.00872,0.45455,1334,0.34127,0.53215,749,0.07196,STOPPED
@@ -220,6 +237,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 388,20250831_181912,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[1024, 768, 512, 256]",mean,minmax,96,4,1024,silu,0.45,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2]",0.009,0.5,983,0.36902,0.46313,814,0.02053,STOPPED
 389,20250831_181912,gln_phase1.csv,Personalizado,MLP,42,52,"[1024, 768, 512, 256]",mean,minmax,96,4,1024,silu,0.45,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2]",0.0022,0.52273,965,0.48245,0.6108,363,0.03487,COMPLETED
 390,20250831_181912,gln_phase2.csv,Personalizado,MLP,42,56,"[1024, 768, 512, 256]",mean,minmax,96,4,1024,silu,0.45,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2]",0.002,0.52273,828,0.3804,0.53822,370,0.0606,COMPLETED
+
 391,20250831_182701,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.45,0.0002,2e-07,True,0.8,"[1, 2]","[1, 2, 3]",0.00191,0.52273,585,0.42209,0.50728,545,0.06038,COMPLETED
 392,20250831_182701,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.45,0.0002,2e-07,True,0.8,"[1, 2]","[1, 2, 3]",0.00235,0.54545,686,0.53735,0.62577,439,0.01487,COMPLETED
 393,20250831_182701,gaitgl.csv,Personalizado,MLP,42,42,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.45,0.0002,2e-07,True,0.8,"[1, 2]","[1, 2, 3]",0.00112,0.45455,776,0.43202,0.52487,466,0.0691,COMPLETED
@@ -233,6 +251,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 401,20250831_182701,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.45,0.0002,2e-07,True,0.8,"[1, 2]","[1, 2, 3]",0.00395,0.59091,735,0.52579,0.57497,647,0.01775,COMPLETED
 402,20250831_182701,gln_phase1.csv,Personalizado,MLP,42,51,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.45,0.0002,2e-07,True,0.8,"[1, 2]","[1, 2, 3]",0.00498,0.54545,460,0.49558,0.57566,180,0.12426,COMPLETED
 403,20250831_182701,gln_phase2.csv,Personalizado,MLP,42,55,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.45,0.0002,2e-07,True,0.8,"[1, 2]","[1, 2, 3]",0.00274,0.47727,485,0.39971,0.45842,195,0.13349,COMPLETED
+
 404,20250901_114259,baseline_CASIAB.csv,Personalizado,MLP,42,40,"[768, 512, 384, 256]",mean,L2,80,4,768,elu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00263,0.52273,906,0.38251,0.49073,389,0.1323,COMPLETED
 405,20250901_114259,baseline_OUMVLP.csv,Personalizado,MLP,42,34,"[768, 512, 384, 256]",mean,L2,80,4,768,elu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00378,0.5,1173,0.41919,0.51804,747,0.02718,COMPLETED
 406,20250901_114259,gaitgl.csv,Personalizado,MLP,42,34,"[768, 512, 384, 256]",mean,L2,80,4,768,elu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00976,0.31818,944,0.23347,0.33626,921,0.01915,STOPPED
@@ -246,6 +265,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 414,20250901_114259,gaitset_OUMVLP.csv,Personalizado,MLP,42,43,"[768, 512, 384, 256]",mean,L2,80,4,768,elu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00356,0.52273,1484,0.42866,0.48485,740,0.15891,COMPLETED
 415,20250901_114259,gln_phase1.csv,Personalizado,MLP,42,39,"[768, 512, 384, 256]",mean,L2,80,4,768,elu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00382,0.40909,1010,0.38588,0.50232,356,0.13128,COMPLETED
 416,20250901_114259,gln_phase2.csv,Personalizado,MLP,42,43,"[768, 512, 384, 256]",mean,L2,80,4,768,elu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00305,0.40909,1047,0.30725,0.44034,476,0.04199,COMPLETED
+
 417,20250901_114909,baseline_CASIAB.csv,Personalizado,MLP,42,40,"[768, 512, 384, 256]",mean,L2,80,4,768,leakyrelu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00235,0.52273,767,0.44033,0.53093,212,0.09928,COMPLETED
 418,20250901_114909,baseline_OUMVLP.csv,Personalizado,MLP,42,34,"[768, 512, 384, 256]",mean,L2,80,4,768,leakyrelu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00967,0.59091,931,0.54167,0.65152,418,0.09608,STOPPED
 419,20250901_114909,gaitgl.csv,Personalizado,MLP,42,34,"[768, 512, 384, 256]",mean,L2,80,4,768,leakyrelu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00575,0.29545,845,0.22537,0.32178,206,0.18806,STOPPED
@@ -259,6 +279,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 427,20250901_114909,gaitset_OUMVLP.csv,Personalizado,MLP,42,43,"[768, 512, 384, 256]",mean,L2,80,4,768,leakyrelu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00567,0.52273,1030,0.38406,0.50584,537,0.11971,STOPPED
 428,20250901_114909,gln_phase1.csv,Personalizado,MLP,42,39,"[768, 512, 384, 256]",mean,L2,80,4,768,leakyrelu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00462,0.56818,914,0.49898,0.62295,632,0.02359,COMPLETED
 429,20250901_114909,gln_phase2.csv,Personalizado,MLP,42,43,"[768, 512, 384, 256]",mean,L2,80,4,768,leakyrelu,0.45,0.0002,0.0,True,0.75,"[2, 4]","[1, 3]",0.00948,0.47727,537,0.39943,0.48704,165,0.1216,STOPPED
+
 430,20250901_121007,baseline_CASIAB.csv,Personalizado,MLP,42,66,"[768, 384, 512, 256]",mean,L2,80,4,768,leakyrelu,0.5,0.0002,0.0,True,0.85,"[1, 3]","[2, 4]",0.00211,0.52273,203,0.48166,0.53714,119,0.01858,COMPLETED
 431,20250901_121007,baseline_OUMVLP.csv,Personalizado,MLP,42,59,"[768, 384, 512, 256]",mean,L2,80,4,768,leakyrelu,0.5,0.0002,0.0,True,0.85,"[1, 3]","[2, 4]",0.0007,0.5,403,0.42665,0.643,254,0.01978,COMPLETED
 432,20250901_121007,gaitgl.csv,Personalizado,MLP,42,53,"[768, 384, 512, 256]",mean,L2,80,4,768,leakyrelu,0.5,0.0002,0.0,True,0.85,"[1, 3]","[2, 4]",0.0043,0.5,384,0.42571,0.49977,173,0.05846,COMPLETED
@@ -272,6 +293,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 440,20250901_121007,gaitset_OUMVLP.csv,Personalizado,MLP,42,72,"[768, 384, 512, 256]",mean,L2,80,4,768,leakyrelu,0.5,0.0002,0.0,True,0.85,"[1, 3]","[2, 4]",0.00107,0.47727,447,0.42554,0.48272,335,0.04465,COMPLETED
 441,20250901_121007,gln_phase1.csv,Personalizado,MLP,42,67,"[768, 384, 512, 256]",mean,L2,80,4,768,leakyrelu,0.5,0.0002,0.0,True,0.85,"[1, 3]","[2, 4]",0.00238,0.43182,262,0.3064,0.48045,187,0.02679,COMPLETED
 442,20250901_121007,gln_phase2.csv,Personalizado,MLP,42,72,"[768, 384, 512, 256]",mean,L2,80,4,768,leakyrelu,0.5,0.0002,0.0,True,0.85,"[1, 3]","[2, 4]",0.00143,0.5,169,0.38009,0.49132,77,0.03254,COMPLETED
+
 443,20250901_121420,baseline_CASIAB.csv,Personalizado,MLP,42,63,"[512, 384, 384, 512]",mean,minmax,80,4,768,leakyrelu,0.5,0.0002,1e-07,True,0.85,"[2, 4]","[1, 3]",0.00199,0.52273,478,0.45159,0.51322,108,0.10732,COMPLETED
 444,20250901_121420,baseline_OUMVLP.csv,Personalizado,MLP,42,61,"[512, 384, 384, 512]",mean,minmax,80,4,768,leakyrelu,0.5,0.0002,1e-07,True,0.85,"[2, 4]","[1, 3]",0.00235,0.61364,584,0.55177,0.60051,223,0.02324,COMPLETED
 445,20250901_121420,gaitgl.csv,Personalizado,MLP,42,45,"[512, 384, 384, 512]",mean,minmax,80,4,768,leakyrelu,0.5,0.0002,1e-07,True,0.85,"[2, 4]","[1, 3]",0.00193,0.52273,717,0.38173,0.55984,151,0.1225,COMPLETED
@@ -285,6 +307,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 453,20250901_121420,gaitset_OUMVLP.csv,Personalizado,MLP,42,71,"[512, 384, 384, 512]",mean,minmax,80,4,768,leakyrelu,0.5,0.0002,1e-07,True,0.85,"[2, 4]","[1, 3]",0.00346,0.45455,482,0.35533,0.45518,263,0.02101,COMPLETED
 454,20250901_121420,gln_phase1.csv,Personalizado,MLP,42,68,"[512, 384, 384, 512]",mean,minmax,80,4,768,leakyrelu,0.5,0.0002,1e-07,True,0.85,"[2, 4]","[1, 3]",0.00284,0.5,561,0.36649,0.51093,432,0.00233,COMPLETED
 455,20250901_121420,gln_phase2.csv,Personalizado,MLP,42,73,"[512, 384, 384, 512]",mean,minmax,80,4,768,leakyrelu,0.5,0.0002,1e-07,True,0.85,"[2, 4]","[1, 3]",0.00345,0.47727,356,0.34154,0.44949,103,0.07282,COMPLETED
+
 456,20250901_121851,baseline_CASIAB.csv,Personalizado,MLP,42,66,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.5,0.0001,1e-07,True,0.85,"[1, 2, 3, 4]","[1, 2]",0.00407,0.52273,824,0.44247,0.50631,402,0.05455,COMPLETED
 457,20250901_121851,baseline_OUMVLP.csv,Personalizado,MLP,42,59,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.5,0.0001,1e-07,True,0.85,"[1, 2, 3, 4]","[1, 2]",0.00873,0.61364,779,0.59905,0.67298,763,0.03438,STOPPED
 458,20250901_121851,gaitgl.csv,Personalizado,MLP,42,53,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.5,0.0001,1e-07,True,0.85,"[1, 2, 3, 4]","[1, 2]",0.00998,0.40909,1047,0.35284,0.5363,972,0.00737,STOPPED
@@ -298,6 +321,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 466,20250901_121851,gaitset_OUMVLP.csv,Personalizado,MLP,42,72,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.5,0.0001,1e-07,True,0.85,"[1, 2, 3, 4]","[1, 2]",0.00332,0.47727,1275,0.39955,0.47648,749,0.19982,COMPLETED
 467,20250901_121851,gln_phase1.csv,Personalizado,MLP,42,67,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.5,0.0001,1e-07,True,0.85,"[1, 2, 3, 4]","[1, 2]",0.00197,0.5,729,0.36252,0.48166,561,0.02018,COMPLETED
 468,20250901_121851,gln_phase2.csv,Personalizado,MLP,42,72,"[1280, 896, 512, 256]",mean,L2,64,4,1280,silu,0.5,0.0001,1e-07,True,0.85,"[1, 2, 3, 4]","[1, 2]",0.00398,0.52273,781,0.37861,0.4285,560,0.01768,COMPLETED
+
 469,20250902_181950,baseline_CASIAB.csv,Personalizado,MLP,42,58,"[768, 512, 256]",max,L2,64,3,768,silu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00913,0.47727,863,0.33631,0.48333,470,0.06991,STOPPED
 470,20250902_181950,baseline_OUMVLP.csv,Personalizado,MLP,42,56,"[768, 512, 256]",max,L2,64,3,768,silu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00769,0.52273,928,0.43892,0.50021,584,0.07044,STOPPED
 471,20250902_181950,gaitgl.csv,Personalizado,MLP,42,65,"[768, 512, 256]",max,L2,64,3,768,silu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00543,0.47727,704,0.44451,0.52461,374,0.0691,STOPPED
@@ -311,6 +335,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 479,20250902_181950,gaitset_OUMVLP.csv,Personalizado,MLP,42,52,"[768, 512, 256]",max,L2,64,3,768,silu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00482,0.5,1573,0.37298,0.4899,1033,0.12622,COMPLETED
 480,20250902_181950,gln_phase1.csv,Personalizado,MLP,42,54,"[768, 512, 256]",max,L2,64,3,768,silu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00377,0.47727,1012,0.35859,0.38481,601,0.02021,COMPLETED
 481,20250902_181950,gln_phase2.csv,Personalizado,MLP,42,55,"[768, 512, 256]",max,L2,64,3,768,silu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00962,0.52273,1057,0.38038,0.49923,1009,0.03785,STOPPED
+
 482,20250902_182557,baseline_CASIAB.csv,Personalizado,MLP,42,256,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,False,,"[1, 2, 3]","[1, 2]",0.00342,0.5,193,0.35606,0.46648,89,0.02089,COMPLETED
 483,20250902_182557,baseline_OUMVLP.csv,Personalizado,MLP,42,256,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,False,,"[1, 2, 3]","[1, 2]",0.00193,0.45455,335,0.42291,0.57867,185,0.01936,COMPLETED
 484,20250902_182557,gaitgl.csv,Personalizado,MLP,42,128,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,False,,"[1, 2, 3]","[1, 2]",0.00432,0.52273,420,0.49238,0.51909,288,0.02127,COMPLETED
@@ -324,6 +349,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 492,20250902_182557,gaitset_OUMVLP.csv,Personalizado,MLP,42,256,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,False,,"[1, 2, 3]","[1, 2]",0.00162,0.47727,529,0.40366,0.53182,512,0.01208,COMPLETED
 493,20250902_182557,gln_phase1.csv,Personalizado,MLP,42,256,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,False,,"[1, 2, 3]","[1, 2]",0.00481,0.5,229,0.42414,0.52857,120,0.0512,COMPLETED
 494,20250902_182557,gln_phase2.csv,Personalizado,MLP,42,256,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,False,,"[1, 2, 3]","[1, 2]",0.00416,0.5,205,0.4195,0.4792,183,0.01146,COMPLETED
+
 495,20250902_183936,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.0033,0.54545,529,0.45798,0.48937,372,0.00893,COMPLETED
 496,20250902_183936,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00385,0.52273,649,0.50287,0.61674,249,0.0794,COMPLETED
 497,20250902_183936,gaitgl.csv,Personalizado,MLP,42,42,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00232,0.47727,683,0.44235,0.46671,239,0.08741,COMPLETED
@@ -337,6 +363,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 505,20250902_183936,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00293,0.52273,603,0.47151,0.59483,353,0.15648,COMPLETED
 506,20250902_183936,gln_phase1.csv,Personalizado,MLP,42,51,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00285,0.56818,475,0.54035,0.59154,397,0.01134,COMPLETED
 507,20250902_183936,gln_phase2.csv,Personalizado,MLP,42,55,"[768, 512, 256]",mean,L2,88,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00321,0.45455,505,0.35674,0.47374,228,0.0357,COMPLETED
+
 508,20250902_184302,baseline_CASIAB.csv,Personalizado,MLP,42,49,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00157,0.61364,666,0.56085,0.63049,99,0.14732,COMPLETED
 509,20250902_184302,baseline_OUMVLP.csv,Personalizado,MLP,42,47,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00411,0.54545,599,0.51548,0.6615,528,0.03752,COMPLETED
 510,20250902_184302,gaitgl.csv,Personalizado,MLP,42,34,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00758,0.45455,628,0.33939,0.48122,153,0.1702,STOPPED
@@ -350,6 +377,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 518,20250902_184302,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00297,0.43182,456,0.37111,0.49374,417,0.00391,COMPLETED
 519,20250902_184302,gln_phase1.csv,Personalizado,MLP,42,52,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00263,0.54545,522,0.5,0.64268,512,0.00434,COMPLETED
 520,20250902_184302,gln_phase2.csv,Personalizado,MLP,42,56,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00343,0.52273,493,0.38943,0.49044,178,0.02853,COMPLETED
+
 521,20250903_132433,baseline_CASIAB.csv,Personalizado,MLP,42,49,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00656,0.52273,680,0.4443,0.58542,299,0.03016,STOPPED
 522,20250903_132433,baseline_OUMVLP.csv,Personalizado,MLP,42,47,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00808,0.54545,506,0.49694,0.64244,418,0.01397,STOPPED
 523,20250903_132433,gaitgl.csv,Personalizado,MLP,42,34,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00442,0.47727,816,0.39211,0.5202,263,0.15872,COMPLETED
@@ -363,6 +391,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 531,20250903_132433,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00615,0.56818,599,0.5047,0.52849,465,0.01081,STOPPED
 532,20250903_132433,gln_phase1.csv,Personalizado,MLP,42,52,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00257,0.54545,652,0.53704,0.63052,138,0.12747,COMPLETED
 533,20250903_132433,gln_phase2.csv,Personalizado,MLP,42,56,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0001,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.0049,0.47727,603,0.36746,0.4437,165,0.07645,COMPLETED
+
 534,20250903_133132,baseline_CASIAB.csv,Personalizado,MLP,42,40,"[896, 640, 320, 192]",mean,L2,96,4,896,silu,0.4,0.0002,1e-07,True,0.75,"[1, 2, 3, 4]","[1, 2, 3]",0.00342,0.52273,1103,0.43468,0.52594,840,0.05422,COMPLETED
 535,20250903_133132,baseline_OUMVLP.csv,Personalizado,MLP,42,34,"[896, 640, 320, 192]",mean,L2,96,4,896,silu,0.4,0.0002,1e-07,True,0.75,"[1, 2, 3, 4]","[1, 2, 3]",0.00318,0.59091,1335,0.53019,0.62311,641,0.11414,COMPLETED
 536,20250903_133132,gaitgl.csv,Personalizado,MLP,42,34,"[896, 640, 320, 192]",mean,L2,96,4,896,silu,0.4,0.0002,1e-07,True,0.75,"[1, 2, 3, 4]","[1, 2, 3]",0.00791,0.38636,1115,0.28431,0.37661,579,0.15631,STOPPED
@@ -376,6 +405,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 544,20250903_133132,gaitset_OUMVLP.csv,Personalizado,MLP,42,43,"[896, 640, 320, 192]",mean,L2,96,4,896,silu,0.4,0.0002,1e-07,True,0.75,"[1, 2, 3, 4]","[1, 2, 3]",0.00862,0.52273,1306,0.43913,0.50798,924,0.15893,STOPPED
 545,20250903_133132,gln_phase1.csv,Personalizado,MLP,42,39,"[896, 640, 320, 192]",mean,L2,96,4,896,silu,0.4,0.0002,1e-07,True,0.75,"[1, 2, 3, 4]","[1, 2, 3]",0.00659,0.45455,1036,0.41032,0.53898,784,0.02386,STOPPED
 546,20250903_133132,gln_phase2.csv,Personalizado,MLP,42,43,"[896, 640, 320, 192]",mean,L2,96,4,896,silu,0.4,0.0002,1e-07,True,0.75,"[1, 2, 3, 4]","[1, 2, 3]",0.00812,0.45455,784,0.37935,0.44949,408,0.11652,STOPPED
+
 547,20250903_150131,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[896, 640, 320, 192]",mean,L2,64,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00905,0.34091,510,0.2516,0.44676,193,0.17051,STOPPED
 548,20250903_150131,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[896, 640, 320, 192]",mean,L2,64,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00666,0.52273,743,0.44832,0.642,313,0.09187,STOPPED
 549,20250903_150131,gaitgl.csv,Personalizado,MLP,42,42,"[896, 640, 320, 192]",mean,L2,64,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00915,0.47727,892,0.4633,0.50285,807,0.02383,STOPPED
@@ -389,6 +419,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 557,20250903_150131,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[896, 640, 320, 192]",mean,L2,64,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00724,0.47727,878,0.39971,0.50261,440,0.14973,STOPPED
 558,20250903_150131,gln_phase1.csv,Personalizado,MLP,42,51,"[896, 640, 320, 192]",mean,L2,64,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.00723,0.52273,814,0.43889,0.58574,612,0.00327,STOPPED
 559,20250903_150131,gln_phase2.csv,Personalizado,MLP,42,55,"[896, 640, 320, 192]",mean,L2,64,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[1, 2, 3, 4]","[1, 2, 3]",0.002,0.43182,742,0.36591,0.4461,169,0.19129,COMPLETED
+
 560,20250903_150932,baseline_CASIAB.csv,Personalizado,MLP,42,51,"[896, 640, 320, 192]",mean,L2,80,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[2, 3]","[2, 3]",0.00264,0.47727,129,0.35536,0.46781,84,0.05047,COMPLETED
 561,20250903_150932,baseline_OUMVLP.csv,Personalizado,MLP,42,45,"[896, 640, 320, 192]",mean,L2,80,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[2, 3]","[2, 3]",0.00309,0.5,167,0.48373,0.50388,162,0.00555,COMPLETED
 562,20250903_150932,gaitgl.csv,Personalizado,MLP,42,42,"[896, 640, 320, 192]",mean,L2,80,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[2, 3]","[2, 3]",0.00317,0.38636,170,0.33329,0.38773,84,0.13615,COMPLETED
@@ -402,6 +433,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 570,20250903_150932,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[896, 640, 320, 192]",mean,L2,80,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[2, 3]","[2, 3]",0.003,0.43182,221,0.37474,0.45531,205,0.01226,COMPLETED
 571,20250903_150932,gln_phase1.csv,Personalizado,MLP,42,51,"[896, 640, 320, 192]",mean,L2,80,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[2, 3]","[2, 3]",0.00092,0.54545,189,0.5176,0.64268,86,0.0475,COMPLETED
 572,20250903_150932,gln_phase2.csv,Personalizado,MLP,42,55,"[896, 640, 320, 192]",mean,L2,80,4,896,leakyrelu,0.5,0.0002,1e-07,True,0.8,"[2, 3]","[2, 3]",0.00274,0.52273,116,0.43423,0.4899,83,0.0294,COMPLETED
+
 573,20250903_151612,baseline_CASIAB.csv,Personalizado,MLP,42,49,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[2, 3]",0.00483,0.5,138,0.41301,0.41806,68,0.03445,COMPLETED
 574,20250903_151612,baseline_OUMVLP.csv,Personalizado,MLP,42,47,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[2, 3]",0.00464,0.63636,142,0.61674,0.67818,40,0.12607,COMPLETED
 575,20250903_151612,gaitgl.csv,Personalizado,MLP,42,34,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[2, 3]",0.0042,0.43182,227,0.36741,0.48468,64,0.16625,COMPLETED
@@ -415,6 +447,7 @@ id,timestamp,target_embedding,source_params,model,seed,input_dim,hidden_layers,p
 583,20250903_151612,gaitset_OUMVLP.csv,Personalizado,MLP,42,55,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[2, 3]",0.004,0.40909,115,0.32353,0.45869,68,0.02966,COMPLETED
 584,20250903_151612,gln_phase1.csv,Personalizado,MLP,42,52,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[2, 3]",0.00407,0.5,139,0.45964,0.51266,35,0.14547,COMPLETED
 585,20250903_151612,gln_phase2.csv,Personalizado,MLP,42,56,"[768, 512, 256]",mean,minmax,64,3,768,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[2, 3]",0.0034,0.43182,134,0.33151,0.42837,34,0.15499,COMPLETED
+
 586,20250903_192419,baseline_CASIAB.csv,Personalizado,MLP,42,49,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00049,0.52273,366,0.44233,0.55307,159,0.05012,COMPLETED
 587,20250903_192419,baseline_OUMVLP.csv,Personalizado,MLP,42,47,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.00387,0.56818,442,0.51447,0.64394,204,0.02614,COMPLETED
 588,20250903_192419,gaitgl.csv,Personalizado,MLP,42,34,"[1024, 768, 512, 256]",mean,minmax,64,4,1024,silu,0.4,0.0002,1e-07,True,0.8,"[1, 2, 3]","[1, 2]",0.0034,0.54545,513,0.40489,0.51111,229,0.02643,COMPLETED
