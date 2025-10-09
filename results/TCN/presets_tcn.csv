@@ -1,14 +1,1 @@
 channels,dilations,kernel_size,convs_per_block,activation,causal,use_weight_norm,wn_on_skip,pooling,fc_hidden,attention_proj,batch_size,optimizer,momentum_sgd,lr,weight_decay,norm,dropout,ln_block_end
-
-"[160, 224, 288, 352]","[1, 2, 3, 6]",7,2,gelu,False,True,True,mean,256,False,96,AdamW,,0.0002,1e-05,L2,"[0.0, 0.1, 0.1, 0.2]","[True, True, True, True]"
-"[128, 160, 192, 224, 256]","[1, 2, 3, 6, 12]",5,3,silu,False,True,True,mean,256,False,64,AdamW,,0.0002,5e-05,L2,"[0.0, 0.1, 0.1, 0.1, 0.2]","[True, True, True, True, True]"
-"[256, 256, 256]","[1, 2, 4]",9,3,silu,False,True,True,mean,256,False,64,AdamW,,0.0001,1e-05,L2,"[0.1, 0.1, 0.2]","[True, True, False]"
-"[128, 160, 192, 224, 256, 320]","[1, 2, 3, 6, 12, 24]",5,2,gelu,False,True,True,mean,256,False,64,AdamW,,0.0002,1e-05,L2,"[0.0, 0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True, True]"
-"[192, 224, 256, 320]","[1, 2, 4, 8]",11,2,gelu,True,True,True,mean,256,False,96,AdamW,,0.0001,1e-05,L2,"[0.1, 0.1, 0.1, 0.2]","[True, True, True, True]"
-"[256, 320, 384]","[1, 2, 6]",7,2,silu,False,True,False,last,128,False,128,AdamW,,0.0003,1e-04,L2,"[0.1, 0.1, 0.2]","[True, True, True]"
-"[224, 224, 224, 224]","[1, 2, 4, 8]",5,4,relu,False,True,True,mean,128,False,80,AdamW,,0.0002,5e-05,L2,"[0.0, 0.1, 0.1, 0.2]","[True, True, True, False]"
-"[192, 256, 384, 512]","[1, 3, 6, 12]",7,2,gelu,False,True,True,mean,256,False,64,AdamW,,0.0001,5e-05,L2,"[0.1, 0.1, 0.1, 0.2]","[True, True, True, True]"
-"[160, 192, 224, 256, 320]","[1, 2, 3, 6, 12]",9,2,silu,False,False,False,mean,256,False,96,Adam,,0.0002,0.0,minmax,"[0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True]"
-"[128, 192, 256, 320]","[1, 2, 4, 8]",13,2,gelu,False,True,True,mean,256,False,64,SGD,0.9,0.002,1e-04,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]"
-"[128, 160, 192, 224, 256, 320]","[1, 2, 4, 8, 16, 32]",7,2,gelu,False,True,True,max,256,False,64,AdamW,,0.0003,1e-05,L2,"[0.0, 0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True, True]"
-"[224, 288, 352, 416]","[1, 2, 4, 8]",9,3,silu,False,True,True,mean,192,False,96,AdamW,,0.0002,1e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]"
