@@ -1,5 +1,18 @@
 channels,dilations,dropout,ln_block_end,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,lr,weight_decay,norm,momentum_sgd
 
+"[256,384,512,640]","[1,2,4,8]","[0.0,0.1,0.1,0.2]","[True,True,True,True]",7,2,gelu,True,True,attention,256,96,AdamW,0.0002,0.00005,L2,
+"[320,448,576]","[1,2,5]","[0.1,0.1,0.2]","[True,True,False]",9,3,silu,True,True,mean,256,128,AdamW,0.0001,0.00001,minmax,
+"[224,320,448,576]","[1,3,5,9]","[0.1,0.1,0.2,0.2]","[True,True,True,True]",5,2,gelu,True,True,attention,192,96,AdamW,0.0003,0.00005,minmax,
+"[256,320,384,448,512]","[1,2,3,4,6]","[0.1,0.1,0.1,0.2,0.2]","[True,True,True,False,False]",7,2,leakyrelu,True,True,max,128,128,AdamW,0.0002,0.00010,L2,
+"[384,512,640,768]","[1,2,4,8]","[0.2,0.2,0.2,0.2]","[True,True,True,True]",11,2,silu,True,True,mean,256,96,AdamW,0.0002,0.00005,minmax,
+"[192,256,320,384,448,512]","[1,2,4,6,9,12]","[0.0,0.1,0.1,0.1,0.2,0.2]","[True,True,True,True,True,True]",5,3,gelu,True,True,attention,256,96,AdamW,0.0001,0.00001,L2,
+"[288,384,480]","[1,4,7]","[0.1,0.2,0.2]","[True,True,True]",9,2,prelu,True,True,attention,256,96,AdamW,0.0003,0.00005,minmax,
+"[256,256,384,384]","[1,2,2,4]","[0.1,0.1,0.2,0.2]","[True,True,True,True]",7,3,gelu,True,True,last,256,96,AdamW,0.0002,0.00005,L2,
+"[320,448,512,640]","[1,3,6,9]","[0.1,0.1,0.2,0.2]","[True,True,True,True]",7,2,silu,True,True,attention,,128,AdamW,0.0002,0.00005,minmax,
+"[224,288,352,416,480]","[1,2,4,8,16]","[0.0,0.1,0.1,0.1,0.2]","[True,True,True,True,True]",5,2,gelu,True,True,mean,192,128,AdamW,0.0001,0.00001,L2,
+"[448,576]","[1,4]","[0.2,0.2]","[True,True]",11,3,leakyrelu,True,True,max,256,96,AdamW,0.0002,0.00005,L2,
+"[256,320,448]","[1,2,4]","[0.1,0.1,0.2]","[True,True,True]",9,2,mish,True,True,attention,384,96,AdamW,0.0001,0.00005,minmax,
+
 "[192,256,320,384]","[1,2,4,8]","[0.0,0.1,0.1,0.2]","[True,True,True,True]",7,2,gelu,True,True,attention,256,96,AdamW,0.0002,0.00005,L2,
 "[224,224,224]","[1,3,9]","[0.1,0.1,0.2]","[True,True,True]",9,2,silu,True,True,attention,256,96,AdamW,0.0003,0.00005,L2,
 "[256,256,256,256]","[1,2,4,8]","[0.1,0.1,0.1,0.1]","[True,True,True,True]",9,3,gelu,True,True,max,128,128,AdamW,0.0002,0.00010,L2,
