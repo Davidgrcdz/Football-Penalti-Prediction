@@ -1,5 +1,4 @@
 target_embedding,best_f1_v1,best_f1_v2,best_f1_v3,difference
-gaitpart.csv,0.5,0.50794,0.61905,0.11111
 gln_phase2.csv,0.49815,0.57177,0.67626,0.10449
 gaitgl.csv,0.54816,0.55271,0.61616,0.06345
 gaitset_OUMVLP.csv,0.5478,0.56197,0.60006,0.03809
