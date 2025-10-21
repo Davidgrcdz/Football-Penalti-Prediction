@@ -1,0 +1,9 @@
+train_loss,test_loss,accuracy,epochs_trained,f1_macro,best_f1,best_state_loss,training,duration_sec MLP
+
+train_loss,test_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss,training,duration_sec LSTM
+
+train_loss,test_loss,accuracy,epochs_trained,f1_macro,best_f1,best_epoch,best_state_loss,training,duration_sec TCN
+
+
+cambiar columnas de mlp para que añada el best epoch .
+y revisar porque el best_state_loss no se guarda en el csv de la TCN.

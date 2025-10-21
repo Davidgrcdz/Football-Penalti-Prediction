@@ -1,36 +1,36 @@
-channels,dilations,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,momentum_sgd,lr,weight_decay,norm,dropout,ln_block_end
-"[256, 256]","[2, 3]",9,1,relu,False,True,max,64.0,96,RMSprop,,0.0001,1e-05,L2,"[None, 0.2]","[True, True]"
-"[128, 128, 128, 128]","[1, 4, 7, 10]",3,2,prelu,False,True,mean,256.0,16,AdamW,,0.0001,0.0,L2,"[None, None, 0.2, None]","[False, True, False, False]"
-"[896, 768, 640]","[3, 6, 9]",2,2,leakyrelu,False,False,attention,64.0,96,Adam,,1e-05,2e-06,minmax,"[None, None, None]","[False, True, True]"
-[256],[1],7,2,hardswish,False,False,last,128.0,16,AdamW,,0.001,1e-06,L2,[0.3],[False]
-"[192, 192]","[1, 2]",7,1,mish,False,True,max,,32,AdamW,,0.0001,1e-06,L2,"[0.3, 0.3]","[False, True]"
-[512],[3],7,2,mish,True,False,last,,32,AdamW,,0.0002,2e-06,L2,[None],[False]
-"[96, 96, 96]","[1, 4, 7]",9,1,gelu,True,False,last,,96,AdamW,,0.0002,2e-06,L2,"[0.1, 0.1, 0.1]","[True, True, False]"
-[512],[1],7,1,relu,False,False,attention,256.0,16,Adam,,0.0005,1e-06,L2,[0.1],[False]
-"[256, 320, 384, 448, 512]","[1, 2, 3, 4, 6]",7,2,leakyrelu,True,True,max,128.0,128,AdamW,,0.0002,0.0001,L2,"[0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, False, False]"
-"[192, 256, 320, 384, 448, 512]","[1, 2, 4, 6, 9, 12]",5,3,gelu,True,True,attention,256.0,96,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True, True]"
-"[256, 256, 384, 384]","[1, 2, 2, 4]",7,3,gelu,True,True,last,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]"
-"[224, 288, 352, 416, 480]","[1, 2, 4, 8, 16]",5,2,gelu,True,True,mean,192.0,128,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2]","[True, True, True, True, True]"
-"[448, 576]","[1, 4]",11,3,leakyrelu,True,True,max,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.2, 0.2]","[True, True]"
-"[192, 256, 320, 384]","[1, 2, 4, 8]",7,2,gelu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[None, 0.1, 0.1, 0.2]","[True, True, True, True]"
-"[224, 224, 224]","[1, 3, 9]",9,2,silu,True,True,attention,256.0,96,AdamW,,0.0003,5e-05,L2,"[0.1, 0.1, 0.2]","[True, True, True]"
-"[256, 256, 256, 256]","[1, 2, 4, 8]",9,3,gelu,True,True,max,128.0,128,AdamW,,0.0002,0.0001,L2,"[0.1, 0.1, 0.1, 0.1]","[True, True, True, True]"
-"[160, 192, 224, 256, 320, 384]","[1, 2, 4, 8, 16, 32]",5,2,gelu,True,True,attention,256.0,96,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.2, 0.2, 0.2]","[True, True, True, True, True, True]"
-"[192, 256, 320]","[1, 2, 8]",7,3,leakyrelu,True,True,attention,384.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.2, 0.2]","[True, True, True]"
-"[128, 160, 192, 224, 256]","[1, 2, 4, 8, 16]",5,2,gelu,True,True,mean,128.0,128,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.1]","[True, True, True, False, False]"
-"[256, 384]","[1, 4]",9,3,gelu,True,True,attention,,96,AdamW,,0.0002,5e-05,L2,"[0.2, 0.2]","[True, True]"
-"[192, 224, 256, 320]","[1, 2, 4, 4]",9,2,gelu,True,True,last,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]"
-"[384, 512, 640]","[1, 2, 3]",11,1,silu,True,True,mean,,128,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.1]","[True, True, False]"
-"[160, 192, 224, 256, 320, 384]","[1, 2, 3, 4, 6, 9]",3,2,gelu,True,True,attention,256.0,96,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True, True]"
-"[224, 256, 320]","[1, 2, 4]",5,2,gelu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[None, 0.1, 0.2]","[True, True, True]"
-"[512, 640]","[1, 3]",7,2,leakyrelu,True,True,max,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.2]","[True, True]"
-"[192, 256, 320, 384]","[1, 2, 4, 8]",5,3,gelu,True,True,mean,192.0,128,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.2]","[True, True, True, False]"
-"[320, 384]","[1, 2]",11,2,silu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.2]","[True, True]"
-"[160, 192, 224, 256, 320]","[1, 2, 3, 5, 9]",3,2,gelu,True,True,attention,256.0,96,AdamW,,0.0001,5e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2]","[True, True, True, True, True]"
-"[256, 256, 256, 256]","[1, 2, 4, 8]",7,2,gelu,True,True,mean,128.0,128,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.1, 0.1]","[True, True, True, True]"
-"[160, 192]","[1, 2]",7,1,gelu,False,True,max,,96,AdamW,,0.0001,5e-05,L2,"[0.2, 0.3]","[False, True]"
-"[128, 160, 192, 224]","[1, 2, 3, 5]",7,1,gelu,False,True,max,,96,AdamW,,0.0002,1e-05,L2,"[None, 0.1, 0.1, 0.2]","[False, False, True, True]"
-"[224, 224]","[1, 3]",9,1,prelu,False,True,mean,,96,AdamW,,0.0001,5e-05,L2,"[0.2, 0.2]","[False, True]"
-"[192, 256, 320]","[1, 2, 4]",9,2,gelu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.2]","[True, True, True]"
-"[256, 320]","[1, 2]",11,1,silu,False,True,max,,96,AdamW,,0.0001,5e-05,L2,"[0.1, 0.2]","[False, True]"
-"[160, 224, 288]","[1, 2, 4]",7,2,gelu,False,True,attention,256.0,96,AdamW,,0.0002,1e-05,L2,"[None, 0.1, 0.2]","[False, True, True]"
+channels,dilations,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,momentum_sgd,lr,weight_decay,norm,dropout,ln_block_end,source_params
+"[896, 768, 640]","[3, 6, 9]",2,2,leakyrelu,False,False,attention,64.0,96,Adam,,1e-05,2e-06,minmax,"[None, None, None]","[False, True, True]",tcn_results_v1_Optuna.csv
+"[128, 128, 128, 128]","[1, 4, 7, 10]",3,2,prelu,False,True,mean,256.0,16,AdamW,,0.0001,0.0,L2,"[None, None, 0.2, None]","[False, True, False, False]",tcn_results_v1_Optuna.csv
+"[128, 160, 192, 224, 256]","[1, 2, 4, 8, 16]",5,2,gelu,True,True,mean,128.0,128,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.1]","[True, True, True, False, False]",tcn_results_v2.csv
+"[256, 320, 384, 448, 512]","[1, 2, 3, 4, 6]",7,2,leakyrelu,True,True,max,128.0,128,AdamW,,0.0002,0.0001,L2,"[0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, False, False]",tcn_results_v2.csv
+"[160, 192]","[1, 2]",7,1,gelu,False,True,max,,96,AdamW,,0.0001,5e-05,L2,"[0.2, 0.3]","[False, True]",tcn_results_v2.csv
+"[128, 160, 192, 224]","[1, 2, 3, 5]",7,1,gelu,False,True,max,,96,AdamW,,0.0002,1e-05,L2,"[None, 0.1, 0.1, 0.2]","[False, False, True, True]",tcn_results_v2.csv
+"[192, 256, 320, 384]","[1, 2, 4, 8]",7,2,gelu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[None, 0.1, 0.1, 0.2]","[True, True, True, True]",tcn_results_v2.csv
+"[224, 288, 352, 416, 480]","[1, 2, 4, 8, 16]",5,2,gelu,True,True,mean,192.0,128,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2]","[True, True, True, True, True]",tcn_results_v2.csv
+"[256, 256, 384, 384]","[1, 2, 2, 4]",7,3,gelu,True,True,last,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]",tcn_results_v2.csv
+"[224, 224]","[1, 3]",9,1,prelu,False,True,mean,,96,AdamW,,0.0001,5e-05,L2,"[0.2, 0.2]","[False, True]",tcn_results_v2.csv
+"[96, 96, 96]","[1, 4, 7]",9,1,gelu,True,False,last,,96,AdamW,,0.0002,2e-06,L2,"[0.1, 0.1, 0.1]","[True, True, False]",tcn_results_v1_Optuna.csv
+"[192, 192]","[1, 2]",7,1,mish,False,True,max,,32,AdamW,,0.0001,1e-06,L2,"[0.3, 0.3]","[False, True]",tcn_results_v1_Optuna.csv
+"[192, 256, 320, 384, 448, 512]","[1, 2, 4, 6, 9, 12]",5,3,gelu,True,True,attention,256.0,96,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True, True]",tcn_results_v2.csv
+[512],[3],7,2,mish,True,False,last,,32,AdamW,,0.0002,2e-06,L2,[None],[False],tcn_results_v1_Optuna.csv
+"[512, 640]","[1, 3]",7,2,leakyrelu,True,True,max,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.2]","[True, True]",tcn_results_v2.csv
+"[384, 512, 640]","[1, 2, 3]",11,1,silu,True,True,mean,,128,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.1]","[True, True, False]",tcn_results_v2.csv
+"[224, 224, 224]","[1, 3, 9]",9,2,silu,True,True,attention,256.0,96,AdamW,,0.0003,5e-05,L2,"[0.1, 0.1, 0.2]","[True, True, True]",tcn_results_v2.csv
+"[160, 224, 288]","[1, 2, 4]",7,2,gelu,False,True,attention,256.0,96,AdamW,,0.0002,1e-05,L2,"[None, 0.1, 0.2]","[False, True, True]",tcn_results_v2.csv
+"[256, 256, 256, 256]","[1, 2, 4, 8]",9,3,gelu,True,True,max,128.0,128,AdamW,,0.0002,0.0001,L2,"[0.1, 0.1, 0.1, 0.1]","[True, True, True, True]",tcn_results_v2.csv
+[512],[1],7,1,relu,False,False,attention,256.0,16,Adam,,0.0005,1e-06,L2,[0.1],[False],tcn_results_v1_Optuna.csv
+[256],[1],7,2,hardswish,False,False,last,128.0,16,AdamW,,0.001,1e-06,L2,[0.3],[False],tcn_results_v1_Optuna.csv
+"[256, 256, 256, 256]","[1, 2, 4, 8]",7,2,gelu,True,True,mean,128.0,128,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.1, 0.1]","[True, True, True, True]",tcn_results_v2.csv
+"[160, 192, 224, 256, 320, 384]","[1, 2, 4, 8, 16, 32]",5,2,gelu,True,True,attention,256.0,96,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.2, 0.2, 0.2]","[True, True, True, True, True, True]",tcn_results_v2.csv
+"[192, 256, 320, 384]","[1, 2, 4, 8]",5,3,gelu,True,True,mean,192.0,128,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.2]","[True, True, True, False]",tcn_results_v2.csv
+"[448, 576]","[1, 4]",11,3,leakyrelu,True,True,max,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.2, 0.2]","[True, True]",tcn_results_v2.csv
+"[320, 384]","[1, 2]",11,2,silu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.2]","[True, True]",tcn_results_v2.csv
+"[192, 256, 320]","[1, 2, 4]",9,2,gelu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.2]","[True, True, True]",tcn_results_v2.csv
+"[160, 192, 224, 256, 320]","[1, 2, 3, 5, 9]",3,2,gelu,True,True,attention,256.0,96,AdamW,,0.0001,5e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2]","[True, True, True, True, True]",tcn_results_v2.csv
+"[224, 256, 320]","[1, 2, 4]",5,2,gelu,True,True,attention,256.0,96,AdamW,,0.0002,5e-05,L2,"[None, 0.1, 0.2]","[True, True, True]",tcn_results_v2.csv
+"[256, 320]","[1, 2]",11,1,silu,False,True,max,,96,AdamW,,0.0001,5e-05,L2,"[0.1, 0.2]","[False, True]",tcn_results_v2.csv
+"[192, 224, 256, 320]","[1, 2, 4, 4]",9,2,gelu,True,True,last,256.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]",tcn_results_v2.csv
+"[192, 256, 320]","[1, 2, 8]",7,3,leakyrelu,True,True,attention,384.0,96,AdamW,,0.0002,5e-05,L2,"[0.1, 0.2, 0.2]","[True, True, True]",tcn_results_v2.csv
+"[256, 256]","[2, 3]",9,1,relu,False,True,max,64.0,96,RMSprop,,0.0001,1e-05,L2,"[None, 0.2]","[True, True]",tcn_results_v1_Optuna.csv
+"[160, 192, 224, 256, 320, 384]","[1, 2, 3, 4, 6, 9]",3,2,gelu,True,True,attention,256.0,96,AdamW,,0.0001,1e-05,L2,"[None, 0.1, 0.1, 0.1, 0.2, 0.2]","[True, True, True, True, True, True]",tcn_results_v2.csv
+"[256, 384]","[1, 4]",9,3,gelu,True,True,attention,,96,AdamW,,0.0002,5e-05,L2,"[0.2, 0.2]","[True, True]",tcn_results_v2.csv
