@@ -15,3 +15,17 @@ https://arxiv.org/pdf/1803.01271 ----> TCN paper
 
 https://www.datacamp.com/tutorial/how-transformers-work?dc_referrer=https%3A%2F%2Fwww.google.com%2F ----> info about transformer 
 
+
+Fundamentos en los que se basa el modelo
+
+Vaswani et al., 2017 – Attention Is All You Need
+
+Modelo Transformer original: codificación posicional, capas encoder, atención multi-cabeza, residuals, normalization, etc.
+
+Dosovitskiy et al., 2020 – An Image is Worth 16x16 Words (ViT)
+
+Adaptación de Transformer a secuencias de bloques espaciales (muy similar a tus steps → franjas del cuerpo).
+
+Leys et al., 2022 – The Art of Pooling Embeddings
+
+Comparativa y recomendaciones sobre CLS, mean, max pooling en Transformers para clasificación.
