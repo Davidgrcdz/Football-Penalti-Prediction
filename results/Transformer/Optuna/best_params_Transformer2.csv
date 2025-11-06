@@ -1,9 +1,0 @@
-embedding,best_f1_cv,model_dim,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,lr,weight_decay,batch_size,optimizer,norm
-baseline_CASIAB.csv,0.4388,128,2,2,768,0.0,silu,prenorm,sinusoidal,max,0.0001,0.0,96,AdamW,minmax
-gaitgl.csv,0.4394,256,8,1,384,0.0,hardswish,prenorm,sinusoidal,mean,0.0001,1e-06,32,Adam,L2
-gaitgl_GREW.csv,0.4604,512,16,2,512,0.0,silu,postnorm,sinusoidal,max,0.0002,1e-06,32,Adam,L2
-gaitgl_GREW_BNNeck.csv,0.3594,512,2,2,256,0.3,silu,prenorm,learned,max,0.0001,1e-06,96,RMSprop,L2
-gaitpart_GREW.csv,0.3822,128,8,4,256,0.0,leakyrelu,prenorm,learned,cls,0.001,1e-07,16,AdamW,L2
-gaitset.csv,0.3764,768,4,2,384,0.1,mish,prenorm,learned,max,2e-05,1e-05,16,AdamW,minmax
-gaitset_GREW.csv,0.427,256,16,1,256,0.0,prelu,postnorm,sinusoidal,max,0.0005,1e-06,32,AdamW,minmax
-gln_phase1.csv,0.4293,512,2,2,256,0.4,hardswish,prenorm,sinusoidal,mean,0.0005,1e-06,16,Adam,L2
