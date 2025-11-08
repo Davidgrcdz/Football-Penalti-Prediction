@@ -9,3 +9,20 @@ model_dim,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_
 384,6,3,768,0.2,leakyrelu,prenorm,sinusoidal,max,false,SGD,0.005,0.00001,64,0.9,minmax
 512,8,4,1024,0.15,hardswish,prenorm,learned,cls,true,AdamW,0.0002,0.00001,48,,L2
 
+model_dim,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm
+
+512,8,3,512,0.1,gelu,prenorm,sinusoidal,max,False,0.0002,1e-6,64,AdamW,,L2
+384,8,4,512,0.0,silu,postnorm,learned,cls,True,0.0005,1e-5,64,Adam,,minmax
+768,12,2,512,0.1,mish,prenorm,sinusoidal,mean,False,0.0001,1e-6,32,AdamW,,L2
+256,8,3,384,0.0,silu,prenorm,learned,max,False,0.0002,1e-6,64,AdamW,,minmax
+512,16,2,384,0.2,gelu,postnorm,sinusoidal,cls,True,0.0005,1e-7,32,AdamW,,L2
+640,8,3,512,0.1,mish,prenorm,learned,mean,False,0.0001,1e-6,64,Adam,,L2
+384,4,4,384,0.0,silu,prenorm,sinusoidal,cls,True,0.0002,1e-6,96,AdamW,,L2
+512,8,4,512,0.1,prelu,postnorm,learned,max,False,0.0002,1e-5,32,AdamW,,minmax
+256,4,3,256,0.0,gelu,prenorm,sinusoidal,cls,True,0.0010,1e-7,128,Adam,,L2
+768,16,2,512,0.1,silu,postnorm,sinusoidal,max,False,0.0005,1e-6,32,AdamW,,minmax
+512,8,5,384,0.1,mish,prenorm,learned,mean,False,0.0002,1e-6,64,AdamW,,L2
+384,4,2,512,0.2,silu,prenorm,sinusoidal,max,False,0.0001,1e-6,64,Adam,,minmax
+640,8,3,512,0.1,gelu,postnorm,learned,cls,True,0.0005,1e-6,64,AdamW,,L2
+512,8,2,512,0.0,mish,prenorm,sinusoidal,mean,False,0.0001,1e-7,64,AdamW,,L2
+256,4,4,384,0.1,silu,postnorm,learned,max,False,0.0005,1e-5,96,Adam,,minmax
