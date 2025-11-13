@@ -1,0 +1,12 @@
+hidden_layers,num_layers,base_dim,activation,dropout_rate,pooling,norm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,use_pca,pca_frac,norm_layer,do_layer
+
+"[768, 384, 192]",3,768,silu,0.20,mean,None,32,AdamW,,5e-4,1e-6,False,,"[1, 2]","[2]"
+"[1024, 512, 256, 128]",4,1024,gelu,0.20,mean,None,32,AdamW,,3e-4,1e-5,True,0.6,"[2, 3, 4]","[1, 3]"
+"[256, 256, 256]",3,256,relu,0.10,mean,None,64,Adam,,1e-3,0,False,,"[]","[2]"
+"[640, 320]",2,640,silu,0.05,mean,None,64,AdamW,,7e-4,1e-6,False,,"[1]","[]"
+"[512, 512, 256]",3,512,gelu,0.25,mean,None,48,AdamW,,4e-4,5e-6,True,0.75,"[1, 3]","[2, 3]"
+"[768, 512]",2,768,leakyrelu,0.10,mean,None,64,Adam,,9e-4,0,False,,"[2]","[1]"
+"[896, 448, 224]",3,896,silu,0.15,mean,None,32,AdamW,,5e-4,1e-5,True,0.75,"[1, 2]","[2]"
+"[384, 256, 128]",3,384,leakyrelu,0.20,mean,None,48,Adam,,8e-4,0,False,,"[3]","[1, 2]"
+"[512, 512]",2,512,gelu,0.12,mean,L2,32,AdamW,,3e-4,1e-6,False,,"[2]","[1, 2]"
+"[320, 320, 160, 80]",4,320,silu,0.18,mean,MinMax,64,AdamW,,6e-4,5e-6,True,0.8,"[1, 3, 4]","[2, 4]"
