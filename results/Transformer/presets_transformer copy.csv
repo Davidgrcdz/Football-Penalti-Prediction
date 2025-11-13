@@ -1,1 +1,9 @@
 model_dim,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm
+
+
+"[1024,1024]",32,2,1280,0.1,gelu,prenorm,learned,cls,True,3e-5,1e-6,24,AdamW,0.0,L2
+"[256,384,512,640]",8,4,768,0.15,silu,postnorm,learned,mean,False,5e-5,1e-6,64,AdamW,0.0,None
+
+512,16,4,1024,0.1,mish,prenorm,learned,mean,False,8e-5,1e-6,48,AdamW,0.0,None
+"[768,640,512,512]",16,4,1280,0.15,silu,postnorm,sinusoidal,cls,True,5e-5,1e-6,32,Adam,0.0,L2
+
