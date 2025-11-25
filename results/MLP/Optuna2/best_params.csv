@@ -1,6 +1,0 @@
-embedding,best_f1_cv,pooling,optimizer,norm,batch_size,num_layers,base_dim,activation,dropout_rate,lr,wd,use_pca,norm_layer,do_layer,norm_layer_5,dropout_layer_5,pca_frac
-baseline_31steps_concat.csv,0.4689,mean,AdamW,L2,64,2,768,tanh,0.4,2e-05,1e-05,False,[1],[],,,
-gaitgl_64steps_concat.csv,0.4665,max,Adam,L2,80,3,896,tanh,0.3,5e-05,1e-05,False,"[2, 3]","[1, 2]",,,
-gaitpart_16steps_concat.csv,0.4873,mean,Adam,L2,32,5,512,silu,0.0,2e-05,1e-06,False,"[1, 4, 5]","[3, 4, 5]",True,True,
-gaitset_62steps_concat.csv,0.4904,mean,RMSprop,minmax,96,4,896,leakyrelu,0.5,0.001,0.0001,True,[4],"[1, 2, 3, 4]",,,0.7
-gln_93steps_concat.csv,0.472,max,AdamW,minmax,96,4,1024,silu,0.5,0.0001,1e-06,True,"[1, 2, 3, 4]","[1, 2, 3, 4]",,,0.95
