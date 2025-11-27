@@ -1,0 +1,14 @@
+embedding,best_f1_cv,hidden_layers,norm_layers,dropout_layers,activation,base_dim,batch_size,dropout,lr,norm,num_layers,pattern,pca_frac,pooling,use_pca,weight_decay
+baseline_CASIAB.csv,0.4745,"[512, 256, 128]",[],[],elu,512,16,,0.0002,minmax,3,decreasing,,mean,False,1e-05
+baseline_OUMVLP.csv,0.471,"[768, 768, 768, 768, 768, 768]","[1, 2, 3, 4]","[0, 1, 2, 3]",leakyrelu,768,128,0.2,0.0002,L2,6,uniform,0.5,mean,True,1e-05
+gaitgl.csv,0.4271,"[640, 640, 640, 640, 640]","[0, 1, 2, 3]","[1, 3]",silu,640,64,0.3,0.001,L2,5,uniform,,mean,False,1e-07
+gaitgl_GREW.csv,0.468,"[128, 256, 512]",[0],"[0, 1]",leakyrelu,512,48,0.5,0.0005,minmax,3,increasing,0.7,max,True,1e-05
+gaitgl_GREW_BNNeck.csv,0.4684,"[512, 256, 128]",[1],[1],elu,512,16,0.2,0.001,minmax,3,decreasing,,max,False,0.0
+gaitgl_OUMVLP.csv,0.4549,"[128, 64, 64]","[0, 1]","[0, 1]",leakyrelu,128,48,0.4,0.001,minmax,3,decreasing,,mean,False,1e-07
+gaitpart_GREW.csv,0.4793,"[96, 192, 384]",[0],[0],leakyrelu,384,128,0.2,0.001,minmax,3,increasing,,max,False,0.0
+gaitpart_OUMVLP.csv,0.506,"[128, 64, 64, 64]","[0, 1]","[1, 2]",elu,128,16,0.4,0.001,minmax,4,decreasing,0.7,mean,True,1e-06
+gaitset.csv,0.4476,"[640, 320, 160, 80, 64, 64]","[1, 4]",[3],relu,640,16,0.2,0.0005,minmax,6,decreasing,,mean,False,1e-06
+gaitset_GREW.csv,0.4781,"[128, 64, 64, 64, 64, 64]","[1, 2, 3, 4]","[1, 2, 3]",leakyrelu,128,64,0.2,0.0005,L2,6,decreasing,0.9,max,True,1e-07
+gaitset_OUMVLP.csv,0.4777,[768],[],[],gelu,768,16,,0.0005,L2,1,uniform,,mean,False,0.0001
+gln_phase1.csv,0.5065,"[640, 640]",[],[],elu,640,128,,0.001,L2,2,uniform,0.6,mean,True,1e-07
+gln_phase2.csv,0.4836,"[192, 384, 768]","[0, 1]",[],tanh,768,16,,2e-05,minmax,3,increasing,,max,False,0.0

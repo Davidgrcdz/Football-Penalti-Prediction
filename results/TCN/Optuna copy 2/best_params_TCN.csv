@@ -1,0 +1,14 @@
+embedding,best_f1_cv,channels,dilations,ln_blocks,dropout_blocks,dr_p,activation,batch_size,channels_pattern,convs_per_block,dilation_mode,fc_hidden,kernel_size,lr,momentum_sgd,norm,num_blocks,optimizer,pooling,use_weight_norm,weight_decay,wn_on_skip
+baseline_CASIAB,0.4418416359191242,"[256, 256]","[2, 3]","[0, 1]",[1],0.2,relu,96,uniform,1,linear,64.0,9,0.0001,,L2,2,RMSprop,max,False,1e-05,True
+baseline_OUMVLP,0.4780653567121191,"[128, 128, 128, 128]","[1, 4, 7, 10]",[1],[2],0.2,prelu,16,uniform,2,linear,256.0,3,0.0001,,L2,4,AdamW,mean,False,0.0,True
+gaitgl,0.4494125203440302,"[896, 768, 640]","[3, 6, 9]","[1, 2]",[],0.0,leakyrelu,96,decreasing,2,linear,64.0,2,1e-05,,minmax,3,Adam,attention,False,2e-06,False
+gaitgl_GREW,0.4594591398329484,[256],[1],[],[0],0.3,hardswish,16,decreasing,2,linear,128.0,7,0.001,,L2,1,AdamW,last,False,1e-06,False
+gaitgl_GREW_BNNeck,0.4683450595325074,"[192, 192]","[1, 2]",[1],"[0, 1]",0.3,mish,32,uniform,1,pow2,,7,0.0001,,L2,2,AdamW,max,False,1e-06,True
+gaitgl_OUMVLP,0.4445329213826841,[512],[3],[],[],0.0,mish,32,increasing,2,linear,,7,0.0002,,L2,1,AdamW,last,True,2e-06,False
+gaitpart_GREW,0.4696233018345472,"[96, 96, 96]","[1, 4, 7]","[0, 1]","[0, 1, 2]",0.1,gelu,96,uniform,1,linear,,9,0.0002,,L2,3,AdamW,last,True,2e-06,False
+gaitpart_OUMVLP,0.437384845300564,"[128, 192]","[3, 4]",[],[],0.0,elu,16,increasing,1,linear,,9,0.0005,,L2,2,AdamW,mean,False,0.0,True
+gaitset,0.4507590478084973,"[128, 128, 128, 128]","[1, 4, 7, 10]",[1],[2],0.2,prelu,16,uniform,2,linear,256.0,3,0.0001,,L2,4,AdamW,mean,False,0.0,True
+gaitset_GREW,0.4657071042470107,"[384, 256, 192, 128]","[2, 4, 8, 16]",[0],"[1, 2]",0.1,elu,16,decreasing,1,pow2,256.0,3,1e-05,,L2,4,RMSprop,max,False,5e-07,False
+gaitset_OUMVLP,0.4690777736281743,[512],[1],[],[0],0.1,relu,16,increasing,1,linear,256.0,7,0.0005,,L2,1,Adam,attention,False,1e-06,False
+gln_phase1,0.4842567338243289,[64],[1],[0],[],0.0,leakyrelu,96,decreasing,2,linear,,3,0.0005,,L2,1,RMSprop,last,True,2e-06,False
+gln_phase2,0.4897893604361267,"[512, 512, 512]","[3, 6, 9]",[1],"[1, 2]",0.1,hardswish,96,uniform,1,linear,128.0,5,0.0002,,minmax,3,AdamW,last,True,1e-06,False
