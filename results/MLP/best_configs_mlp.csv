@@ -1,39 +1,4 @@
 hidden_layers,norm_layers,dropout_layers,dropout_rate,activation,base_dim,batch_size,num_layers,pooling,norm,optimizer,momentum_sgd,learning_rate,weight_decay,use_pca,pca_frac,source_params
-"[768, 512, 256]","[1, 2, 3]","[1, 2]",0.4,silu,768,64,3,mean,minmax,Adam,,0.0002,1e-07,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[640, 640, 640, 640]","[1, 2, 3, 4]","[1, 2, 3]",0.45,leakyrelu,640,96,4,mean,,AdamW,,0.0003,1e-05,True,0.75,mlp_results_v2 DEFINITIVO.csv
-"[1280, 896, 512, 256]","[1, 2, 3, 4]","[1, 2]",0.5,silu,1280,64,4,mean,L2,Adam,,0.0001,1e-07,True,0.85,mlp_results_v2 DEFINITIVO.csv
-"[768, 768, 768, 768]","[1, 2, 3, 4]","[1, 3, 4]",0.4,gelu,768,128,4,mean,minmax,AdamW,,0.00025,5e-06,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[1024, 784, 512, 256]","[2, 3]","[1, 2, 3]",0.5,leakyrelu,1024,64,4,mean,L2,Adam,,0.0002,1e-06,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[1024, 1024, 512]","[1, 3]",[2],0.5,silu,1024,128,3,mean,L2,AdamW,,0.0002,5e-06,True,0.85,mlp_results_v2 DEFINITIVO.csv
-"[1280, 896, 512, 256]","[1, 3]","[2, 3]",0.4,silu,1280,64,4,mean,,AdamW,,0.00018,5e-07,False,,mlp_results_v2 DEFINITIVO.csv
-"[1152, 768, 512]","[1, 2]","[1, 2]",0.5,silu,1152,96,3,mean,minmax,AdamW,,0.0002,5e-06,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[512, 256, 128]",[3],[3],0.5,silu,512,64,3,mean,L2,Adam,,0.0001,0.0,True,0.7,mlp_results_v2 DEFINITIVO.csv
-"[896, 896, 896]","[1, 2, 3]","[2, 3]",0.45,silu,896,96,3,mean,L2,AdamW,,0.00015,1e-05,True,0.85,mlp_results_v2 DEFINITIVO.csv
-"[768, 512, 384, 256]","[2, 4]","[1, 3]",0.45,leakyrelu,768,80,4,mean,L2,Adam,,0.0002,0.0,True,0.75,mlp_results_v2 DEFINITIVO.csv
-"[1280, 960, 640, 320, 160]","[1, 2, 4]","[3, 4]",0.3,gelu,1280,96,5,max,L2,Adam,,0.0001,1e-07,True,0.7,mlp_results_v2 DEFINITIVO.csv
-"[1152, 1152, 1152]","[1, 2, 3]","[2, 3]",0.5,silu,1152,128,3,mean,L2,AdamW,,0.0002,5e-06,False,,mlp_results_v2 DEFINITIVO.csv
-"[160, 320, 640]",[2],"[1, 2]",0.2,relu,640,128,3,mean,L2,AdamW,,0.0002,1e-07,False,,mlp_results_v1_OPTUNA DEFINITIVO.csv
-"[576, 384, 192]",[2],"[1, 3]",0.5,elu,576,96,3,mean,minmax,RMSprop,,0.0002,5e-05,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[1408, 1024, 768, 512]","[1, 2, 3, 4]","[2, 3, 4]",0.45,silu,1408,128,4,mean,L2,AdamW,,0.0002,5e-06,False,,mlp_results_v2 DEFINITIVO.csv
-"[640, 384, 256]",[1],"[1, 2]",0.35,gelu,640,80,3,max,,Adam,,0.0001,1e-06,True,0.75,mlp_results_v2 DEFINITIVO.csv
-"[896, 512, 256]","[1, 2]","[1, 2, 3]",0.4,silu,896,64,3,mean,minmax,RMSprop,,8e-05,5e-05,True,0.7,mlp_results_v2 DEFINITIVO.csv
-"[640, 448, 256]",[2],"[1, 2]",0.35,gelu,640,96,3,mean,minmax,Adam,,0.00015,1e-06,True,0.7,mlp_results_v2 DEFINITIVO.csv
-"[384, 192, 96]",[2],"[1, 2]",0.35,relu,384,64,3,mean,L2,RMSprop,,9e-05,5e-05,False,,mlp_results_v2 DEFINITIVO.csv
-"[768, 512, 256]","[1, 2, 3]","[1, 2]",0.4,silu,768,88,3,mean,L2,Adam,,0.0002,1e-07,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[1024, 768, 512, 256]","[1, 2, 3, 4]","[1, 2, 3]",0.4,silu,1024,64,4,mean,minmax,Adam,,0.0001,1e-07,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[1024, 768, 512, 256]","[1, 2, 3, 4]","[1, 2]",0.45,silu,1024,96,4,mean,minmax,Adam,,0.0001,1e-07,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[768, 512, 384, 256]","[1, 3]","[2, 3]",0.5,silu,768,80,4,mean,,Adam,,0.00025,1e-06,False,,mlp_results_v2 DEFINITIVO.csv
-"[768, 384, 192, 96, 64, 64]","[1, 3, 5]","[1, 3, 5]",0.3,relu,768,32,6,mean,L2,RMSprop,,0.0002,1e-07,True,0.6,mlp_results_v1_OPTUNA DEFINITIVO.csv
-"[896, 640, 320, 192]","[1, 2, 3]","[1, 2]",0.5,leakyrelu,896,80,4,mean,minmax,Adam,,0.0002,2e-07,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[896, 640, 384, 192]","[1, 2, 3]","[1, 2]",0.4,silu,896,64,4,mean,L2,Adam,,0.0001,0.0,True,0.85,mlp_results_v2 DEFINITIVO.csv
-"[768, 512, 384, 256]","[1, 2]","[1, 2, 3]",0.5,silu,768,64,4,mean,L2,Adam,,0.0002,5e-07,True,0.7,mlp_results_v2 DEFINITIVO.csv
-"[1024, 512, 256, 128]","[2, 3, 4]","[1, 3]",0.2,gelu,1024,32,4,mean,,AdamW,,0.0003,1e-05,True,0.6,mlp_results_v2 DEFINITIVO.csv
-"[384, 384, 192]","[2, 3]","[1, 3]",0.15,silu,384,48,3,mean,,Adam,,0.0006,0.0,True,0.7,mlp_results_v2 DEFINITIVO.csv
-"[640, 640, 512]","[1, 2, 3]","[2, 3]",0.4,silu,640,96,3,mean,L2,AdamW,,0.00015,1e-05,True,0.75,mlp_results_v2 DEFINITIVO.csv
-"[768, 512, 256]","[1, 2]","[1, 2]",0.4,silu,768,80,3,mean,L2,Adam,,0.00015,2e-07,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[896, 896, 896, 896]","[1, 2, 3, 4]","[2, 3, 4]",0.45,silu,896,96,4,mean,,AdamW,,0.00015,1e-05,True,0.75,mlp_results_v2 DEFINITIVO.csv
-"[1024, 1024, 512]","[1, 2, 3]","[2, 3]",0.4,silu,1024,128,3,mean,L2,Adam,,0.0002,0.0,True,0.8,mlp_results_v2 DEFINITIVO.csv
-"[1280, 896, 512, 256]","[1, 3]","[1, 3]",0.5,silu,1280,64,4,mean,L2,AdamW,,0.0002,1e-06,True,0.85,mlp_results_v2 DEFINITIVO.csv
 "[512, 256]",[],[],,silu,512,64,2,mean,L2,RMSprop,,0.001,1e-07,True,0.9,mlp_results_v1_OPTUNA DEFINITIVO.csv
 "[512, 256]",[1],[1],0.3,silu,512,128,2,mean,minmax,Adam,,0.0001,1e-06,True,0.8,mlp_results_v2 DEFINITIVO.csv
 "[1024, 768, 384, 192]",[2],"[1, 3]",0.55,leakyrelu,1024,80,4,mean,minmax,SGD,0.9,0.002,1e-05,False,,mlp_results_v2 DEFINITIVO.csv
