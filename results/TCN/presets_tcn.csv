@@ -1,25 +1,36 @@
-channels,dilations,dropout,ln_block_end,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,lr,weight_decay,norm,momentum_sgd
+channels,dilations,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,momentum_sgd,lr,num_blocks,weight_decay,norm,dropout,ln_block_end,source_params
 
-"[256,384,512,640]","[1,2,4,8]","[0.1,0.1,0.1,0.1]","[False,False,False,False]",5,2,gelu,True,True,mean,256,48,AdamW,0.0005,0,"",
-"[512,640,768]","[1,2,4]","[0.05,0.05,0.05]","[False,False,False]",7,2,mish,True,False,mean,384,32,AdamW,0.0003,0,"",
-"[384,512,512]","[1,2,4]","[0.1,0.1,0.05]","[True,True,False]",5,2,gelu,True,True,attention,512,32,AdamW,0.0002,0,"",
-"[320,480,640]","[1,2,8]","[0.15,0.1,0.1]","[False,True,False]",7,2,silu,True,True,mean,256,48,SGD,0.006,0,"",0.9
-"[256,384,512,768]","[1,2,4,8]","[0.1,0.1,0.1,0.15]","[False,False,True,True]",9,2,gelu,True,False,attention,384,32,AdamW,0.0003,0,"",
-
-"[256,320,384,448,512]","[1,2,3,4,6]","[0.0,0.1,0.1,0.1,0.1]","[True,True,True,True,True]",7,2,gelu,True,True,attention,256,96,AdamW,0.00018,0.0,,
-"[128,128,128,128]","[1,2,4,8]","[0.0,0.1,0.1,0.15]","[True,True,True,True]",5,3,silu,True,True,attention,192,128,AdamW,0.00025,0.0,,
-"[160,192]","[1,2]","[0.0,0.1]","[True,True]",7,2,gelu,True,True,mean,256,128,AdamW,0.00025,0.0,,
-"[128,160,192,224,256]","[1,2,4,8,16]","[0.0,0.05,0.1,0.1,0.15]","[True,True,True,True,True]",5,2,gelu,True,True,max,320,96,AdamW,0.0002,0.0,,
-"[384,512,640]","[1,2,4]","[0.05,0.1,0.1]","[True,True,True]",5,3,gelu,True,True,attention,384,64,AdamW,0.00015,0.0,,
-
-"[512,640,768,896]","[1,2,4,8]","[0.05,0.05,0.1,0.1]","[True,True,True,True]",5,2,gelu,True,True,attention,512,64,AdamW,0.00014,0.00005,L2,
-"[640,768,896,1024]","[1,2,4,8]","[0.05,0.05,0.1,0.1]","[True,True,True,True]",3,2,gelu,True,True,mean,512,48,AdamW,0.00012,0.00005,L2,
-"[512,512,768,768,1024]","[1,2,4,8,16]","[0.05,0.05,0.1,0.1,0.15]","[True,True,True,True,True]",5,2,gelu,True,True,attention,640,48,AdamW,0.0001,0.0001,L2,
-"[896,768,640]","[1,2,4]","[0.05,0.1,0.1]","[True,True,True]",3,2,gelu,True,True,attention,512,64,AdamW,0.00015,0.00005,L2,
-"[1024,896,768,640]","[1,2,4,8]","[0.05,0.1,0.1,0.15]","[True,True,True,True]",3,2,gelu,True,True,attention,512,32,AdamW,0.00012,0.0001,L2,
-"[256,320,384,448,512]","[1,2,3,4,6]","[0.0,0.05,0.05,0.1,0.1]","[True,True,True,True,True]",5,2,gelu,True,True,mean,320,96,AdamW,0.0002,0.0001,minmax,
-"[256,256,256,256]","[1,2,4,8]","[0.0,0.05,0.1,0.1]","[True,True,True,True]",5,3,gelu,True,True,max,256,96,AdamW,0.00018,0.0001,minmax,
-"[384,384,384,384]","[1,2,4,8]","[0.05,0.1,0.1,0.15]","[True,True,True,True]",7,2,gelu,True,True,attention,384,64,AdamW,0.00016,0.0001,L2,
-"[160,192,224,256,288,320]","[1,2,4,8,16,32]","[0.0,0.05,0.05,0.1,0.1,0.15]","[True,True,True,True,True,True]",5,2,gelu,True,True,attention,320,96,AdamW,0.00018,0.00005,minmax,
-"[256,384,512,640]","[1,2,4,8]","[0.05,0.05,0.1,0.1]","[True,True,True,True]",5,2,gelu,True,True,attention,384,64,AdamW,0.00015,0.0001,L2,
-"[256,256,256]","[1,2,4]","[0.0,0.1,0.1]","[True,True,True]",5,2,gelu,True,True,attention,256,128,SGD,0.01,0.0005,L2,0.9
+"[256, 320, 384]","[2, 4, 8]",3,2,gelu,False,True,mean,256,56,AdamW,,5e-05,3,1e-06,,"[0.10,0.10,0.10]","[False,True,True]",manual_exploration_tcn_vNew
+"[512, 640, 512]","[1, 2, 4]",5,2,hardswish,True,True,mean,384,32,Adam,,1e-04,3,0.0,L2,"[0.10,0.10,0.10]","[True,False,True]",manual_exploration_tcn_vNew
+"[320, 448, 576]","[1, 3, 6]",3,3,silu,True,False,attention,256,48,AdamW,,3e-05,3,1e-05,minmax,"[0.0,0.10,0.15]","[True,True,True]",manual_exploration_tcn_vNew
+"[512, 512, 512]","[1, 2, 4]",3,3,relu,True,True,max,256,64,AdamW,,2e-05,3,1e-06,L2,"[0.0,0.0,0.10]","[False,True,True]",manual_exploration_tcn_vNew_mod
+"[640, 768, 896]","[2, 4, 8]",3,2,gelu,True,True,attention,512,32,AdamW,,2e-05,3,1e-05,,"[0.10,0.10,0.20]","[True,True,True]",manual_exploration_tcn_vNew
+"[256, 256]","[3, 6]",3,2,silu,True,True,attention,192,56,Adam,,5e-05,2,1e-05,minmax,"[0.0,0.0]","[True,True]",manual_exploration_tcn_vNew_mod
+"[384, 512]","[1, 3]",7,1,mish,False,True,max,256,40,AdamW,,3e-05,2,1e-05,L2,"[0.10,0.10]","[True,True]",manual_exploration_tcn_vNew
+"[640, 768]","[3, 6]",3,2,gelu,True,True,attention,320,48,Adam,,2e-05,2,1e-06,L2,"[0.0,0.10]","[True,True]",manual_exploration_tcn_vNew_mod
+"[640, 448]","[3, 6]",3,2,hardswish,True,True,mean,384,32,AdamW,,1e-04,2,0.0,minmax,"[0.10,0.10]","[True,True]",manual_exploration_tcn_vNew
+"[768, 512]","[3, 7]",3,3,silu,True,True,attention,448,32,AdamW,,2e-05,2,1e-05,L2,"[0.10,0.10]","[True,True]",manual_exploration_tcn_vNew
+"[448, 256]","[1, 2]",3,1,gelu,False,True,max,256,64,AdamW,,3e-05,2,1e-06,L2,"[0.0,0.0]","[False,True]",manual_exploration_tcn_vNew_mod
+"[448, 448, 448, 448]","[1, 2, 4, 8]",3,2,gelu,True,True,mean,320,40,AdamW,,2e-05,4,1e-05,L2,"[0.1,0.10,0.10,0.10]","[True,True,True,True]",manual_exploration_tcn_vNew
+"[640, 768, 768, 640]","[1, 2, 4, 8]",5,2,mish,True,True,attention,384,32,Adam,,3e-05,4,1e-05,minmax,"[0.05,0.10,0.10,0.10]","[True,True,True,True]",manual_exploration_tcn_vNew_mod
+"[320, 384, 448, 512]","[2, 4, 8, 16]",3,2,silu,True,True,max,256,48,AdamW,,5e-05,4,1e-06,L2,"[0.05,0.05,0.10,0.10]","[True,True,True,True]",manual_exploration_tcn_vNew
+"[640, 640, 512, 384]","[3, 6, 9, 12]",3,2,gelu,False,False,attention,448,32,AdamW,,2e-05,4,1e-05,L2,"[0.10,0.10,0.15,0.15]","[True,True,True,True]",manual_exploration_tcn_vNew_mod
+"[256, 384, 512, 384]","[1, 2, 4, 8]",5,2,hardswish,True,True,mean,320,56,Adam,,1e-04,4,0.0,minmax,"[0.0,0.10,0.10,0.10]","[False,True,True,True]",manual_exploration_tcn_vNew
+"[384, 512, 640, 768, 640]","[1, 2, 4, 8, 16]",5,1,gelu,False,False,attention,384,32,AdamW,,2e-05,5,1e-05,L2,"[0.0,0.0,0.10,0.10,0.25]","[True,True,True,True,True]",manual_exploration_tcn_vNew
+"[320, 448, 576, 448, 320]","[1, 2, 3, 4, 5]",9,2,mish,True,True,max,256,48,Adam,,3e-05,5,1e-05,minmax,"[0.0,0.10,0.10,0.15,0.20]","[False,True,True,True,True]",manual_exploration_tcn_vNew_mod
+"[512, 448, 384, 320, 256]","[1, 3, 6, 9, 12]",3,2,silu,True,True,attention,320,40,AdamW,,2e-05,5,1e-06,L2,"[0.0,0.10,0.10,0.15,0.20]","[True,True,True,True,True]",manual_exploration_tcn_vNew
+"[768]","[9]",5,2,gelu,True,False,attention,384,32,AdamW,,2e-05,1,1e-05,L2,"[0.05]","[True]",manual_exploration_tcn_vNew
+"[640]","[9]",5,3,mish,True,True,max,320,56,Adam,,3e-05,1,1e-05,minmax,"[0.10]","[True]",manual_exploration_tcn_vNew_mod
+"[384]","[7]",7,1,silu,True,True,mean,256,64,AdamW,,5e-05,1,1e-06,L2,"[0.05]","[True]",manual_exploration_tcn_vNew
+"[640]","[7]",3,1,hardswish,True,True,attention,448,40,AdamW,,2e-05,1,1e-05,L2,"[0.10]","[True]",manual_exploration_tcn_vNew
+"[256, 320, 256]","[1, 2, 4]",3,1,gelu,True,True,attention,192,64,AdamW,,2e-05,3,1e-05,L2,"[0.2,0.2,0.2]","[False,True,True]",manual_exploration_tcn_vNew
+"[448, 512, 448]","[1, 3, 5]",5,2,silu,True,False,mean,320,48,Adam,,3e-05,3,1e-05,minmax,"[0.10,0.10,0.10]","[True,True,True]",manual_exploration_tcn_vNew
+"[320, 384, 448, 512]","[1, 2, 4, 8]",3,2,mish,True,True,attention,256,40,AdamW,,2e-05,4,1e-06,L2,"[0.05,0.10,0.10,0.15]","[True,True,True,True]",manual_exploration_tcn_vNew
+"[768, 640, 512, 384]","[1, 2, 4, 8]",5,2,gelu,True,True,max,384,32,Adam,,1e-04,4,0.0,L2,"[0.10,0.10,0.15,0.15]","[True,True,True,True]",manual_exploration_tcn_vNew
+"[192,256,320,384,448]","[1, 2, 3, 4, 5]",3,3,silu,True,True,attention,256,56,AdamW,,2e-05,5,1e-05,L2,"[0.2,0.2,0.2,0.2,0.2]","[True,True,True,True,True]",manual_exploration_tcn_vNew
+"[512,512]","[1,2]",3,1,gelu,True,True,attention,320,48,AdamW,,2e-05,2,1e-05,L2,"[0.0,0.10]","[True,True]",manual_exploration_tcn_vNew
+"[640,384]","[1,2]",5,2,mish,True,True,max,256,40,Adam,,3e-05,2,1e-05,minmax,"[0.10,0.10]","[True,True]",manual_exploration_tcn_vNew
+"[384,512,640]","[1,2,4]",3,2,gelu,True,True,attention,320,32,AdamW,,2e-05,3,1e-05,L2,"[0.05,0.10,0.10]","[True,True,True]",manual_exploration_tcn_vNew
+"[256,384,512,640]","[1,2,4,8]",3,1,hardswish,True,True,mean,384,32,AdamW,,2e-05,4,1e-05,L2,"[0.0,0.10,0.10,0.10]","[True,True,True,True]",manual_exploration_tcn_vNew
+"[768,896]","[3,9]",9,1,silu,True,True,max,512,24,Adam,,3e-05,2,1e-05,L2,"[0.20,0.10]","[True,True]",manual_exploration_tcn_vNew
+"[320,448,576]","[1,3,5]",3,3,gelu,True,False,attention,256,56,AdamW,,2e-05,3,1e-06,minmax,"[0.0,0.10,0.20]","[True,True,True]",manual_exploration_tcn_vNew
