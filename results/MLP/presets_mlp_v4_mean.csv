@@ -1,1 +1,0 @@
-hidden_layers,pooling,norm,batch_size,num_layers,base_dim,activation,dropout_rate,optimizer,momentum_sgd,learning_rate,weight_decay,use_pca,pca_frac,norm_layer,do_layer,source_params

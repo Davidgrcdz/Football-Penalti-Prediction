@@ -1,0 +1,2 @@
+num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode,source_params
+4,"[512, 256, 128, 64]",True,,0.25,"[1, 2, 3]","[1, 3]",last,768.0,elu,False,16,SGD,0.7,0.001,1e-05,False,lstm_results_v2 DEFINITIVO.csv
