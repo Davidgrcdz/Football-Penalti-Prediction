@@ -1,3 +1,0 @@
-model_dims,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm,source_params
-"[160, 320, 640]",10,3,1024,0.25,gelu,postnorm,sinusoidal,mean,False,0.00015,1e-06,32,AdamW,0.0,,transformer_results_v2 DEFINITIVO.csv
-[512],16,1,2048,0.1,silu,prenorm,learned,cls,True,0.0004,1e-06,64,AdamW,0.0,L2,transformer_results_v2 DEFINITIVO.csv
