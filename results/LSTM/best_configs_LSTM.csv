@@ -1,2 +1,35 @@
 num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode,source_params
-4,"[512, 256, 128, 64]",True,,0.25,"[1, 2, 3]","[1, 3]",last,768.0,elu,False,16,SGD,0.7,0.001,1e-05,False,lstm_results_v2 DEFINITIVO.csv
+1,[448],False,L2,0.0,[],[],last,1024.0,silu,True,32,Adam,,0.001,1e-06,True,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[256],False,minmax,0.0,[],[],last,256.0,relu,True,32,Adam,,0.0001,0.0,True,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[1024],False,L2,0.0,[],[],last,1024.0,silu,True,32,AdamW,,0.0002,1e-06,True,lstm_results_v2 DEFINITIVO.csv
+1,[96],False,,0.0,[],[],last,256.0,tanh,False,32,Adam,,0.001,0.0,True,lstm_results_v2 DEFINITIVO.csv
+1,[256],True,,0.0,[],[],last,,,False,64,AdamW,,0.0005,1e-05,True,lstm_results_v2 DEFINITIVO.csv
+2,"[512, 512]",True,minmax,0.1,[1],[1],last,128.0,relu,True,96,AdamW,,0.0002,2e-06,False,lstm_results_v2 DEFINITIVO.csv
+2,"[96, 128]",True,L2,0.15,[1],[],mean,128.0,gelu,True,64,AdamW,,0.00025,1e-05,False,lstm_results_v2 DEFINITIVO.csv
+2,"[384, 384]",False,L2,0.0,[],[],last,,,False,96,AdamW,,0.0008,5e-06,True,lstm_results_v2 DEFINITIVO.csv
+2,"[160, 160]",True,minmax,0.2,[1],[],attention,128.0,relu,True,48,AdamW,,0.0002,2e-06,False,lstm_results_v2 DEFINITIVO.csv
+1,[192],True,L2,0.0,[],[],mean,128.0,relu,False,48,AdamW,,0.0003,1e-06,True,lstm_results_v2 DEFINITIVO.csv
+1,[256],False,minmax,0.0,[],[],last,128.0,gelu,True,96,Adam,,0.0002,1e-06,True,lstm_results_v2 DEFINITIVO.csv
+3,"[768, 512, 256]",False,,0.3,[1],"[1, 2]",attention,256.0,elu,True,64,AdamW,,1e-05,1e-05,False,lstm_results_v2 DEFINITIVO.csv
+2,"[1024, 1536]",False,L2,0.3,[1],[1],last,512.0,gelu,True,32,AdamW,,0.0001,1e-06,False,lstm_results_v2 DEFINITIVO.csv
+1,[256],True,L2,0.0,[],[],mean,,,False,64,AdamW,,0.0005,1e-05,True,lstm_results_v2 DEFINITIVO.csv
+3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,,0.001,0.0005,False,lstm_results_v2 DEFINITIVO.csv
+3,"[768, 640, 512]",False,minmax,0.1,[2],"[1, 2]",max,768.0,relu,True,64,AdamW,,2e-05,1e-07,False,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[960],True,,0.0,[],[],last,960.0,relu,True,128,SGD,0.9,0.0008,1e-06,True,lstm_results_v2 DEFINITIVO.csv
+1,[128],False,,0.0,[],[],last,,,False,64,Adam,,0.003,0.0,True,lstm_results_v2 DEFINITIVO.csv
+3,"[128, 192, 256]",False,L2,0.25,"[1, 2]",[1],last,128.0,leakyrelu,True,64,AdamW,,0.0004,1e-06,False,lstm_results_v2 DEFINITIVO.csv
+4,"[160, 160, 160, 160]",True,,0.4,[],[],max,128.0,relu,False,128,RMSprop,,0.0005,1e-07,True,lstm_results_v2 DEFINITIVO.csv
+3,"[256, 256, 256]",False,L2,0.0,[],[],last,256.0,silu,True,32,Adam,,0.001,1e-06,True,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[640],True,minmax,0.0,[],[],attention,512.0,gelu,False,64,Adam,,0.0008,0.0,True,lstm_results_v2 DEFINITIVO.csv
+2,"[384, 384]",True,,0.15,[1],[1],last,128.0,relu,True,64,AdamW,,0.0003,1e-05,False,lstm_results_v2 DEFINITIVO.csv
+4,"[896, 768, 640, 512]",False,L2,0.4,[1],[1],attention,512.0,elu,True,16,AdamW,,1e-05,0.0,False,lstm_results_v2 DEFINITIVO.csv
+4,"[64, 160, 384, 896]",False,,0.25,"[1, 3]","[1, 2, 3]",last,256.0,gelu,False,64,AdamW,,0.0001,1e-06,False,lstm_results_v2 DEFINITIVO.csv
+1,[64],True,L2,0.0,[],[],max,256.0,tanh,False,16,RMSprop,,0.0002,1e-05,True,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[64],False,L2,0.0,[],[],last,,,False,64,Adam,,0.01,1e-07,True,lstm_results_v2 DEFINITIVO.csv
+1,[512],False,L2,0.0,[],[],max,128.0,leakyrelu,False,64,AdamW,,0.001,0.0,True,lstm_results_v2 DEFINITIVO.csv
+2,"[256, 384]",True,L2,0.0,[],[1],max,512.0,gelu,True,32,Adam,,0.0002,1e-05,False,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[256],False,L2,0.0,[],[],max,,,False,64,AdamW,,0.001,1e-05,True,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[64],True,minmax,0.0,[],[],last,768.0,silu,False,48,AdamW,,0.0002,1e-07,True,lstm_results_v1_OPTUNA DEFINITIVO.csv
+1,[448],False,L2,0.0,[],[],last,64.0,tanh,True,16,AdamW,,0.0001,1e-06,True,lstm_results_v2 DEFINITIVO.csv
+2,"[288, 576]",False,minmax,0.0,[],[],last,128.0,relu,False,16,RMSprop,,0.00045,1e-06,False,lstm_results_v2 DEFINITIVO.csv
+4,"[384, 256, 192, 128]",False,L2,0.5,"[1, 3]","[1, 3]",max,1024.0,leakyrelu,True,32,AdamW,,0.0002,1e-07,False,lstm_results_v1_OPTUNA DEFINITIVO.csv

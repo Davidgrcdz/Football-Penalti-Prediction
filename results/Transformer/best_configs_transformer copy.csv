@@ -1,8 +1,0 @@
-model_dims,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm,source_params
-"[640, 640, 640, 640]",20,4,1280,0.1,gelu,prenorm,learned,mean,False,5e-05,1e-06,32,AdamW,0.0,L2,transformer_results_v2 DEFINITIVO.csv
-[768],16,1,768,0.0,silu,prenorm,learned,cls,True,2e-05,0.0,48,AdamW,0.0,L2,transformer_results_v2 DEFINITIVO.csv
-"[768, 768, 512]",16,3,1152,0.15,silu,postnorm,learned,max,False,5e-05,1e-05,32,AdamW,0.0,,transformer_results_v2 DEFINITIVO.csv
-"[640, 640, 896]",32,3,1024,0.1,gelu,prenorm,sinusoidal,mean,False,2e-05,1e-06,48,AdamW,0.0,,transformer_results_v2 DEFINITIVO.csv
-"[384, 512, 768]",8,3,896,0.2,mish,postnorm,learned,mean,False,7e-05,1e-06,40,AdamW,0.0,minmax,transformer_results_v2 DEFINITIVO.csv
-"[640, 640, 640]",32,3,1024,0.1,hardswish,postnorm,sinusoidal,mean,False,5e-05,0.0,32,AdamW,0.0,minmax,transformer_results_v2 DEFINITIVO.csv
-"[896, 896]",32,2,1280,0.1,gelu,prenorm,learned,cls,True,3e-05,1e-06,32,AdamW,0.0,L2,transformer_results_v2 DEFINITIVO.csv
