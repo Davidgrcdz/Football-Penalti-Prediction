@@ -1,4 +1,0 @@
-channels,dilations,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,momentum_sgd,lr,num_blocks,weight_decay,norm,dropout,ln_block_end,source_params
-"[896, 768, 640]","[3, 6, 9]",2,2,leakyrelu,False,False,attention,64.0,96,Adam,,1e-05,3,2e-06,minmax,"[0.0, 0.0, 0.0]","[False, True, True]",tcn_results_v1 DEFINITIVO.csv
-"[256, 256, 384, 384]","[1, 2, 2, 4]",7,3,gelu,True,True,last,256.0,96,AdamW,,0.0002,4,5e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]",tcn_results_v2 DEFINITIVO.csv
-"[384, 512, 512, 512]","[1, 2, 4, 8]",5,3,gelu,True,True,max,512.0,96,AdamW,,0.00015,4,1e-05,minmax,"[None, 0.05, 0.1, 0.1]","[True, True, True, True]",tcn_results_v2 DEFINITIVO.csv

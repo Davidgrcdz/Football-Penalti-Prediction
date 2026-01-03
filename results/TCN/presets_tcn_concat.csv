@@ -1,0 +1,29 @@
+channels,dilations,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,momentum_sgd,lr,num_blocks,weight_decay,norm,dropout,ln_block_end
+"[384, 576, 768]","[3, 6, 9]",3,2,silu,True,True,max,512,40,Adam,0.0,3e-05,3,1e-05,L2,"[0.1, 0.1, 0.1]",False
+"[384, 576, 768]","[3, 6, 9]",5,2,silu,True,True,max,1024,40,Adam,0.0,3e-05,3,1e-05,L2,"[0.0, 0.1, 0.1]",True
+"[384, 576, 768]","[3, 6, 9]",7,2,silu,True,True,max,320,40,AdamW,0.0,4e-05,3,1e-05,L2,"[0.1, 0.1, 0.2]",False
+"[384, 576, 768]","[3, 6, 9]",3,1,silu,True,True,max,512,32,AdamW,0.0,2e-05,3,5e-06,minmax,"[0.0, 0.1, 0.1]",True
+"[896, 768, 640]","[3, 6, 9]",9,2,gelu,True,True,max,640,64,AdamW,0.0,1e-05,3,5e-06,minmax,"[0.0, 0.1, 0.1]",False
+"[896, 768, 640]","[3, 6, 9]",5,2,gelu,True,True,max,256,64,AdamW,0.0,2e-05,3,5e-06,minmax,"[0.1, 0.1, 0.2]",True
+"[768, 640, 512]","[1, 2, 4]",3,1,gelu,True,True,max,512,48,AdamW,0.0,2e-05,3,1e-05,minmax,"[0.0, 0.1, 0.1]",False
+"[192, 256]","[1, 3]",3,2,gelu,True,True,max,448,40,AdamW,0.0,0.0001,2,5e-06,L2,"[0.0, 0.1]",False
+"[192, 256, 320]","[1, 2, 4]",3,2,gelu,True,True,max,448,40,RMSprop,0.0,7e-05,3,5e-06,L2,"[0.0, 0.1, 0.1]",False
+"[512, 640, 640]","[1, 2, 4]",3,2,silu,True,True,attention,512,64,Adam,0.0,8e-05,3,0.0,minmax,"[0.2, 0.2, 0.2]",False
+"[512, 640, 640]","[1, 2, 4]",3,2,silu,True,True,attention,512,64,AdamW,0.0,6e-05,3,0.0,minmax,"[0.2, 0.2, 0.2]",False
+"[512]","[1]",3,2,gelu,True,True,max,512,48,AdamW,0.0,0.0001,1,0.0,minmax,"[0.2]",False
+"[384, 256, 192, 128]","[2, 4, 8, 16]",3,1,elu,False,False,max,256,16,RMSprop,0.0,1e-05,4,5e-07,L2,"[0.0, 0.1, 0.1, 0.0]",False
+"[448, 256]","[1, 2]",7,2,gelu,True,True,max,320,40,AdamW,0.0,7e-05,2,1e-06,L2,"[0.1, 0.1]",False
+"[256, 256, 256, 256, 256]","[1, 2, 4, 8, 16]",3,2,gelu,True,True,max,512,32,AdamW,0.0,5e-05,5,1e-05,minmax,"[0.0, 0.1, 0.1, 0.2, 0.2]",False
+"[320, 320, 320, 320, 320, 320]","[1, 2, 4, 8, 16, 32]",3,2,silu,True,True,mean,256,64,AdamW,0.0,8e-05,6,1e-05,L2,"[0.1, 0.1, 0.2, 0.2, 0.2, 0.3]",True
+"[256, 512, 1024, 512]","[1, 2, 4, 8]",7,1,prelu,True,True,mean,512,32,AdamW,0.0,6e-05,4,1e-05,L2,"[0.1, 0.2, 0.2, 0.1]",False
+"[768, 1024, 768]","[1, 3, 9]",5,2,mish,False,False,max,256,16,RMSprop,0.0,0.0002,3,2e-06,L2,"[0.1, 0.1, 0.1]",False
+"[128, 256, 512, 1024]","[3, 6, 9, 12]",3,2,leakyrelu,True,True,attention,256,64,SGD,0.9,3e-05,4,1e-05,minmax,"[0.0, 0.1, 0.2, 0.2]",False
+"[1024, 1024]","[1, 2]",3,2,silu,True,True,attention,512,32,Adam,0.0,8e-05,2,1e-06,minmax,"[0.0, 0.1]",False
+"[256]","[7]",9,2,silu,True,True,mean,256,128,AdamW,0.0,0.0001,1,1e-06,minmax,"[0.2]",False
+"[1024, 768]","[1, 3]",7,2,gelu,True,True,max,512,80,Adam,0.0,5e-05,2,1e-06,L2,"[0.1, 0.2]",False
+"[896, 640, 512, 384]","[2, 4, 8, 16]",5,3,hardswish,True,True,attention,256,16,AdamW,0.0,6e-05,4,1e-06,minmax,"[0.1, 0.1, 0.2, 0.2]",False
+"[64, 128, 256, 512, 1024]","[3, 6, 9, 12, 15]",3,1,relu,True,True,last,128,32,RMSprop,0.0,0.0003,5,1e-06,minmax,"[0.0, 0.1, 0.1, 0.2, 0.2]",True
+"[256, 384, 512]","[3, 6, 9]",3,2,silu,True,True,attention,256,32,AdamW,0.0,6e-05,3,1e-05,minmax,"[0.0, 0.1, 0.2]",False
+"[192, 320, 512]","[1, 2, 4]",7,2,gelu,True,True,mean,256,32,AdamW,0.0,8e-05,3,1e-06,L2,"[0.1, 0.1, 0.2]",False
+"[256, 384]","[1, 2]",5,2,elu,True,True,max,256,48,RMSprop,0.0,0.0002,2,1e-06,L2,"[0.1, 0.2]",False
+"[512, 768, 1024]","[1, 3, 6]",11,2,leakyrelu,False,False,max,512,24,RMSprop,0.0,4e-05,3,1e-05,L2,"[0.1, 0.2, 0.2]",False

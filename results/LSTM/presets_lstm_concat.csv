@@ -1,0 +1,16 @@
+num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode
+1,"[256]",False,minmax,0.0,"[]","[]",last,256,relu,True,32,AdamW,0.0,0.0003,0.00010,True
+1,"[320]",False,L2,0.0,"[]","[]",mean,512,gelu,True,16,Adam,0.0,0.0005,0.00005,True
+2,"[256, 256]",False,minmax,0.20,"[]","[]",last,128,relu,True,32,AdamW,0.0,0.0002,0.00050,True
+2,"[192, 192]",True,L2,0.15,"[]","[]",last,128,gelu,False,32,RMSprop,0.0,0.0003,0.00001,True
+2,"[256, 384]",False,minmax,0.20,"[1]","[1]",attention,256,relu,True,32,Adam,0.0,0.0002,0.00010,False
+3,"[192, 256, 384]",False,minmax,0.25,"[1, 2]","[1, 2]",last,256,gelu,True,32,AdamW,0.0,0.0001,0.00050,False
+4,"[128, 192, 256, 384]",False,minmax,0.30,"[1, 2, 3]","[1, 2, 3]",last,128,relu,True,32,AdamW,0.0,0.0001,0.00100,False
+1,"[384]",False,minmax,0.0,"[]","[]",mean,256,silu,True,16,Adam,0.0,0.0002,0.00010,True
+1,"[256]",True,L2,0.0,"[]","[]",max,512,mish,True,16,AdamW,0.0,0.0003,0.00010,True
+2,"[320, 320]",False,minmax,0.30,"[]","[]",mean,256,gelu,True,32,RMSprop,0.0,0.0002,0.00005,True
+2,"[384, 256]",False,L2,0.15,"[1]","[1]",mean,256,relu,False,64,Adam,0.0,0.0003,0.00001,False
+1,"[512]",False,minmax,0.0,"[]","[]",last,128,relu,True,16,AdamW,0.0,0.0001,0.00100,True
+3,"[256, 256, 256]",False,minmax,0.25,"[1, 2]","[1, 2]",attention,128,gelu,True,32,AdamW,0.0,0.0002,0.00050,False
+2,"[256, 256]",False,L2,0.10,"[]","[]",attention,256,relu,True,16,Adam,0.0,0.0002,0.00001,True
+1,"[256]",False,minmax,0.0,"[]","[]",max,256,relu,True,32,SGD,0.9,0.0100,0.00010,True

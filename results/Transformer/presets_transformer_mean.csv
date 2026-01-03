@@ -1,0 +1,23 @@
+model_dims,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm,source_params
+"[512, 768, 512]",16,3,896,0.1,gelu,prenorm,learned,cls,True,3e-05,1e-05,40,AdamW,0.0,,proposed_v5_mean_best
+"[512, 768, 512]",16,3,1024,0.1,gelu,prenorm,learned,cls,True,2e-05,1e-05,40,AdamW,0.0,,proposed_v5_mean_best
+"[512, 768, 512]",16,3,896,0.2,gelu,postnorm,learned,mean,False,3e-05,5e-06,64,AdamW,0.0,,proposed_v5_mean_best
+"[384, 640, 512]",16,3,1024,0.1,gelu,prenorm,learned,cls,True,3e-05,1e-05,48,AdamW,0.0,,proposed_v5_mean_best
+"[512, 640, 512]",16,3,768,0.1,gelu,prenorm,learned,cls,True,4e-05,5e-06,48,AdamW,0.0,,proposed_v5_mean_best
+"[640, 768, 640]",8,3,1024,0.1,gelu,postnorm,learned,cls,True,2e-05,1e-06,32,AdamW,0.0,,proposed_v5_mean_best
+"[512, 512, 512, 512]",32,4,1024,0.1,gelu,prenorm,learned,cls,True,2e-05,5e-06,32,AdamW,0.0,,proposed_v5_mean_best
+"[384, 512, 640, 512]",16,4,1024,0.1,gelu,prenorm,learned,cls,True,3e-05,1e-05,32,AdamW,0.0,,proposed_v5_mean_best
+"[256, 512, 768]",16,3,1024,0.2,gelu,prenorm,learned,mean,False,5e-05,1e-06,64,AdamW,0.0,L2,proposed_v5_mean_best
+"[512, 768]",8,2,768,0.1,silu,prenorm,learned,cls,True,3e-05,1e-05,40,AdamW,0.0,,proposed_v5_mean_best
+"[512, 640]",16,2,1024,0.1,gelu,prenorm,learned,cls,True,3e-05,1e-05,32,AdamW,0.0,,proposed_v5_mean_best
+"[128]",8,1,256,0.2,relu,prenorm,sinusoidal,mean,False,0.0001,0.0,128,AdamW,0.0,L2,proposed_v5_mean_expl
+"[256]",8,1,512,0.1,mish,postnorm,learned,max,False,7e-05,1e-06,96,Adam,0.0,,proposed_v5_mean_expl
+"[256, 256]",8,2,512,0.3,elu,prenorm,sinusoidal,mean,False,5e-05,1e-05,80,RMSprop,0.0,minmax,proposed_v5_mean_expl
+"[320, 320, 320]",10,3,640,0.2,hardswish,postnorm,sinusoidal,mean,False,8e-05,1e-06,48,AdamW,0.0,,proposed_v5_mean_expl
+"[384, 384, 384, 384]",8,4,768,0.2,leakyrelu,prenorm,learned,max,False,5e-05,1e-06,64,Adam,0.0,L2,proposed_v5_mean_expl
+"[512]",32,1,1024,0.1,gelu,prenorm,sinusoidal,mean,False,2e-05,1e-06,48,AdamW,0.0,,proposed_v5_mean_expl
+"[256, 512]",8,2,1024,0.0,silu,prenorm,learned,cls,True,2e-05,1e-06,64,AdamW,0.0,,proposed_v5_mean_expl
+"[128, 256, 512]",8,3,1024,0.3,prelu,postnorm,learned,cls,True,6e-05,5e-06,40,Adam,0.0,,proposed_v5_mean_expl
+"[640, 640]",20,2,1280,0.1,gelu,prenorm,learned,mean,False,3e-05,1e-06,48,SGD,0.9,,proposed_v5_mean_expl
+"[768, 512, 256]",16,3,256,0.2,elu,postnorm,sinusoidal,max,False,4e-05,1e-05,32,RMSprop,0.0,,proposed_v5_mean_expl
+"[256, 384, 512, 640]",16,4,1536,0.0,gelu,prenorm,learned,mean,False,2e-05,1e-06,32,AdamW,0.0,,proposed_v5_mean_expl
