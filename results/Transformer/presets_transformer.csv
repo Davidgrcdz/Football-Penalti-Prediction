@@ -1,2 +1,0 @@
-model_dims,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm,source_params
-"[512, 512, 512]",8,3,1024,0.1,mish,prenorm,learned,cls,True,7e-05,5e-06,48,AdamW,0.0,,transformer_results_v2 DEFINITIVO.csv

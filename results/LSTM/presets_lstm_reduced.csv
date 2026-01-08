@@ -1,0 +1,37 @@
+layer_sizes,num_layers,bidirectional,native_mode,dropout,dropout_layers,norm_layers,norm_post_lstm,pooling,fc_hidden,activation,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,norm
+"[512, 512]",2,True,True,0.2,"[]","[]",False,last,,relu,64,AdamW,0.0,5e-05,1e-06,L2
+"[512, 384, 256, 192]",4,False,False,0.35,"[1, 2, 3]","[2, 3]",True,attention,256,gelu,48,AdamW,0.0,2e-05,1e-05,L2
+"[512, 384, 256]",3,True,False,0.15,"[1, 2]","[]",False,max,256,mish,80,Adam,0.0,8e-05,0.0,minmax
+"[256, 256, 256]",3,False,True,0.3,"[]","[]",True,mean,128,silu,96,RMSprop,0.0,0.00015,1e-06,L2
+"[640, 320]",2,True,False,0.25,"[1]","[1]",True,attention,,elu,64,AdamW,0.0,2e-05,5e-06,L2
+"[256, 192, 160]",3,False,False,0.0,"[]","[1, 2]",True,mean,512,prelu,128,AdamW,0.0,6e-05,1e-06,L2
+"[128]",1,True,True,0.0,"[]","[]",False,last,128,tanh,160,Adam,0.0,0.0002,0.0,minmax
+"[384, 384, 384, 384]",4,True,True,0.4,"[]","[]",True,max,256,gelu,32,AdamW,0.0,2e-05,1e-05,L2
+"[1024, 512, 256, 128]",4,True,False,0.2,"[2, 3]","[1, 2, 3]",True,attention,256,silu,24,AdamW,0.0,1e-05,1e-05,L2
+"[320, 640]",2,False,False,0.3,"[1]","[]",False,last,,leakyrelu,96,SGD,0.9,0.0006,2e-05,L2
+"[768, 512, 384]",3,False,False,0.25,"[1, 2]","[1, 2]",True,attention,256,elu,64,AdamW,0.0,1e-05,1e-05,L2
+"[896, 640, 384]",3,True,False,0.25,"[1, 2]","[1, 2]",True,mean,256,mish,32,AdamW,0.0,1e-05,1e-05,L2
+"[640, 512, 256]",3,True,False,0.3,"[1, 2]","[2]",True,last,512,gelu,48,AdamW,0.0,2e-05,5e-06,L2
+"[512, 384, 256]",3,False,False,0.35,"[1, 2]","[1]",True,attention,256,silu,80,AdamW,0.0,1e-05,5e-06,L2
+"[512, 512, 256]",3,False,False,0.25,"[1, 2]","[1, 2]",True,max,256,elu,64,AdamW,0.0,1.5e-05,1e-05,L2
+"[768, 768, 512]",3,True,False,0.2,"[1, 2]","[]",True,mean,256,gelu,32,AdamW,0.0,2e-05,5e-06,L2
+"[1024, 768, 512]",3,False,False,0.2,"[1, 2]","[1, 2]",True,mean,256,gelu,24,AdamW,0.0,1e-05,1e-05,L2
+"[384, 256]",2,False,False,0.25,"[1]","[1]",True,attention,256,elu,96,AdamW,0.0,3e-05,1e-06,L2
+"[512, 256]",2,False,False,0.3,"[1]","[1]",True,attention,256,silu,96,AdamW,0.0,2e-05,1e-06,L2
+"[640, 640]",2,False,True,0.25,"[]","[]",False,last,,relu,48,Adam,0.0,0.0001,0.0,
+"[256, 256, 256, 256]",4,False,True,0.35,"[]","[]",True,attention,256,mish,64,AdamW,0.0,5e-05,1e-06,L2
+"[512, 512, 512]",3,False,True,0.4,"[]","[]",True,max,512,gelu,32,RMSprop,0.0,0.0002,1e-06,L2
+"[768, 768, 768, 768]",4,False,True,0.2,"[]","[]",True,mean,256,hardswish,24,AdamW,0.0,3e-05,1e-05,L2
+"[1024, 1024]",2,True,True,0.2,"[]","[]",True,mean,256,gelu,16,AdamW,0.0,2e-05,1e-05,L2
+"[96, 96]",2,False,False,0.4,"[1]","[1]",False,mean,128,tanh,128,Adam,0.0,0.0003,0.0,minmax
+"[160, 128]",2,True,False,0.3,"[1]","[1]",False,last,,relu,96,SGD,0.9,0.0008,1e-05,L2
+"[192, 128]",2,False,False,0.3,"[1]","[1]",True,mean,128,elu,96,AdamW,0.0,0.00015,0.0,
+"[256, 192]",2,False,False,0.2,"[1]","[]",False,max,256,gelu,96,Adam,0.0,0.0001,0.0,minmax
+"[320, 256]",2,True,False,0.2,"[1]","[]",True,mean,128,silu,80,AdamW,0.0,7e-05,1e-06,L2
+"[128, 256, 128]",3,False,False,0.3,"[1, 2]","[1]",False,max,128,relu,128,Adam,0.0,0.0002,0.0,minmax
+"[384, 192, 128]",3,True,False,0.25,"[1, 2]","[1, 2]",True,attention,256,selu,64,AdamW,0.0,5e-05,1e-05,L2
+"[256]",1,False,True,0.0,"[]","[]",True,last,256,leakyrelu,256,Adam,0.0,0.0002,0.0,minmax
+"[512]",1,True,True,0.0,"[]","[]",False,max,,gelu,96,AdamW,0.0,5e-05,1e-06,L2
+"[768]",1,False,False,0.0,"[]","[]",False,mean,256,silu,96,RMSprop,0.0,0.00012,0.0,
+"[128, 192, 256]",3,True,False,0.25,"[1, 2]","[1]",True,attention,128,leakyrelu,128,AdamW,0.0,8e-05,1e-06,L2
+"[192, 192, 192]",3,False,True,0.3,"[]","[]",True,attention,256,silu,96,Adam,0.0,0.00012,0.0,
