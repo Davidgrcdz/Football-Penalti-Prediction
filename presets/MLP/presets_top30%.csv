@@ -1,0 +1,6 @@
+hidden_layers,norm_layers,dropout_layers,dropout_rate,activation,base_dim,batch_size,num_layers,pooling,norm,optimizer,momentum_sgd,learning_rate,weight_decay,use_pca,pca_frac,best_f1,source_params
+"[896, 640, 384, 192]","[1, 2, 3]","[1, 2]",0.4,silu,896,64,4,mean,L2,Adam,,0.0001,0.0,True,0.85,0.69444,Preset_27
+"[1024, 768, 512, 256]","[1, 2, 3, 4]","[1, 2]",0.45,silu,1024,96,4,mean,minmax,Adam,,0.0001,1e-07,True,0.8,0.69251,Preset_23
+"[160, 320, 640]",[2],"[1, 2]",0.2,relu,640,128,3,mean,L2,AdamW,,0.0002,1e-07,False,,0.66496,Preset_14
+"[896, 576, 288]","[1, 2, 3]","[1, 2]",0.45,silu,896,80,3,max,minmax,AdamW,,0.001,5e-05,False,,0.65966,Preset_40
+"[768, 512, 256]","[1, 2, 3]","[1, 2]",0.4,silu,768,88,3,mean,L2,Adam,,0.0002,1e-07,False,,0.65789,Preset_57

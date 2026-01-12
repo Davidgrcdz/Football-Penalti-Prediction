@@ -1,0 +1,6 @@
+num_layers,layer_sizes,bidirectional,norm,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,native_mode,best_f1,source_params
+3,"[128, 128, 128]",False,L2,0.1,[1],"[1, 2]",last,64.0,tanh,False,64,AdamW,,0.001,0.0005,False,0.73645,Preset_15
+1,[1024],False,L2,0.0,[],[],last,1024.0,silu,True,32,AdamW,,0.0002,1e-06,True,0.73099,Preset_3
+1,[128],False,,0.0,[],[],last,,,False,64,Adam,,0.003,0.0,True,0.71494,Preset_18
+1,[448],False,L2,0.0,[],[],last,1024.0,silu,True,32,Adam,,0.001,1e-06,True,0.71379,Preset_1
+2,"[512, 512]",True,minmax,0.1,[1],[1],last,128.0,relu,True,96,AdamW,,0.0002,2e-06,False,0.68519,Preset_6

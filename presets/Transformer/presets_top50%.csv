@@ -1,0 +1,6 @@
+model_dims,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm,best_f1,source_params
+"[768, 768, 512]",16,3,1152,0.15,silu,postnorm,learned,max,False,5e-05,1e-05,32,AdamW,0.0,,0.65024,Preset_14
+"[512, 640, 768, 640]",16,4,1280,0.1,silu,postnorm,sinusoidal,cls,True,5e-05,1e-06,32,Adam,0.0,,0.64488,Preset_1
+"[640, 640, 896]",32,3,1024,0.1,gelu,prenorm,sinusoidal,mean,False,2e-05,1e-06,48,AdamW,0.0,,0.64452,Preset_15
+"[640, 480, 320]",8,3,960,0.15,mish,postnorm,sinusoidal,max,False,6e-05,1e-06,32,Adam,0.0,,0.63529,Preset_4
+[768],16,1,768,0.0,silu,prenorm,learned,cls,True,2e-05,0.0,48,AdamW,0.0,L2,0.63417,Preset_13

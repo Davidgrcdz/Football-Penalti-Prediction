@@ -1,0 +1,6 @@
+channels,dilations,kernel_size,convs_per_block,activation,use_weight_norm,wn_on_skip,pooling,fc_hidden,batch_size,optimizer,momentum_sgd,weight_decay,norm,dropout,ln_block_end,best_f1,source_params
+"[512, 512, 512]","[3, 6, 9]",5,1,hardswish,True,False,last,128.0,96,AdamW,,1e-06,minmax,"[0.0, 0.1, 0.1]","[False, True, False]",0.69251,Preset_7
+"[256, 256, 384, 384]","[1, 2, 2, 4]",7,3,gelu,True,True,last,256.0,96,AdamW,,5e-05,L2,"[0.1, 0.1, 0.2, 0.2]","[True, True, True, True]",0.66743,Preset_2
+[256],[1],7,2,hardswish,False,False,last,128.0,16,AdamW,,1e-06,L2,[0.3],[False],0.65893,Preset_31
+"[384, 512, 640]","[1, 2, 4]",7,2,gelu,True,True,max,256.0,96,AdamW,,1e-05,minmax,"[0.05, 0.1, 0.1]","[True, True, True]",0.6568,Preset_5
+"[320, 448, 576, 448, 320]","[1, 2, 3, 4, 5]",9,2,mish,True,True,max,256.0,48,Adam,,1e-05,minmax,"[0.0, 0.1, 0.1, 0.15, 0.2]","[False, True, True, True, True]",0.65512,Preset_9
