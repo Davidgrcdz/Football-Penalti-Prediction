@@ -1,0 +1,36 @@
+{
+  "n_files": 13,
+  "video_id_common_count": 432,
+  "video_id_union_count": 432,
+  "files_with_missing_videos": {},
+  "feature_dims_by_file": {
+    "baseline_CASIAB.csv": 256,
+    "baseline_OUMVLP.csv": 256,
+    "gaitgl.csv": 128,
+    "gaitgl_GREW.csv": 256,
+    "gaitgl_GREW_BNNeck.csv": 256,
+    "gaitgl_OUMVLP.csv": 256,
+    "gaitpart_GREW.csv": 256,
+    "gaitpart_OUMVLP.csv": 256,
+    "gaitset.csv": 256,
+    "gaitset_GREW.csv": 256,
+    "gaitset_OUMVLP.csv": 256,
+    "gln_phase1.csv": 256,
+    "gln_phase2.csv": 256
+  },
+  "step_mode_by_file": {
+    "baseline_CASIAB.csv": 31,
+    "baseline_OUMVLP.csv": 31,
+    "gaitgl.csv": 64,
+    "gaitgl_GREW.csv": 64,
+    "gaitgl_GREW_BNNeck.csv": 64,
+    "gaitgl_OUMVLP.csv": 64,
+    "gaitpart_GREW.csv": 16,
+    "gaitpart_OUMVLP.csv": 16,
+    "gaitset.csv": 62,
+    "gaitset_GREW.csv": 62,
+    "gaitset_OUMVLP.csv": 62,
+    "gln_phase1.csv": 93,
+    "gln_phase2.csv": 93
+  }
+}

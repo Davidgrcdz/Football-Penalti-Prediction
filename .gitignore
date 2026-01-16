@@ -1,7 +1,7 @@
 Gait_Embeddings_good/
 Gait_Embeddings_Combined/
 Gait_Embeddings_TopSteps/
-Gait_Embeddings_WorstSteps
+Gait_Embeddings_LowSteps
 Gait_Embeddings_Reduced/
 Step_Analysis_Selection/
 saved_models/

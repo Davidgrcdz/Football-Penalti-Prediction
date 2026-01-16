@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "file": "gaitset_OUMVLP.csv",
+    "n_rows": 26784,
+    "n_videos": 432,
+    "has_required_cols": true,
+    "missing_required_cols": [],
+    "D_features": 256,
+    "nan_total": 0,
+    "nan_by_col_top": [],
+    "step_dtype": "int64",
+    "step_is_integer_like": true,
+    "step_has_negatives": false,
+    "steps_T_unique_count": 1,
+    "steps_T_mode": 62,
+    "videos_with_noncontiguous_steps": 0,
+    "videos_with_missing_steps_examples": [],
+    "duplicated_rows": 0,
+    "meta_inconsistencies": {
+      "pitch_side": {
+        "videos_inconsistent": 0,
+        "examples": {}
+      },
+      "kicker_foot": {
+        "videos_inconsistent": 0,
+        "examples": {}
+      },
+      "shoot_zone": {
+        "videos_inconsistent": 0,
+        "examples": {}
+      }
+    },
+    "warnings": []
+  },
+  "details": {
+    "feat_cols_count": 256,
+    "feat_cols_first": [
+      "feat_0",
+      "feat_1",
+      "feat_2",
+      "feat_3",
+      "feat_4"
+    ],
+    "feat_cols_last": [
+      "feat_251",
+      "feat_252",
+      "feat_253",
+      "feat_254",
+      "feat_255"
+    ],
+    "feat_index_check": {
+      "ok": true,
+      "reason": null,
+      "missing": [],
+      "extra": [],
+      "D": 256
+    }
+  }
+}
