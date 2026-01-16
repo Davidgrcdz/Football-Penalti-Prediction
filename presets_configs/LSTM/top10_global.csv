@@ -1,0 +1,11 @@
+num_layers,layer_sizes,bidirectional,dropout,dropout_layers,norm_layers,pooling,fc_hidden,activation,norm_post_lstm,native_mode,batch_size,optimizer,momentum_sgd,learning_rate,weight_decay,norm,target_embedding,source_params,best_f1_per_class,best_f1,__source_file__
+3,"[128, 128, 128]",False,0.1,[1],"[1, 2]",last,64.0,tanh,False,False,64,AdamW,,0.001,0.0005,L2,gln_phase1_TOP50.csv,Preset_15,"[0.82927, 0.61538, 0.76471]",0.73645,lstm_results_v5_top50%.csv
+1,[256],False,0.0,[],[],last,128.0,gelu,True,True,96,Adam,,0.0002,1e-06,minmax,gln_phase1_TOP70.csv,Preset_11,"[0.68571, 0.76923, 0.75]",0.73498,lstm_results_v5_top70%.csv
+1,[448],False,0.0,[],[],last,1024.0,silu,True,True,32,Adam,,0.001,1e-06,L2,gln_phase1.csv,best_configs_v3,"[0.7619, 0.66667, 0.77419]",0.73425,lstm_results_v3 DEFINITIVO.csv
+1,[1024],False,0.0,[],[],last,1024.0,silu,True,True,32,AdamW,,0.0002,1e-06,L2,gln_phase1.csv,best_configs_v3,"[0.74286, 0.66667, 0.78947]",0.733,lstm_results_v3 DEFINITIVO.csv
+3,"[256, 256, 256]",False,0.0,[],[],last,256.0,silu,True,True,32,Adam,,0.001,1e-06,L2,gln_phase2_TOP30.csv,Preset_21,"[0.73684, 0.66667, 0.78947]",0.73099,lstm_results_v5_top30%.csv
+1,[256],False,0.0,[],[],last,256.0,relu,True,True,32,Adam,,0.0001,0.0,minmax,gln_phase1.csv,baseline_OUMVLP.csv,"[0.75, 0.71429, 0.70588]",0.72339,lstm_results_v1_OPTUNA DEFINITIVO.csv
+4,"[64, 160, 384, 896]",False,0.25,"[1, 3]","[1, 2, 3]",last,256.0,gelu,False,False,64,AdamW,,0.0001,1e-06,,gln_phase1.csv,best_configs_v3,"[0.76596, 0.71429, 0.66667]",0.71564,lstm_results_v3 DEFINITIVO.csv
+1,[128],False,0.0,[],[],last,,,False,True,64,Adam,,0.003,0.0,,gln_phase1_TOP50.csv,Preset_18,"[0.62857, 0.83333, 0.68293]",0.71494,lstm_results_v5_top50%.csv
+2.0,"[288, 576]",False,0.0,[],[],last,128.0,relu,False,False,16.0,RMSprop,,0.00045,1e-06,minmax,gln_93steps_mean.csv,Preset_26,"[0.75556, 0.54545, 0.8125]",0.7045,lstm_results_v4_mean.csv
+1,[256],True,0.0,[],[],last,,,False,True,64,AdamW,,0.0005,1e-05,,gln_phase1.csv,best_configs_v3,"[0.72727, 0.66667, 0.68966]",0.69453,lstm_results_v3 DEFINITIVO.csv

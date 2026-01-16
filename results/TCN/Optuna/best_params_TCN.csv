@@ -1,14 +1,14 @@
-embedding,best_f1_cv,num_blocks,channels_pattern,ch_first_idx,dilation_mode,dilation_d0,dilation_step,convs_per_block,kernel_size,activation,use_weight_norm,wn_on_skip,ln_use_b0,ln_use_b1,ln_use_b2,ln_use_b3,dr_use_b0,dr_use_b1,dr_use_b2,dr_use_b3,dr_p,pooling,fc_hidden,lr,weight_decay,batch_size,optimizer,norm,ch_idx,dilation_start
-baseline_CASIAB.csv,0.4418,2,uniform,,linear,2.0,1.0,1,9,relu,False,True,True,True,,,False,True,,,0.2,max,64.0,0.0001,1e-05,96,RMSprop,L2,4.0,
-baseline_OUMVLP.csv,0.4781,4,uniform,,linear,1.0,3.0,2,3,prelu,False,True,False,True,False,False,False,False,True,False,0.2,mean,256.0,0.0001,0.0,16,AdamW,L2,2.0,
-gaitgl.csv,0.4494,3,decreasing,9.0,linear,3.0,3.0,2,2,leakyrelu,False,False,False,True,True,,False,False,False,,0.3,attention,64.0,1e-05,2e-06,96,Adam,minmax,,
-gaitgl_GREW.csv,0.4595,1,decreasing,4.0,linear,1.0,1.0,2,7,hardswish,False,False,False,,,,True,,,,0.3,last,128.0,0.001,1e-06,16,AdamW,L2,,
-gaitgl_GREW_BNNeck.csv,0.4683,2,uniform,,pow2,,,1,7,mish,False,True,False,True,,,True,True,,,0.3,max,,0.0001,1e-06,32,AdamW,L2,3.0,1.0
-gaitgl_OUMVLP.csv,0.4445,1,increasing,6.0,linear,3.0,1.0,2,7,mish,True,False,False,,,,False,,,,0.2,last,,0.0002,2e-06,32,AdamW,L2,,
-gaitpart_GREW.csv,0.4696,3,uniform,,linear,1.0,3.0,1,9,gelu,True,False,True,True,False,,True,True,True,,0.1,last,,0.0002,2e-06,96,AdamW,L2,1.0,
-gaitpart_OUMVLP.csv,0.4374,2,increasing,2.0,linear,3.0,1.0,1,9,elu,False,True,False,False,,,True,False,,,0.0,mean,,0.0005,0.0,16,AdamW,L2,,
-gaitset.csv,0.4508,4,uniform,,linear,1.0,3.0,2,3,prelu,False,True,False,True,False,False,False,False,True,False,0.2,mean,256.0,0.0001,0.0,16,AdamW,L2,2.0,
-gaitset_GREW.csv,0.4657,4,decreasing,5.0,pow2,,,1,3,elu,False,False,True,False,False,False,False,True,True,False,0.1,max,256.0,1e-05,5e-07,16,RMSprop,L2,,2.0
-gaitset_OUMVLP.csv,0.4691,1,increasing,6.0,linear,1.0,3.0,1,7,relu,False,False,False,,,,True,,,,0.1,attention,256.0,0.0005,1e-06,16,Adam,L2,,
-gln_phase1.csv,0.4843,1,decreasing,0.0,linear,1.0,1.0,2,3,leakyrelu,True,False,True,,,,False,,,,0.1,last,,0.0005,2e-06,96,RMSprop,L2,,
-gln_phase2.csv,0.4898,3,uniform,,linear,3.0,3.0,1,5,hardswish,True,False,False,True,False,,False,True,True,,0.1,last,128.0,0.0002,1e-06,96,AdamW,minmax,6.0,
+embedding,best_f1_cv,channels,dilations,ln_block_end,dropout,activation,batch_size,channels_pattern,convs_per_block,dilation_mode,fc_hidden,kernel_size,lr,momentum_sgd,norm,num_blocks,optimizer,pooling,use_weight_norm,weight_decay,wn_on_skip
+baseline_CASIAB,0.4418,"[256, 256]","[2, 3]","[True, True]","[0.0, 0.2]",relu,96,uniform,1,linear,64.0,9,0.0001,,L2,2,RMSprop,max,False,1e-05,True
+baseline_OUMVLP,0.4781,"[128, 128, 128, 128]","[1, 4, 7, 10]","[False, True, False, False]","[0.0, 0.0, 0.2, 0.0]",prelu,16,uniform,2,linear,256.0,3,0.0001,,L2,4,AdamW,mean,False,0.0,True
+gaitgl,0.4494,"[896, 768, 640]","[3, 6, 9]","[False, True, True]","[0.0, 0.0, 0.0]",leakyrelu,96,decreasing,2,linear,64.0,2,1e-05,,minmax,3,Adam,attention,False,2e-06,False
+gaitgl_GREW_BNNeck,0.4683,"[192, 192]","[1, 2]","[False, True]","[0.3, 0.3]",mish,32,uniform,1,pow2,,7,0.0001,,L2,2,AdamW,max,False,1e-06,True
+gaitgl_GREW,0.4595,[256],[1],[False],[0.3],hardswish,16,decreasing,2,linear,128.0,7,0.001,,L2,1,AdamW,last,False,1e-06,False
+gaitgl_OUMVLP,0.4445,[512],[3],[False],[0.0],mish,32,increasing,2,linear,,7,0.0002,,L2,1,AdamW,last,True,2e-06,False
+gaitpart_GREW,0.4696,"[96, 96, 96]","[1, 4, 7]","[True, True, False]","[0.1, 0.1, 0.1]",gelu,96,uniform,1,linear,,9,0.0002,,L2,3,AdamW,last,True,2e-06,False
+gaitpart_OUMVLP,0.4374,"[128, 192]","[3, 4]","[False, False]","[0.0, 0.0]",elu,16,increasing,1,linear,,9,0.0005,,L2,2,AdamW,mean,False,0.0,True
+gaitset,0.4508,"[128, 128, 128, 128]","[1, 4, 7, 10]","[False, True, False, False]","[0.0, 0.0, 0.2, 0.0]",prelu,16,uniform,2,linear,256.0,3,0.0001,,L2,4,AdamW,mean,False,0.0,True
+gaitset_GREW,0.4657,"[384, 256, 192, 128]","[2, 4, 8, 16]","[True, False, False, False]","[0.0, 0.1, 0.1, 0.0]",elu,16,decreasing,1,pow2,256.0,3,1e-05,,L2,4,RMSprop,max,False,5e-07,False
+gaitset_OUMVLP,0.4691,[512],[1],[False],[0.1],relu,16,increasing,1,linear,256.0,7,0.0005,,L2,1,Adam,attention,False,1e-06,False
+gln_phase1,0.4843,[64],[1],[True],[0.0],leakyrelu,96,decreasing,2,linear,,3,0.0005,,L2,1,RMSprop,last,True,2e-06,False
+gln_phase2,0.4898,"[512, 512, 512]","[3, 6, 9]","[False, True, False]","[0.0, 0.1, 0.1]",hardswish,96,uniform,1,linear,128.0,5,0.0002,,minmax,3,AdamW,last,True,1e-06,False

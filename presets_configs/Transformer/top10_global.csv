@@ -1,0 +1,11 @@
+model_dims,num_heads,num_layers,dim_feedforward,dropout,activation,norm_type,pos_encoding,pooling,use_cls_token,lr,weight_decay,batch_size,optimizer,momentum_sgd,norm,target_embedding,source_params,best_f1_per_class,best_f1,__source_file__
+[256],8.0,1.0,512.0,0.0,leakyrelu,postnorm,learned,max,False,6e-05,1e-06,96.0,Adam,0.0,,gaitpart_16steps_concat.csv,Preset_11,"[0.68421, 0.61538, 0.75676]",0.68545,transformer_results_v4_concat.csv
+"[512, 512, 512]",8.0,3.0,1024.0,0.1,mish,prenorm,learned,cls,True,7e-05,5e-06,48.0,AdamW,0.0,,gaitpart_OUMVLP.csv,Preset_21,"[0.65, 0.76923, 0.62857]",0.6826,transformer_results_v2 DEFINITIVO.csv
+"[256, 384, 512]",16.0,3.0,768.0,0.1,gelu,prenorm,learned,cls,True,0.0001,1e-06,80.0,AdamW,0.0,L2,baseline_OUMVLP.csv,Preset_18,"[0.7234, 0.6, 0.70968]",0.67769,transformer_results_v2 DEFINITIVO.csv
+"[512, 768, 512]",16.0,3.0,896.0,0.1,gelu,prenorm,learned,cls,True,3e-05,1e-05,40.0,AdamW,0.0,,gaitpart_16steps_mean.csv,Preset_5,"[0.78431, 0.5, 0.72]",0.6681,transformer_results_v4_mean.csv
+[256],8.0,1.0,512.0,0.1,mish,postnorm,learned,max,False,7e-05,1e-06,96.0,Adam,0.0,,gln_93steps_mean.csv,Preset_13,"[0.68293, 0.61538, 0.70588]",0.66806,transformer_results_v4_mean.csv
+"[768, 768]",16.0,2.0,1536.0,0.1,gelu,prenorm,learned,max,False,2e-05,1e-06,32.0,AdamW,0.0,minmax,gaitpart_16steps_mean.csv,Preset_3,"[0.71429, 0.54545, 0.74286]",0.66753,transformer_results_v4_mean.csv
+"[320, 480, 640]",8.0,3.0,960.0,0.15,gelu,prenorm,learned,mean,False,7e-05,1e-06,48.0,AdamW,0.0,,gaitpart_OUMVLP.csv,Preset_12,"[0.69767, 0.61538, 0.6875]",0.66685,transformer_results_v2 DEFINITIVO.csv
+"[512, 640, 768, 640]",16.0,4.0,1280.0,0.1,silu,postnorm,sinusoidal,cls,True,5e-05,1e-06,32.0,Adam,0.0,,gaitpart_OUMVLP_TOP30.csv,Preset_11,"[0.73684, 0.54545, 0.71795]",0.66675,transformer_results_v5_top30%.csv
+"[160, 320, 640]",10.0,3.0,1024.0,0.25,gelu,postnorm,sinusoidal,mean,False,0.00015,1e-06,32.0,AdamW,0.0,,gaitpart_OUMVLP_TOP30.csv,Preset_15,"[0.79167, 0.625, 0.58333]",0.66667,transformer_results_v5_top30%.csv
+"[256, 384, 512, 640]",16.0,4.0,1536.0,0.0,gelu,prenorm,learned,mean,False,2e-05,1e-06,32.0,AdamW,0.0,,gaitpart_16steps_mean.csv,Preset_22,"[0.77273, 0.5, 0.71429]",0.66234,transformer_results_v4_mean.csv
