@@ -1,4 +1,4 @@
-# Football Penalty Prediction (Gait Embeddings)
+# ⚽ Football Penalty Prediction (Gait Embeddings)
 
 Predicción de la dirección de un penalti (**3 clases: izquierda / centro / derecha**) a partir de **secuencias temporales de gait embeddings** ya extraídos y almacenados en **CSVs**. El repositorio implementa un pipeline experimental común para **4 arquitecturas** (MLP, LSTM, TCN y Transformer) y una batería de fases **Optuna + V1…V5**, incluyendo experimentos con **embeddings combinados** y **selección de steps (Top-K / Low-K)**.
 
